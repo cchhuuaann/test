@@ -12,7 +12,7 @@
 
 		$novytext = ($text2 . $text1) / 10;
 
-		
+		echo $novytext;
 		
 	?>
 	</body>
