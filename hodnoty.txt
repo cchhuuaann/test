@@ -1,10 +1,10 @@
 Karel Bláha, 26, 15000, A
 Marie Majerová, 42, 10000, N
-Jakub Skoumal, 16, 26000, N
+Jakub Skoumal, 16, 60000, N
 Martin Dostál, 34, 18000, A
-Anna Kareninová, 27, 21000, N
+Anna Kareninová, 65, 20000, N
 Lucie Krásná, 21, 12000, A
-Roman Zabloudil, 25, 19000, A
+Roman Zabloudil, 51, 19000, A
 Maxmilián Navrátil, 31, 23000, N
 Jan Pospíšil, 28, 19000, A
 Martina Nehezká, 24, 14000, N
