@@ -114,6 +114,7 @@
 			<select id="zazadal" name="zazadal" >
 				<?= vytvor_option($arr_zazadal,$zadost)?>
 			</select><br />
+			<input type="hidden" name="ahoj" value="<?= htmlspecialchars($_GET['ahoj']) ?>" />
 			<input type="submit" />
 		</p>
 		</form>
@@ -150,5 +151,24 @@
 		</table>
 		<br />
 		<a href="form_get.php">Zobrazit bez filtru</a>
+		<br />
+		<pre>
+<?php 
+	$array = array();
+	parse_str($_SERVER['QUERY_STRING'], $array);
+	//var_dump($array);
+	if (!isset($array['ahoj'])) {
+		$array['ahoj'] = "5";
+	}
+	$parametry = http_build_query($array);
+	//var_dump($parametry);
+	
+	$string = "http://zpravy.idnes.cz/nove-jednani-soudu-v-praze-5-o-bartovi-a-skarkovi-ftr-/domaci.aspx?c=A130123_080644_domaci_kop";
+	echo $string.'<br />';
+	var_dump(parse_url($string));
+?>
+		</pre>
+		<br />
+		<a href="form_get.php?<?= $parametry?>">Zobrazit s parametrem ahoj</a>
 	</body>
 </html>
