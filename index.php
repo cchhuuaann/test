@@ -1,21 +1,15 @@
-<html>
-	<head>
-		<title><?php echo "Hello word!"; ?></title>
-	</head>
-	<body>	
-	<pre>
-	<?php 	
-		$cislo = min(10, 6);
+<?php
+	header("Content-Type: text/html; Charset=utf-8");
 
-		$cislo2 = 1.545;
-		$text1 = "ahoj $cislo svete ";
-		$text2 = 'ahoj ' . 'svete ';
-
-		//echo $text1 . $text2;
-		
-		var_dump($_SERVER);
-		
-	?>
-	</pre>	
-	</body>
-</html>
+	require('funkce.php');
+	require('db.php');
+	
+	$povolene_akce = array("list","edit","delete");
+	
+	if (isset($_GET['nav']) && in_array($_GET['nav'], $povolene_akce)) {
+		$nav = $_GET['nav'];
+	} else {
+		$nav = $povolene_akce[0];
+	}
+	
+	require("{$nav}.php");

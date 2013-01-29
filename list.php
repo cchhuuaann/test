@@ -1,8 +1,5 @@
 <?php
-	header("Content-Type: text/html; Charset=utf-8");
 	
-	include('fce_php.php');
-
 	$arr_zazadal = array(
 			"v" => "vše",
 			"1" => "ano",
@@ -26,10 +23,17 @@
 			"30000_" => "30.000 a více"
 	);
 	
+	$arr_razeni = array(
+			"id",
+			"name"
+	);
+	
+	
+	
 	$where_conds = array();
 	
 	$where = "";
-	
+
 	
 	if (isset($_GET['strana']) && is_numeric($_GET['strana'])) {
 		$strana = $_GET['strana'];
@@ -37,18 +41,13 @@
 		$strana = 1;
 	}	
 	
-	$link = mysql_connect('localhost', 'honza', 'test');
-	if (!$link) {
-		die('Could not connect: ' . mysql_error());
-	}
-	//echo 'Connected successfully';
 
-	$db_selected = mysql_select_db('zamestnaci', $link);
-	if (!$db_selected) {
-		die ('Can\'t use zamestnaci : ' . mysql_error());
+//nastaveni razeni dle name nebo id
+	if (isset($_GET['order']) && in_array($_GET['order'],$arr_razeni) ) {
+		$order = 'ORDER BY ' . $_GET['order'] . ' ASC';
+	} else {
+		$order = '';
 	}
-	
-	mysql_query('SET NAMES utf8');
 	
 //filtrace podle stavu zadosti
 	if (isset($_GET['zazadal']) && isset($arr_zazadal[$_GET['zazadal']])) {
@@ -88,10 +87,7 @@
 	
 	vygeneruj_podminky($where_conds, $money, 'payment');
 	
-//podminka: jenom lidi nad 25 let
-	/*
-	$where_conds[] = "age >= 25";
-	*/
+
 //zde skadame finalni podminku
 
 	if (!empty($where_conds)) {
@@ -122,7 +118,7 @@
 		$limit = "LIMIT " . ($max - $per_page) . "," . $max;
 	}
 	
-	$query = "SELECT * FROM hodnoty $where $limit";
+	$query = "SELECT * FROM hodnoty $where $order $limit";
 	
 	$result = mysql_query($query,$link);
 	
@@ -137,7 +133,6 @@
 	}
 	
 	mysql_free_result($result);
-	mysql_close($link);
 
 ?><!DOCTYPE html>
 <html>
@@ -167,7 +162,7 @@
 				<?= vytvor_option($arr_zazadal,$zadost)?>
 			</select>
 				<br />
-				
+            <input type="hidden" name="order" value="<?= isset($_GET['order']) ? $_GET['order'] : "" ?>" />				
 			<input type="submit" />
 		</form>
 		<br />Vyhovuje <?=$count['cnt']?> položek z <?=$count['cnt']?>
@@ -175,8 +170,12 @@
 		<table>
 			<thead>
 				<tr>
-					<th>id</th>
-					<th>Jméno</th>
+					<th>
+						<a href="<?=get_link("", array('order'=>'id'))?>">id</a>
+					</th>
+					<th>
+						<a href="<?=get_link("", array('order'=>'name'))?>">Jméno</a>
+					</th>
 					<th>věk</th>
 					<th>výplata</th>
 					<th>zažádal</th>
