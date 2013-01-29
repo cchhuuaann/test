@@ -1,6 +1,36 @@
 <?php
 	header("Content-Type: text/html; Charset=utf-8");
+	
+	include('fce_php.php');
 
+	$arr_zazadal = array(
+			"v" => "vše",
+			"1" => "ano",
+			"0" => "ne"
+	);
+
+	$arr_vek = array(
+			"0" => "vše",
+			"_26" => "do 26 let",
+			"26_35" => "26-34",
+			"35_47" => "35-46",
+			"47_60" => "47-59",
+			"60_" => "60 a více"
+	);
+	
+	$arr_vyplata = array(
+			"0" => "vše",
+			"_10000" => "do 10.000",
+			"10000_20000" => "10.000-19.999",
+			"20000_30000" => "20.000-29.999",
+			"30000_" => "30.000 a více"
+	);
+	
+	$where_conds = array();
+	
+	$where = "";
+	
+	
 	if (isset($_GET['strana']) && is_numeric($_GET['strana'])) {
 		$strana = $_GET['strana'];
 	} else {
@@ -19,9 +49,57 @@
 	}
 	
 	mysql_query('SET NAMES utf8');
+	
+//filtrace podle stavu zadosti
+	if (isset($_GET['zazadal']) && isset($arr_zazadal[$_GET['zazadal']])) {
+		$zadost = $_GET['zazadal'];
+	} else {
+		$zadost = "v";
+	}
+		
+	if ($zadost != "v") {
+		$where_conds[] = "request = '" . mysql_real_escape_string($zadost) . "'";
+	}
+	
+//filtrace podle zacatku jmena
+	if (isset($_GET['zacatek'])) {
+		$zacatek = $_GET['zacatek'];
+	} else {
+		$zacatek = "";
+	}
+	
+	if (!empty($zacatek)) {
+		$where_conds[] = "name LIKE '%" . mysql_real_escape_string($zacatek) . "%'";
+	}	
+	
+//filtrace dle veku
+	$age = "0";
+	if (isset($_GET['vek']) && isset($arr_vek[$_GET['vek']])) {
+		$age = $_GET['vek'];
+	}
+	
+	vygeneruj_podminky($where_conds,$age,'age');
+	
+//filtrace dle vyplaty
+	$money = "0";
+	if (isset($_GET['vyplata']) && isset($arr_vyplata[$_GET['vyplata']])) {
+		$money = $_GET['vyplata'];
+	}
+	
+	vygeneruj_podminky($where_conds, $money, 'payment');
+	
+//podminka: jenom lidi nad 25 let
+	/*
+	$where_conds[] = "age >= 25";
+	*/
+//zde skadame finalni podminku
 
+	if (!empty($where_conds)) {
+		$where = "WHERE " . implode(" AND ",$where_conds);
+	}
+	
 //ziskani poctu radku
-	$query = 'SELECT COUNT(*) as cnt FROM hodnoty';
+	$query = "SELECT COUNT(*) as cnt FROM hodnoty $where";
 	
 	$result = mysql_query($query,$link);
 	
@@ -44,7 +122,7 @@
 		$limit = "LIMIT " . ($max - $per_page) . "," . $max;
 	}
 	
-	$query = "SELECT * FROM hodnoty $limit";
+	$query = "SELECT * FROM hodnoty $where $limit";
 	
 	$result = mysql_query($query,$link);
 	
@@ -67,8 +145,32 @@
 		<meta charset="utf-8" />
 	</head>
 	<body>
-		
-		Vyhovuje <?=$count['cnt']?> položek z <?=$count['cnt']?>
+		<form action="" method="get">
+			<label for="zacatek">Jméno začíná na: </label>
+			<input type="text" name="zacatek" id="zacatek" value="<?=htmlspecialchars($zacatek) ?>" />
+				<br />
+				
+			<label for="vek">věk</label>
+			<select id="vek" name="vek" >
+				<?= vytvor_option($arr_vek,$age)?>
+			</select>
+				<br />
+				
+			<label for="vyplata">výplata</label>
+			<select id="vyplata" name="vyplata" >
+				<?= vytvor_option($arr_vyplata,$money)?>
+			</select>
+				<br />
+				
+			<label for="zazadal">zažádal</label>
+			<select id="zazadal" name="zazadal" >
+				<?= vytvor_option($arr_zazadal,$zadost)?>
+			</select>
+				<br />
+				
+			<input type="submit" />
+		</form>
+		<br />Vyhovuje <?=$count['cnt']?> položek z <?=$count['cnt']?>
 	
 		<table>
 			<thead>
@@ -104,24 +206,25 @@
 					}
 				*/
 
-				foreach ($data as $row) { ?>
-					<tr>
-						<td><?=$row['id'] ?></td>
-						<td><?=$row['name'] ?></td>
-						<td><?=$row['age'] ?></td>
-						<td><?=$row['payment'] ?></td>
-						
-						<td><?=$row['request']?'A':'N' ?></td>
-						
-						<td><?php/*
-							if ($row['request'] == 0) {
-								echo "N";
-							} else {
-								echo "A";
-							}
-						*/?></td>
-					</tr>
-				<?php }?>
+				if (!empty($data)) {
+					foreach ($data as $row) { ?>
+						<tr>
+							<td><?=$row['id'] ?></td>
+							<td><?=$row['name'] ?></td>
+							<td><?=$row['age'] ?></td>
+							<td><?=$row['payment'] ?></td>
+							
+							<td><?=$row['request']?'A':'N' ?></td>
+							
+							<td><?php/*
+								if ($row['request'] == 0) {
+									echo "N";
+								} else {
+									echo "A";
+								}
+							*/?></td>
+						</tr>
+				<?php } }?>
 			</tbody>
 		</table>
 		<br />
