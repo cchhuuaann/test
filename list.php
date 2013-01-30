@@ -134,7 +134,7 @@
 	
 	mysql_free_result($result);
 
-?><!DOCTYPE html>
+?><!doctype html>
 <html>
 	<head>
 		<meta charset="utf-8" />
@@ -166,6 +166,15 @@
 			<input type="submit" />
 		</form>
 		<br />Vyhovuje <?=$count['cnt']?> položek z <?=$count['cnt']?>
+		
+		<p>
+		<?php
+			if (isset($_SESSION['message'])) {
+				echo $_SESSION['message'];
+				unset($_SESSION['message']);
+			}
+		?>
+		</p>
 	
 		<table>
 			<thead>
@@ -179,6 +188,8 @@
 					<th>věk</th>
 					<th>výplata</th>
 					<th>zažádal</th>
+					<th>smazat</th>
+					<th>upravit</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -212,21 +223,16 @@
 							<td><?=$row['name'] ?></td>
 							<td><?=$row['age'] ?></td>
 							<td><?=$row['payment'] ?></td>
-							
 							<td><?=$row['request']?'A':'N' ?></td>
-							
-							<td><?php/*
-								if ($row['request'] == 0) {
-									echo "N";
-								} else {
-									echo "A";
-								}
-							*/?></td>
+							<td><a href="<?= get_link('delete',array('id'=>$row['id'])) ?>">Smazat</a></td>
+							<td><a href="<?= get_link('edit',array('id'=>$row['id'])) ?>">Upravit</a></td>
 						</tr>
 				<?php } }?>
 			</tbody>
 		</table>
-		<br />
+		<p>
+		<a href="<?= get_link('edit',array('id'=>'')) ?>">Nová položka</a>
+		</p>
 		<?php
 		
 			if ($strana > 1) {

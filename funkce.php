@@ -66,7 +66,7 @@ function get_link($akce, $parametry=Array(),$escape=true) {
 	foreach ($parametry as $key => $value) {
 		if ($value == "" && isset($array[$key])) {
 			unset($array[$key]);
-		} else {
+		} else if ($value != "") {
 			$array[$key] = $value;
 		}
 	}
@@ -79,3 +79,108 @@ function get_link($akce, $parametry=Array(),$escape=true) {
 	
 	return "/?" . $get;
 }
+
+/**
+ * @param name nazev form. prvku
+ * @param type typ prvku, bude: text, hidden, checkbox
+ * @param hodnota vychozi hodnota
+ * 
+ * @return string vysledny vystup do echo
+ */
+function get_input($name, $type, $hodnota) {
+	$out = "<input ";
+	$out .= 'name="' . $name . '" ';
+	$out .= 'id="' . $name . '" ';
+	$out .= 'type="' . $type . '" ';
+	$checked = "";
+	if ($type == 'checkbox') {
+		$value = "1";
+		if (isset($_POST[$name])) {
+			$checked = ' checked="checked"';
+		} else if ((string)$hodnota == $value) {
+			$checked = ' checked="checked"';
+		}
+	} else {
+		if (isset($_POST[$name])) {
+			$value = $_POST[$name];
+		} else {
+			$value = $hodnota;
+		}
+	}
+	
+	$out .= 'value="' . htmlspecialchars($value) . '"' . $checked . ' />';
+	
+	return $out;
+}
+
+/**
+ * @param name jmeno, ktere hledame v $_POST
+ * 
+ * @return hodnota nebo false
+ */
+function get_post($name) {
+	
+	if (isset($_POST[$name])) {
+		return trim($_POST[$name]);
+	} else {
+		return false;
+	}
+	
+}
+
+/**
+ * @param nazev tabulky
+ * @param asociativni pole, sloupec => hodnota
+ * 
+ * @return vraci vysledny dotaz
+ */
+function make_insert($table, $array) {
+	if (empty($array)) {
+		return "";
+	}
+	$keys = array_keys($array);
+	$values = array_values($array);
+	
+	foreach ($values as $key => $value) {
+		$values[$key] = mysql_real_escape_string($value);
+	}
+	
+	$dotaz = "INSERT INTO $table(`" . implode("`, `", $keys) . "`) VALUES ('" . implode("', '", $values) . "')";
+	
+	return $dotaz;
+}
+
+/**
+ * @param nazev tabulky
+ * @param asociativni pole, sloupec => hodnota
+ * @param kompletni text podminky where
+ *
+ * @return vraci vysledny dotaz
+ */
+function make_update($table, $array, $where) {
+	if (empty($array)) {
+		return "";
+	}
+	$arr_tmp = array();
+	$dotaz = "UPDATE $table SET ";
+	
+	foreach ($array as $key => $value) {
+		$arr_tmp[] = "`{$key}`='" . mysql_real_escape_string($value) . "'";
+	}
+	
+	$dotaz .= implode(", ", $arr_tmp);
+	$dotaz .= " {$where}";
+	return $dotaz;	
+}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

@@ -1,4 +1,5 @@
 <?php
+	session_start();
 	header("Content-Type: text/html; Charset=utf-8");
 
 	require('funkce.php');
@@ -11,5 +12,5 @@
 	} else {
 		$nav = $povolene_akce[0];
 	}
-	
+
 	require("{$nav}.php");
