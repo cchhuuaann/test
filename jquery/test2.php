@@ -31,6 +31,13 @@
 
 		$('div.vlevo').append(vlevo);
 		$('div.vpravo').append(vpravo);
+
+		var list = $('div#seznam>ul');
+		var listItems = list.find('li');
+		console.log(listItems);
+		for(var i = (listItems.length - 2); i >= 0; i -= 1) {
+			listItems.eq(i).appendTo(list);
+		}
 		
 	});
 
@@ -41,33 +48,21 @@
 	<noscript>
 		Zapnete si v prohlizeci javascript
 	</noscript>
-	<div id="pokus">
-		ydar!
-	</div>
+	<div class="vlevo"></div>
+	<div class="vlevo vpravo"></div>
+	<div class="vpravo"></div>
+	<div class="vlevo"></div>
+	<div class="vpravo"></div>
+	<hr style="width: 100%" />
 	<div id="seznam">
-		<ul id="prvni">
-			<li>ahoj</li>
-			<li class="special">zdar</li>
-			<li>quote <span>nebo</span> uvozovky</li>
-			<li><ul id="druhy">
-					<li>volvo</li>
-					<li>saab</li>
-					<li><ul id="treti">
-							<li>slunce</li>
-							<li>mars</li>
-							<li>pluto</li>
-						</ul></li>
-					<li>skoda</li>
-					<li>fiat</li>
-				</ul></li>
-			<li class="special">neco</li>
+		<ul>
+			<li>jedna</li>
+			<li>dva</li>
+			<li>tri</li>
+			<li>ctyri</li>
+			<li>pet</li>
+			<li>sest</li>
 		</ul>
 	</div>
-	<hr style="width: 100%" />
-	<div class="vlevo"></div>
-	<div class="vlevo"></div>
-	<div class="vpravo"></div>
-	<div class="vlevo"></div>
-	<div class="vpravo"></div>
 </body>
 </html>
