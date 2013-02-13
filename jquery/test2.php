@@ -31,14 +31,36 @@
 
 		$('div.vlevo').append(vlevo);
 		$('div.vpravo').append(vpravo);
+/*
+		var list = $('div#seznam>ul li');
+		console.log(list);
+		for(var i = (list.length - 2); i >= 0; i -= 1) {
+			list.eq(i).appendTo(list.parent());
+		}
+*/
 
+		var arrLi = [];
 		var list = $('div#seznam>ul');
 		var listItems = list.find('li');
-		console.log(listItems);
-		for(var i = (listItems.length - 2); i >= 0; i -= 1) {
-			listItems.eq(i).appendTo(list);
+		listItems.each(function(index,elem) {
+			arrLi.push($(elem).text());
+			$(elem).remove();
+		});
+/**
+ * lze resit take pomoci clone(true) - zkopiruje se cely prvek
+ * (s true v zavorkach se zachova i navazani na udalosti)
+ */
+		arrLi.sort();
+		arrLi.reverse();
+		
+		while(arrLi.length > 0) {
+			var obsah = $('<li>',{html: arrLi.shift()});
+			list.append(obsah);
 		}
 		
+		
+
+
 	});
 
 </script>
@@ -57,7 +79,7 @@
 	<div id="seznam">
 		<ul>
 			<li>jedna</li>
-			<li>dva</li>
+			<li class="dva">dva</li>
 			<li>tri</li>
 			<li>ctyri</li>
 			<li>pet</li>
