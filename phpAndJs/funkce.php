@@ -77,7 +77,7 @@ function get_link($akce, $parametry=Array(),$escape=true) {
 		$get = htmlspecialchars($get);
 	}
 	
-	return "/?" . $get;
+	return URL . "?" . $get;
 }
 
 /**
