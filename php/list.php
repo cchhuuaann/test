@@ -111,12 +111,9 @@
 		$strana = 1;
 	}
 	
-	if ($strana == 1) {
-		$limit = "LIMIT $per_page";
-	} else {
-		$max = $per_page * $strana;
-		$limit = "LIMIT " . ($max - $per_page) . "," . $max;
-	}
+	$max = $per_page * $strana;
+	$limit = "LIMIT " . ($max - $per_page) . "," . $per_page;
+
 	
 	$query = "SELECT * FROM hodnoty $where $order $limit";
 	
@@ -243,7 +240,7 @@
 				echo "<a href=\"?{$odkaz}\">&laquo;</a> ";
 			}
 			
-			for ($i = 1; $i <= ceil($count['cnt']/5); $i++) {
+			for ($i = 1; $i <= ceil($count['cnt']/$per_page); $i++) {
 				$get = $_GET;
 				$get['strana']=$i;
 				$odkaz = http_build_query($get);

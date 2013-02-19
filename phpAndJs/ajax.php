@@ -1,5 +1,9 @@
 <?php
 	
+	require('config.php');
+	require('funkce.php');
+	require('db.php');
+	
 	$where_conds = array();
 	
 	$where = "";
@@ -72,7 +76,7 @@
 	$count = mysql_fetch_assoc($result);
 // konec
 	
-	$per_page = 5;
+	$per_page = 4;
 	$page_count = ceil($count['cnt']/$per_page);
 	
 	mysql_free_result($result);
@@ -81,12 +85,8 @@
 		$strana = 1;
 	}
 	
-	if ($strana == 1) {
-		$limit = "LIMIT $per_page";
-	} else {
-		$max = $per_page * $strana;
-		$limit = "LIMIT " . ($max - $per_page) . "," . $max;
-	}
+	$max = $per_page * $strana;
+	$limit = "LIMIT " . ($max - $per_page) . "," . $per_page;
 	
 	$query = "SELECT * FROM hodnoty $where $order $limit";
 	
@@ -104,37 +104,7 @@
 	
 	mysql_free_result($result);
 
-?><!doctype html>
-<html>
-	<head>
-		<meta charset="utf-8" />
-	</head>
-	<body>
-		<form action="" method="get">
-			<label for="zacatek">Jméno začíná na: </label>
-			<input type="text" name="zacatek" id="zacatek" value="<?=htmlspecialchars($zacatek) ?>" />
-				<br />
-				
-			<label for="vek">věk</label>
-			<select id="vek" name="vek" >
-				<?= vytvor_option($arr_vek,$age)?>
-			</select>
-				<br />
-				
-			<label for="vyplata">výplata</label>
-			<select id="vyplata" name="vyplata" >
-				<?= vytvor_option($arr_vyplata,$money)?>
-			</select>
-				<br />
-				
-			<label for="zazadal">zažádal</label>
-			<select id="zazadal" name="zazadal" >
-				<?= vytvor_option($arr_zazadal,$zadost)?>
-			</select>
-				<br />
-            <input type="hidden" name="order" value="<?= isset($_GET['order']) ? $_GET['order'] : "" ?>" />				
-			<input type="submit" />
-		</form>
+?>
 		<br />Vyhovuje <?=$count['cnt']?> položek z <?=$count['cnt']?>
 		
 		<p>
@@ -150,10 +120,10 @@
 			<thead>
 				<tr>
 					<th>
-						<a href="<?=get_link("", array('order'=>'id'))?>">id</a>
+						<a class="order" data-order="id" href="<?=get_link("", array('order'=>'id'))?>">id</a>
 					</th>
 					<th>
-						<a href="<?=get_link("", array('order'=>'name'))?>">Jméno</a>
+						<a class="order" data-order="name" href="<?=get_link("", array('order'=>'name'))?>">Jméno</a>
 					</th>
 					<th>věk</th>
 					<th>výplata</th>
@@ -164,28 +134,7 @@
 			</thead>
 			<tbody>
 				<?php
-				/* 
-					foreach ($data as $line) {
-						echo "<tr>\n";
-							foreach ($line as $key => $value) {
-								$tmp = "<td>";
-								
-								if ($key == 'request') {
-									if ($value == 0) {
-										$tmp .= "N";
-									} else {
-										$tmp .= "A";
-									}
-								} else {
-									$tmp .= $value;
-								}
-								
-								echo "{$tmp}</td>\n";
-							}
-						echo "</tr>\n";
-					}
-				*/
-
+				
 				if (!empty($data)) {
 					foreach ($data as $row) { ?>
 						<tr>
@@ -210,10 +159,10 @@
 				$get['strana']=$strana - 1;
 				$odkaz = http_build_query($get);
 				
-				echo "<a href=\"?{$odkaz}\">&laquo;</a> ";
+				echo "<a class=\"page\" data-page=\"{$get['strana']}\" href=\"?{$odkaz}\">&laquo;</a> ";
 			}
 			
-			for ($i = 1; $i <= ceil($count['cnt']/5); $i++) {
+			for ($i = 1; $i <= ceil($count['cnt']/$per_page); $i++) {
 				$get = $_GET;
 				$get['strana']=$i;
 				$odkaz = http_build_query($get);
@@ -221,7 +170,7 @@
 				if ($strana == $i) {
 					echo "<strong>$i </strong>";
 				} else {
-					echo "<a href=\"?{$odkaz}\">$i</a>  ";
+					echo "<a class=\"strana\" data-page=\"{$get['strana']}\" href=\"?{$odkaz}\">$i</a>  ";
 				}
 			}
 			
@@ -230,9 +179,7 @@
 				$get['strana']=$strana + 1;
 				$odkaz = http_build_query($get);
 				
-				echo "<a href=\"?{$odkaz}\">&raquo;</a>";
+				echo "<a class=\"strana\" data-page=\"{$get['strana']}\" href=\"?{$odkaz}\">&raquo;</a>";
 			}
 
 		?>
-	</body>
-</html>
