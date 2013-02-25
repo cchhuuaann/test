@@ -22,7 +22,7 @@ $.fn.spin = function(opts) {
 /**
  * Nastaveni spinner
  */
-var opts = {
+var spinnerOpts = {
 		  lines: 5, // The number of lines to draw
 		  length: 30, // The length of each line
 		  width: 10, // The line thickness

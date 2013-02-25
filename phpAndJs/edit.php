@@ -7,7 +7,7 @@
 	if (isset($_GET['id']) && is_numeric($_GET['id'])) {
 		$id = $_GET['id'];
 		
-		$result = mysql_query("SELECT * FROM hodnoty WHERE id=$id",$link);
+		$result = mysql_query("SELECT * FROM zamestnanec WHERE id=$id",$link);
 		$row = mysql_fetch_assoc($result);
 		
 	} else {
@@ -76,10 +76,10 @@
 				);
 			
 			if ($row === false) {
-				mysql_query(make_insert('hodnoty', $values),$link);
+				mysql_query(make_insert('zamestnanec', $values),$link);
 				$message = "Nový záznam byl vytvořen.";
 			} else {
-				mysql_query(make_update('hodnoty', $values, "WHERE id={$id}"),$link);
+				mysql_query(make_update('zamestnanec', $values, "WHERE id={$id}"),$link);
 				$message = "Upraven záznam id = {$id}";
 			}
 			

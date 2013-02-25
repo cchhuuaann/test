@@ -25,7 +25,7 @@ $(document).ready(function(){
 		
 		$.ajax({
 			type: 'GET',
-			url: 'ajax.php',
+			url: 'tabulka_jx.php',
 			data: data,
 			dataType: 'html',
 			success: function(resp){

@@ -3,7 +3,7 @@
 define('URL','http://test/phpAndJs/');
 define('JS_VERSION_STRING','0.2');
 
-$povolene_akce = array("list","edit","delete","ajax");
+$povolene_akce = array("list","edit","delete","tabulka_jx");
 
 $arr_zazadal = array(
 		"v" => "vše",

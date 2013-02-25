@@ -9,6 +9,9 @@
 		<script type="text/javascript" src="jq.ajax-table.js?v=<?= JS_VERSION_STRING ?>"></script>
 	</head>
 	<body>
+	<!-- 
+		Pridat: filtrování podle skupiny, firmy a pobočky
+	 -->
 		<form action="" method="get" style="display: none">
 			<label for="zacatek">Jméno začíná na: </label>
 			<input type="text" name="zacatek" id="zacatek" />
@@ -30,11 +33,26 @@
 			<select id="zazadal" name="zazadal" >
 				<?= vytvor_option($arr_zazadal,'')?>
 			</select>
-				<br />			
+				<br />
+			<label for="skupina">skupina</label>
+			<select id="skupina" name="skupina" >
+				<?= vytvor_option_db('skupina','nazev','','')?>
+			</select>
+				<br />	
+			<label for="firma">firma</label>
+			<select id="firma" name="firma" >
+				<?= vytvor_option_db('firma','nazev','','')?>
+			</select>
+				<br />	
+			<label for="pobocka">pobočka</label>
+			<select id="pobocka" name="pobocka" >
+				<?= vytvor_option_db('pobocka','nazev','','')?>
+			</select>
+				<br />				
 			<input type="submit" />
 		</form>
 		
-		<div id="tabulka" style="width: 500px; height: 300px">
+		<div id="tabulka" style="width: 800px; height: 500px">
 		</div>
 	
 	</body>

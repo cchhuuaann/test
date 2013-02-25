@@ -41,6 +41,36 @@ function vytvor_option($arr,$hodnota=""/*pri nezadani promenne se hodnota nastav
 	}
 }
 
+function vytvor_option_db($tabulka,$sloupec,$where="",$hodnota=""/*pri nezadani promenne se hodnota nastavi na ""*/) {
+	global $link;
+
+	$query = "SELECT id, $sloupec AS nazev FROM $tabulka";
+	if($where != '') {
+		$query .= " WHERE " . $where;
+	}
+	
+	$result = mysql_query($query,$link);
+	
+	if (!$result) {
+		$message  = 'Invalid query: ' . mysql_error() . "\n";
+		$message .= 'Whole query: ' . $query;
+		die($message);
+	}
+	
+	while($row = mysql_fetch_assoc($result)) {
+		$res[$row['id']] = $row['nazev'];
+	}
+	
+	foreach($res as $key => $value) {
+		$selected = "";
+		if ((string)$key == $hodnota) {
+			$selected = "selected=\"selected\"";
+		}
+		echo "<option value=\"{$key}\" {$selected}>{$value}</option>\n";
+	}
+	
+}
+
 /**
  * @param akce (string) - jedna z povolených akcí - GET parametr nav s validací (pokud není akce platná, bude
  * @param parametry (pole) - asociativní pole GET parametrů kde key=>název GET parametru,

@@ -69,18 +69,21 @@
 	}
 	
 //ziskani poctu radku
-	$query = "SELECT COUNT(*) as cnt FROM hodnoty $where";
+	$query = "SELECT COUNT(*) as cnt FROM zamestnanec $where";
 	
 	$result = mysql_query($query,$link);
 	
 	$count = mysql_fetch_assoc($result);
+
+	mysql_free_result($result);
+	
 // konec
 	
+	
+// dotaz pro vypis tabulky
 	$per_page = 4;
 	$page_count = ceil($count['cnt']/$per_page);
 	
-	mysql_free_result($result);
-
 	if (!($strana > 0 && $strana <= $page_count) ) {
 		$strana = 1;
 	}
@@ -88,7 +91,8 @@
 	$max = $per_page * $strana;
 	$limit = "LIMIT " . ($max - $per_page) . "," . $per_page;
 	
-	$query = "SELECT * FROM hodnoty $where $order $limit";
+	$query = "SELECT z.id, z.name, z.age, z.payment, z.request, s.nazev AS skupina_nazev, f.nazev AS firma_nazev, f.adresa AS firma_adresa, f.mesto AS firma_mesto, GROUP_CONCAT(p.nazev, ', ') AS pobocka_nazev_list FROM zamestnanec AS z JOIN skupina AS s ON z.skupina_id = s.id LEFT JOIN firma AS f ON z.firma_id = f.id JOIN pobocka_zamestnanec AS spoj ON z.id = spoj.zamestnanec_id1 JOIN pobocka AS p ON p.id = spoj.pobocka_id1 GROUP BY z.id ORDER BY z.id $limit";
+	//$query = "SELECT * FROM zamestnanec $where $order $limit";
 	
 	$result = mysql_query($query,$link);
 	
@@ -128,6 +132,9 @@
 					<th>věk</th>
 					<th>výplata</th>
 					<th>zažádal</th>
+					<th>skupina</th>
+					<th>firma</th>
+					<th>pobočky</th>
 					<th>smazat</th>
 					<th>upravit</th>
 				</tr>
@@ -143,6 +150,9 @@
 							<td><?=$row['age'] ?></td>
 							<td><?=$row['payment'] ?></td>
 							<td><?=$row['request']?'A':'N' ?></td>
+							<td><?=$row['skupina_nazev'] ?></td>
+							<td><?=$row['firma_nazev']?"{$row['firma_nazev']}<br />{$row['firma_adresa']}<br />{$row['firma_mesto']}":'NEPŘIŘAZEN' ?></td>
+							<td><?=$row['pobocka_nazev_list']?$row['pobocka_nazev_list']:'NEPŘIŘAZEN' ?></td>
 							<td><a href="<?= get_link('delete',array('id'=>$row['id'])) ?>">Smazat</a></td>
 							<td><a href="<?= get_link('edit',array('id'=>$row['id'])) ?>">Upravit</a></td>
 						</tr>

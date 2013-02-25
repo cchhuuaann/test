@@ -5,9 +5,9 @@ if (!$link) {
 }
 //echo 'Connected successfully';
 
-$db_selected = mysql_select_db('zamestnaci', $link);
+$db_selected = mysql_select_db('firma', $link);
 if (!$db_selected) {
-	die ('Can\'t use zamestnaci : ' . mysql_error());
+	die ('Can\'t use firma : ' . mysql_error());
 }
 
 mysql_query('SET NAMES utf8');
