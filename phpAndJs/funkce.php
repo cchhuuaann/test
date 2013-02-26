@@ -31,47 +31,108 @@ function vygeneruj_podminky(&$arr,$podminka,$sloupec) {
 	return;
 }
 
+/**
+ * Fce generuje <option> pro html <select> na zaklade vstupnich parametru
+ * vstupni parametry:
+ * @param asociativni pole: index => option value, value => text
+ * @param pri zadani nastavi odpovidajici option na checked pro: hodnota == index pole, hodnota muze byt i pole vybranych hodnot
+ * @return zadny
+ */
 function vytvor_option($arr,$hodnota=""/*pri nezadani promenne se hodnota nastavi na ""*/) {
+	
 	foreach ($arr as $key => $value) {
 		$selected = "";
-		if ((string)$key == $hodnota) {
+		if(is_array($hodnota)) {
+			$podminka = in_array((string)$key, $hodnota);
+		} else {
+			$podminka = ((string)$key == $hodnota);
+		}
+		if ($podminka) {
 			$selected = "selected=\"selected\"";
 		}
 		echo "<option value=\"{$key}\" {$selected}>{$value}</option>\n";
 	}
 }
 
-function vytvor_option_db($tabulka,$sloupec,$where="",$hodnota=""/*pri nezadani promenne se hodnota nastavi na ""*/) {
-	global $link;
-
+/**
+ * Fce vytahne z tabulky sloupec a id, vytvori asociativni pole a zavola fci pro vytvoreni <option> v html <select>
+ * vstupni parametry:
+ * @param nazev tabulky, ze ktere se <option> bude tvorit
+ * @param nazev sloupce, ktery se pouzije jako hodnota v asc. poli
+ * @param podminka pro vybrani dat ze sloupce ve forme mysql dotazu
+ * @param pri zadani nastavi odpovidajici option na checked pro: hodnota == index pole
+ * @param false/true jestli ma vytvorit na zacatku <option value="">vše</option>
+ * @return zadny
+ */
+function vytvor_option_db($tabulka,$sloupec,$where="",$hodnota="", $vychozi=false) {
+	
 	$query = "SELECT id, $sloupec AS nazev FROM $tabulka";
 	if($where != '') {
 		$query .= " WHERE " . $where;
 	}
 	
-	$result = mysql_query($query,$link);
-	
-	if (!$result) {
-		$message  = 'Invalid query: ' . mysql_error() . "\n";
-		$message .= 'Whole query: ' . $query;
-		die($message);
-	}
+	$result = dotaz_db($query);
 	
 	while($row = mysql_fetch_assoc($result)) {
-		$res[$row['id']] = $row['nazev'];
+		$arr[$row['id']] = $row['nazev'];
 	}
 	
-	foreach($res as $key => $value) {
-		$selected = "";
-		if ((string)$key == $hodnota) {
-			$selected = "selected=\"selected\"";
-		}
-		echo "<option value=\"{$key}\" {$selected}>{$value}</option>\n";
+	if($vychozi) {
+		echo "<option value=\"\">vše</option>\n";	
 	}
+	
+	vytvor_option($arr, $hodnota);
 	
 }
 
 /**
+ * 
+ * @param string $tabulka - nazev tabulky, ze ktere se cerpa (pobocka)
+ * @param string $sloupec - popisek selektu (nazev)
+ * @param string $related - navazujici tabulka
+ * @param string $related_id - id z navazujici tabulky
+ */
+function vytvor_option_db_multi($tabulka,$sloupec,$related,$related_id){
+	$hodnoty = array();
+	$query = "SELECT id, $sloupec AS nazev FROM $tabulka";
+	
+	$result = dotaz_db($query);
+	
+	while($row = mysql_fetch_assoc($result)) {
+		$arr[$row['id']] = $row['nazev'];
+	}
+	
+	$query = "SELECT {$tabulka}_id1 FROM {$tabulka}_{$related} WHERE {$related}_id1 = '" . mysql_real_escape_string($related_id) . "'";
+	
+	$result = dotaz_db($query);
+	
+	while($row = mysql_fetch_assoc($result)) {
+		$hodnoty[] =$row["{$tabulka}_id1"]; 
+	}
+	
+	vytvor_option($arr, $hodnoty);
+}
+
+/**
+ * Fce provede dotaz na databazi v pripade chyby ukonci script s chybovou hlaskou
+ * vstupni parametry:
+ * @param MySQL dotaz, ktery se ma provest
+ * @return vysledek dotazu, pokud nenastala chyba
+ */
+function dotaz_db($query){
+	global $link;
+	
+	$result = mysql_query($query,$link);
+	
+	if($result === false) {
+		Die("Chyba MySQL dotazu, kod: " . mysql_errno($link) . ", popis chyby: " . htmlspecialchars(mysql_error($link)) . "<br /> Puvodni dotaz: " . htmlspecialchars($query)); 
+	}
+	
+	return $result;
+}
+
+/**
+ * Fce vytvori link s parametry GET, ktere vezme v druhem parametru
  * @param akce (string) - jedna z povolených akcí - GET parametr nav s validací (pokud není akce platná, bude
  * @param parametry (pole) - asociativní pole GET parametrů kde key=>název GET parametru,
  *                           value=>jeho hodnota, prázdný value ("") - ruší parametr z GET,
@@ -111,6 +172,7 @@ function get_link($akce, $parametry=Array(),$escape=true) {
 }
 
 /**
+ * Fce vytvori prvek input dle zadanych parametru
  * @param name nazev form. prvku
  * @param type typ prvku, bude: text, hidden, checkbox
  * @param hodnota vychozi hodnota
@@ -181,8 +243,28 @@ function make_insert($table, $array) {
 }
 
 /**
+ * 
+ * @param string $table
+ * @param array $arr
+ * @param int $id
+ * @return string
+ */
+function make_insert_sp($table,$arr,$id) {
+	$tmp = array();
+	
+	for($i = 0; $i < count($arr); $i++) {
+		$tmp[] = "($id,$arr[$i])";
+	}
+	
+	$dotaz = "INSERT INTO $table(zamestnanec_id1,pobocka_id1) VALUES" . implode(", ",$tmp);
+	
+	return $dotaz;
+}
+
+/**
+ * Fce vytvori dotaz ze vstupnich parametru pro aktualizaci dat
  * @param nazev tabulky
- * @param asociativni pole, sloupec => hodnota
+ * @param asociativni pole, sloupec => hodnota, 
  * @param kompletni text podminky where
  *
  * @return vraci vysledny dotaz

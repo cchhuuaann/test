@@ -36,17 +36,17 @@
 				<br />
 			<label for="skupina">skupina</label>
 			<select id="skupina" name="skupina" >
-				<?= vytvor_option_db('skupina','nazev','','')?>
+				<?= vytvor_option_db('skupina','nazev','','',true)?>
 			</select>
 				<br />	
 			<label for="firma">firma</label>
 			<select id="firma" name="firma" >
-				<?= vytvor_option_db('firma','nazev','','')?>
+				<?= vytvor_option_db('firma','nazev','','',true)?>
 			</select>
 				<br />	
 			<label for="pobocka">pobočka</label>
 			<select id="pobocka" name="pobocka" >
-				<?= vytvor_option_db('pobocka','nazev','','')?>
+				<?= vytvor_option_db('pobocka','nazev','','',true)?>
 			</select>
 				<br />				
 			<input type="submit" />

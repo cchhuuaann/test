@@ -61,6 +61,39 @@
 	
 	vygeneruj_podminky($where_conds, $money, 'payment');
 	
+//filtrace dle skupiny
+	if(isset($_GET['skupina']) && is_numeric($_GET['skupina'])) {
+		$skupina = $_GET['skupina'];
+	} else {
+		$skupina = "";
+	}
+	
+	if($skupina != "") {
+		$where_conds[] = "s.id = '" . mysql_real_escape_string($skupina) . "'";
+	}
+	
+//filtrace dle firmy
+	if(isset($_GET['firma']) && is_numeric($_GET['firma'])) {
+		$firma = $_GET['firma'];
+	} else {
+		$firma = "";
+	}
+	
+	if($firma != "") {
+		$where_conds[] = "f.id = '" . mysql_real_escape_string($firma) . "'";
+	}
+	
+//filtrace dle pobocky
+	if(isset($_GET['pobocka']) && is_numeric($_GET['pobocka'])) {
+		$pobocka = $_GET['pobocka'];
+	} else {
+		$pobocka = "";
+	}
+	
+	if($pobocka != "") {
+		$where_conds[] = "p.id = '" . mysql_real_escape_string($pobocka) . "'";
+	}
+
 
 //zde skadame finalni podminku
 
@@ -68,10 +101,16 @@
 		$where = "WHERE " . implode(" AND ",$where_conds);
 	}
 	
-//ziskani poctu radku
-	$query = "SELECT COUNT(*) as cnt FROM zamestnanec $where";
+//retezec pro pripojovani
+	$join = "JOIN skupina AS s ON z.skupina_id = s.id LEFT JOIN firma AS f ON z.firma_id = f.id LEFT JOIN pobocka_zamestnanec AS spoj ON z.id = spoj.zamestnanec_id1 LEFT JOIN pobocka AS p ON p.id = spoj.pobocka_id1";
 	
-	$result = mysql_query($query,$link);
+//pole
+	$pole = "z.id, z.name, z.age, z.payment, z.request, s.nazev AS skupina_nazev, f.nazev AS firma_nazev, f.adresa AS firma_adresa, f.mesto AS firma_mesto, GROUP_CONCAT(p.nazev SEPARATOR ', ') AS pobocka_nazev_list";
+
+//ziskani poctu radku
+	$query = "SELECT COUNT(DISTINCT z.id) as cnt FROM zamestnanec AS z $join $where";
+	
+	$result = dotaz_db($query);
 	
 	$count = mysql_fetch_assoc($result);
 
@@ -91,16 +130,10 @@
 	$max = $per_page * $strana;
 	$limit = "LIMIT " . ($max - $per_page) . "," . $per_page;
 	
-	$query = "SELECT z.id, z.name, z.age, z.payment, z.request, s.nazev AS skupina_nazev, f.nazev AS firma_nazev, f.adresa AS firma_adresa, f.mesto AS firma_mesto, GROUP_CONCAT(p.nazev, ', ') AS pobocka_nazev_list FROM zamestnanec AS z JOIN skupina AS s ON z.skupina_id = s.id LEFT JOIN firma AS f ON z.firma_id = f.id JOIN pobocka_zamestnanec AS spoj ON z.id = spoj.zamestnanec_id1 JOIN pobocka AS p ON p.id = spoj.pobocka_id1 GROUP BY z.id ORDER BY z.id $limit";
+	$query = "SELECT $pole FROM zamestnanec AS z $join $where GROUP BY z.id $order $limit";
 	//$query = "SELECT * FROM zamestnanec $where $order $limit";
 	
-	$result = mysql_query($query,$link);
-	
-	if (!$result) {
-		$message  = 'Invalid query: ' . mysql_error() . "\n";
-		$message .= 'Whole query: ' . $query;
-		die($message);
-	}
+	$result = dotaz_db($query);
 	
 	while ($row = mysql_fetch_assoc($result)) {
 		$data[] = $row;
@@ -124,10 +157,10 @@
 			<thead>
 				<tr>
 					<th>
-						<a class="order" data-order="id" href="<?=get_link("", array('order'=>'id'))?>">id</a>
+						<a class="order" data-order="id" href="<?=get_link("", array('order'=>'z.id'))?>">id</a>
 					</th>
 					<th>
-						<a class="order" data-order="name" href="<?=get_link("", array('order'=>'name'))?>">Jméno</a>
+						<a class="order" data-order="name" href="<?=get_link("", array('order'=>'z.name'))?>">Jméno</a>
 					</th>
 					<th>věk</th>
 					<th>výplata</th>

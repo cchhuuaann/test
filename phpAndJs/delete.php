@@ -5,7 +5,7 @@
 	if (isset($_GET['id']) && is_numeric($_GET['id'])) {
 		$id = $_GET['id'];
 		
-		$result = mysql_query("SELECT name FROM zamestnanec WHERE id=$id",$link);
+		$result = dotaz_db("SELECT name FROM zamestnanec WHERE id=$id");
 		$row = mysql_fetch_assoc($result);
 		
 		if ($row === false) {
@@ -16,8 +16,9 @@
 	}
 	
 	if (isset($_POST['delete'])) {
+		dotaz_db("DELETE FROM pobocka_zamestnanec WHERE zamestnanec_id1 = $id");
 		$query = "DELETE FROM zamestnanec WHERE id=$id";
-		$result = mysql_query($query,$link);
+		$result = dotaz_db($query);
 		
 		$_SESSION['message'] = "Záznam uživatele {$row['name']} byl smazán.";
 		$location = "Location: " . get_link("",array('id'=>''),false);
