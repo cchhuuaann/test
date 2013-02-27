@@ -34,15 +34,17 @@
 		<?= vykresli_header("Smazání zaměstnance") ?>
 	</head>
 	<body>
-		<?= vykresli_menu() ?>
-		<p>
-			Opravdu chcete smazat uživatele <?= $row['name'] ?>?
-		</p>
-		<form action="" method="post">
-			<input type="hidden" name="delete" value="1" />
-			<input type="submit" value="ano" />
-		</form>
-		<br />
-		<a href="<?= get_link("",array('id'=>'')) ?>">Zpět</a>
+		<div id="all">
+			<?= vykresli_menu() ?>
+			<p>
+				Opravdu chcete smazat uživatele <?= $row['name'] ?>?
+			</p>
+			<form action="" method="post">
+				<input type="hidden" name="delete" value="1" />
+				<input type="submit" value="ano" />
+			</form>
+			<br />
+			<a href="<?= get_link("",array('id'=>'')) ?>">Zpět</a>
+		</div>
 	</body>
 </html>

@@ -71,6 +71,8 @@ function vytvor_option_db($tabulka,$sloupec,$where="",$hodnota="", $vychozi=fals
 		$query .= " WHERE " . $where;
 	}
 	
+	$query .= " GROUP BY {$tabulka}.{$sloupec}";
+		
 	$result = dotaz_db($query);
 	
 	while($row = mysql_fetch_assoc($result)) {
@@ -177,6 +179,8 @@ function get_link($akce, $parametry=Array(),$escape=true, $novy_model="") {
 			$array[$key] = $value;
 		}
 	}
+	
+	unset($array['model']);
 	
 	$get = http_build_query($array);
 	

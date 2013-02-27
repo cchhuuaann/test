@@ -3,11 +3,14 @@
 define('URL','http://test/phpAndJs/');
 define('JS_VERSION_STRING','0.3');
 
+$per_page = 4;
+
 $vychozi_model = "zamestnanec";
+
 $povolene_akce = array(
-		"zamestnanec" => array("list","edit","delete","tabulka_jx","get_pobocky_jx"),
-		"firma" => array("list","edit","delete"),
-		"pobocka" => array("list","edit","delete")
+			"zamestnanec" => array("list","edit","delete","tabulka_jx","get_pobocky_jx"),
+			"firma" => array("list","edit","delete","tabulka_jx"),
+			"pobocka" => array("list","edit","delete")
 		);
 
 $menu = array(
@@ -74,5 +77,6 @@ $arr_vyplata = array(
 
 $arr_razeni = array(
 		"id",
-		"name"
+		"name",
+		"nazev"
 );

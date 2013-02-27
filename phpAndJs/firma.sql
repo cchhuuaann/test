@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Počítač: 127.0.0.1
--- Vygenerováno: Pon 25. úno 2013, 17:14
+-- Vygenerováno: Stř 27. úno 2013, 15:19
 -- Verze MySQL: 5.5.27
 -- Verze PHP: 5.4.7
 
@@ -38,6 +38,7 @@ CREATE TABLE IF NOT EXISTS `firma` (
   `telefon` int(9) unsigned NOT NULL,
   `email` varchar(45) NOT NULL,
   `dph` tinyint(1) NOT NULL,
+  `mesicni_naklady` int(11) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
 
@@ -45,9 +46,9 @@ CREATE TABLE IF NOT EXISTS `firma` (
 -- Vypisuji data pro tabulku `firma`
 --
 
-INSERT INTO `firma` (`id`, `nazev`, `adresa`, `mesto`, `psc`, `jmeno_jednatele`, `ico`, `dic`, `telefon`, `email`, `dph`) VALUES
-(1, 'IBM', 'Technického 5', 'Brno', '60200', 'Jaromír Kovařík', 25623219, 'cz523751', 256145698, 'jaromirkovarik@ibm.cz', 1),
-(2, 'RedHat', 'Dřevařova 341', 'Praha', '10200', 'Stanislav Malý', 52371265, 'cz628351', 325452658, 'stanislavmaly@redhat.cz', 0);
+INSERT INTO `firma` (`id`, `nazev`, `adresa`, `mesto`, `psc`, `jmeno_jednatele`, `ico`, `dic`, `telefon`, `email`, `dph`, `mesicni_naklady`) VALUES
+(1, 'IBM', 'Technického 5', 'Brno', '60200', 'Jaromír Kovařík', 25623219, 'cz523751', 256145698, 'jaromirkovarik@ibm.cz', 1, 2500000),
+(2, 'RedHat', 'Dřevařova 341', 'Praha', '10200', 'Stanislav Malý', 52371265, 'cz628351', 325452658, 'stanislavmaly@redhat.cz', 0, 725000);
 
 -- --------------------------------------------------------
 

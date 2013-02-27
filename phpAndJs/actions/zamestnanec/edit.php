@@ -148,45 +148,47 @@
 		<script type="text/javascript" src="<?= URL ?>scripts/jq.edit.js?v=<?= JS_VERSION_STRING ?>"></script>
 	</head>
 	<body>
-		<?= vykresli_menu() ?>
-		<p>
-			<?= $row===false?"Vytvoření nového prvku":"Úprava prvku" ?>
-		</p>
-		<form action="" method="post">
-			<label for="name">Jméno a příjmení </label>
-			<?=get_input('name', 'text', is_array($row)?$row['name']:'') ?>
-			<?= isset($errors['name'])?"<p>{$errors['name']}</p>":"" ?>
-				<br />
-			<label for="age">Věk </label>
-			<?=get_input('age', 'text', is_array($row)?$row['age']:'') ?>
-			<?= isset($errors['age'])?"<p>{$errors['age']}</p>":"" ?>
-				<br />
-			<label for="payment">Výplata </label>
-			<?=get_input('payment', 'text', is_array($row)?$row['payment']:'') ?>
-			<?= isset($errors['payment'])?"<p>{$errors['payment']}</p>":"" ?>
-				<br />
-			<label for="request">Zažádal </label>
-			<?=get_input('request', 'checkbox', is_array($row)?$row['request']:'') ?>
-			<?=get_input('edit_form', 'hidden', '1') ?>
-				<br />
-			<label for="skupina">skupina</label>
-			<select id="skupina" name="skupina" >
-				<?= vytvor_option_db('skupina','nazev','',$skupina)?>
-			</select>
-				<br />
-			<label for="firma">firma</label>
-			<select id="firma" name="firma" >
-				<?= vytvor_option_db('firma','nazev','',$firma)?>
-			</select>
-				<br />
-			<label for="pobocka">pobočky</label>
-			<select id="pobocka" name="pobocka[]" size="6" multiple >
-				<?= vytvor_option_db_multi('pobocka','nazev','zamestnanec',$id, "WHERE t.firma_id = '{$firma}'")?>
-			</select>
-				<br />
-			<input type="submit" value="uložit" />
-		</form>
-		<br />
-		<a href="<?= get_link("",array('id'=>'')) ?>">Zpět</a>
+		<div id="all">
+			<?= vykresli_menu() ?>
+			<p>
+				<?= $row===false?"Vytvoření nového prvku":"Úprava prvku" ?>
+			</p>
+			<form action="" method="post">
+				<label for="name">Jméno a příjmení </label>
+				<?=get_input('name', 'text', is_array($row)?$row['name']:'') ?>
+				<?= isset($errors['name'])?"<p>{$errors['name']}</p>":"" ?>
+					<br />
+				<label for="age">Věk </label>
+				<?=get_input('age', 'text', is_array($row)?$row['age']:'') ?>
+				<?= isset($errors['age'])?"<p>{$errors['age']}</p>":"" ?>
+					<br />
+				<label for="payment">Výplata </label>
+				<?=get_input('payment', 'text', is_array($row)?$row['payment']:'') ?>
+				<?= isset($errors['payment'])?"<p>{$errors['payment']}</p>":"" ?>
+					<br />
+				<label for="request">Zažádal </label>
+				<?=get_input('request', 'checkbox', is_array($row)?$row['request']:'') ?>
+				<?=get_input('edit_form', 'hidden', '1') ?>
+					<br />
+				<label for="skupina">skupina</label>
+				<select id="skupina" name="skupina" >
+					<?= vytvor_option_db('skupina','nazev','',$skupina)?>
+				</select>
+					<br />
+				<label for="firma">firma</label>
+				<select id="firma" name="firma" >
+					<?= vytvor_option_db('firma','nazev','',$firma)?>
+				</select>
+					<br />
+				<label for="pobocka">pobočky</label>
+				<select id="pobocka" name="pobocka[]" size="6" multiple >
+					<?= vytvor_option_db_multi('pobocka','nazev','zamestnanec',$id, "WHERE t.firma_id = '{$firma}'")?>
+				</select>
+					<br />
+				<input type="submit" value="uložit" />
+			</form>
+			<br />
+			<a href="<?= get_link("",array('id'=>'')) ?>">Zpět</a>
+		</div>
 	</body>
 </html>
