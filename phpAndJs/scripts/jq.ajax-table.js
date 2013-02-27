@@ -25,7 +25,7 @@ $(document).ready(function(){
 		
 		$.ajax({
 			type: 'GET',
-			url: 'tabulka_jx.php',
+			url: URL + 'zamestnanec?nav=tabulka_jx',
 			data: data,
 			dataType: 'html',
 			success: function(resp){

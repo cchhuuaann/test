@@ -1,14 +1,13 @@
 <?php
-
 ?><!doctype html>
 <html>
 	<head>
-		<meta charset="utf-8" />
-		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-		<script type="text/javascript" src="jq.spin.js"></script>
-		<script type="text/javascript" src="jq.ajax-table.js?v=<?= JS_VERSION_STRING ?>"></script>
+		<?= vykresli_header("Seznam zaměstnanců") ?>
+		<script type="text/javascript" src="<?= URL ?>scripts/jq.spin.js"></script>
+		<script type="text/javascript" src="<?= URL ?>scripts/jq.ajax-table.js?v=<?= JS_VERSION_STRING ?>"></script>
 	</head>
 	<body>
+		<?= vykresli_menu() ?>
 	<!-- 
 		Pridat: filtrování podle skupiny, firmy a pobočky
 	 -->

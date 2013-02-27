@@ -16,7 +16,10 @@
 	} else {
 		$row = false;
 		$skupina = "";
-		$firma = "";
+		$result = dotaz_db("SELECT id FROM firma LIMIT 1");
+		if($radek = mysql_fetch_assoc($result)) {
+			$firma = $radek['id'];
+		}
 	}
 	
 	if (isset($_POST['edit_form'])) {
@@ -141,12 +144,11 @@
 ?><!doctype html>
 <html>
 	<head>
-		<meta charset="utf-8" />
-		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-		<script type="text/javascript" src="jq.edit.js?v=<?= JS_VERSION_STRING ?>"></script>
-		<title><?= $row===false?"Vytvoření nového prvku":"Úprava prvku" ?></title>
+		<?= vykresli_header("Vložení zaměstnance") ?>
+		<script type="text/javascript" src="<?= URL ?>scripts/jq.edit.js?v=<?= JS_VERSION_STRING ?>"></script>
 	</head>
 	<body>
+		<?= vykresli_menu() ?>
 		<p>
 			<?= $row===false?"Vytvoření nového prvku":"Úprava prvku" ?>
 		</p>
@@ -179,7 +181,7 @@
 				<br />
 			<label for="pobocka">pobočky</label>
 			<select id="pobocka" name="pobocka[]" size="6" multiple >
-				<?= vytvor_option_db_multi('pobocka','nazev','zamestnanec',$id)?>
+				<?= vytvor_option_db_multi('pobocka','nazev','zamestnanec',$id, "WHERE t.firma_id = '{$firma}'")?>
 			</select>
 				<br />
 			<input type="submit" value="uložit" />

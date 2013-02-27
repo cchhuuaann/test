@@ -1,9 +1,5 @@
 <?php
 	
-	require('config.php');
-	require('funkce.php');
-	require('db.php');
-	
 	$where_conds = array();
 	
 	$where = "";

@@ -31,9 +31,10 @@
 ?><!doctype html>
 <html>
 	<head>
-		<title>Smazání</title>
+		<?= vykresli_header("Smazání zaměstnance") ?>
 	</head>
 	<body>
+		<?= vykresli_menu() ?>
 		<p>
 			Opravdu chcete smazat uživatele <?= $row['name'] ?>?
 		</p>

@@ -91,18 +91,20 @@ function vytvor_option_db($tabulka,$sloupec,$where="",$hodnota="", $vychozi=fals
  * @param string $sloupec - popisek selektu (nazev)
  * @param string $related - navazujici tabulka
  * @param string $related_id - id z navazujici tabulky
+ * @param string $right_query - cast mysql dotazu, ktery se pripoji zprava
  */
-function vytvor_option_db_multi($tabulka,$sloupec,$related,$related_id){
+function vytvor_option_db_multi($tabulka,$sloupec,$related,$related_id,$right_query=""){
 	$hodnoty = array();
-	$query = "SELECT id, $sloupec AS nazev FROM $tabulka";
+	$arr = array();
+	$query = "SELECT t.id AS tid, t.$sloupec AS nazev FROM $tabulka AS t $right_query";
 	
 	$result = dotaz_db($query);
 	
 	while($row = mysql_fetch_assoc($result)) {
-		$arr[$row['id']] = $row['nazev'];
+		$arr[$row['tid']] = $row["nazev"];
 	}
 	
-	$query = "SELECT {$tabulka}_id1 FROM {$tabulka}_{$related} WHERE {$related}_id1 = '" . mysql_real_escape_string($related_id) . "'";
+	$query = "SELECT t.{$tabulka}_id1 FROM {$tabulka}_{$related} AS t WHERE t.{$related}_id1 = '" . mysql_real_escape_string($related_id) . "'";
 	
 	$result = dotaz_db($query);
 	
@@ -137,21 +139,35 @@ function dotaz_db($query){
  * @param parametry (pole) - asociativní pole GET parametrů kde key=>název GET parametru,
  *                           value=>jeho hodnota, prázdný value ("") - ruší parametr z GET,
  *                           jinak přepisuje stávající nebo nastavuje ten, co ještě nastavený nebyl
- * @param escape true/false zda escapovat get string, vychozi true                         
+ * @param escape true/false zda escapovat get string, vychozi true 
+ * @param model / aby se link generoval pro konkretni model                        
  * @return string kompletní URL
  */
-function get_link($akce, $parametry=Array(),$escape=true) {
-	global $povolene_akce;
+function get_link($akce, $parametry=Array(),$escape=true, $novy_model="") {
+	global $povolene_akce, $model, $vychozi_model;
 	
 	$array = array();
-	
+
 	parse_str($_SERVER["QUERY_STRING"],$array);
 	
+	//rozhodovani ohledne modelu
+	$model_url = "";
+	if ($novy_model != ""){
+		
+		if(in_array( $novy_model, array_keys($povolene_akce) )) {
+			$model_url = $novy_model;
+		} else {
+			$model_url = $vychozi_model;
+		}
+	} else {
+		$model_url = $model;
+	}
+	
 	//rozhodovani ohledne akce
-	if (in_array($akce, $povolene_akce)) {
+	if (in_array($akce, $povolene_akce[$model_url])) {
 		$array['nav'] = $akce;
 	} else {
-		$array['nav'] = $povolene_akce[0];
+		$array['nav'] = $povolene_akce[$model_url][0];
 	}
 	
 	foreach ($parametry as $key => $value) {
@@ -168,7 +184,7 @@ function get_link($akce, $parametry=Array(),$escape=true) {
 		$get = htmlspecialchars($get);
 	}
 	
-	return URL . "?" . $get;
+	return URL . $model_url .  "?" . $get;
 }
 
 /**
@@ -286,8 +302,43 @@ function make_update($table, $array, $where) {
 }
 	
 	
+/**
+ * 
+ */	
+function vykresli_menu(){
+	global $menu,$model,$nav;
 	
+	echo "<div id=\"menu\"><ul>";
 	
+	foreach($menu as $value) {
+		if($model == $value['model'] && $nav == $value['action']) {
+			$class = " class=\"active\"";
+		} else {
+			$class = "";
+		}
+		
+		echo "<li><a $class href=\"" . get_link($value['action'],$value['params'],true,$value['model']) . "\">". htmlspecialchars($value['name']) . "</a></li>\n";
+		
+	}
+	
+	echo "</ul></div>";
+	
+}
+
+/**
+ * @param
+ */
+function vykresli_header($title=""){
+?>
+		<meta charset="utf-8" />
+		<script type="text/javascript">
+			var URL = "<?= URL ?>"; 
+		</script>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="<?= URL ?>css/style.css" />
+		<title><?= htmlspecialchars($title) ?></title>
+<?php
+}
 	
 	
 	
