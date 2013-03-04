@@ -1,11 +1,12 @@
 <?php
 
+	//pobocka
 	
 
 	if (isset($_GET['id']) && is_numeric($_GET['id'])) {
 		$id = $_GET['id'];
 		
-		$result = dotaz_db("SELECT name FROM zamestnanec WHERE id=$id");
+		$result = dotaz_db("SELECT nazev FROM pobocka WHERE id=$id");
 		$row = mysql_fetch_assoc($result);
 		
 		if ($row === false) {
@@ -16,11 +17,10 @@
 	}
 	
 	if (isset($_POST['delete'])) {
-		dotaz_db("DELETE FROM pobocka_zamestnanec WHERE zamestnanec_id1 = $id");
-		$query = "DELETE FROM zamestnanec WHERE id=$id";
+		$query = "DELETE FROM pobocka WHERE id=$id";
 		$result = dotaz_db($query);
 		
-		$_SESSION['message'] = "Záznam uživatele {$row['name']} byl smazán.";
+		$_SESSION['message'] = "Záznam pobočky {$row['nazev']} byl smazán.";
 		$location = "Location: " . get_link("",array('id'=>''),false);
 		
 		header($location, true, 303);
@@ -31,13 +31,13 @@
 ?><!doctype html>
 <html>
 	<head>
-		<?= vykresli_header("Smazání zaměstnance") ?>
+		<?= vykresli_header("Smazání pobočky") ?>
 	</head>
 	<body>
 		<div id="all">
 			<?= vykresli_menu() ?>
 			<h1>
-				Opravdu chcete smazat uživatele <?= $row['name'] ?>?
+				Opravdu chcete smazat pobočku <?= $row['nazev'] ?>?
 			</h1>
 			<form action="" method="post">
 				<input type="hidden" name="delete" value="1" />

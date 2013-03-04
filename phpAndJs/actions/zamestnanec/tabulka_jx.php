@@ -127,7 +127,6 @@
 	$limit = "LIMIT " . ($max - $per_page) . "," . $per_page;
 	
 	$query = "SELECT $pole FROM zamestnanec AS z $join $where GROUP BY z.id $order $limit";
-	//$query = "SELECT * FROM zamestnanec $where $order $limit";
 	
 	$result = dotaz_db($query);
 	
@@ -148,8 +147,10 @@
 			}
 		?>
 		</p>
-	
-		<table>
+			<?php 
+				if (!empty($data)) {
+			?>
+		<table class="seznam">
 			<thead>
 				<tr>
 					<th>
@@ -170,8 +171,6 @@
 			</thead>
 			<tbody>
 				<?php
-				
-				if (!empty($data)) {
 					foreach ($data as $row) { ?>
 						<tr>
 							<td><?=$row['id'] ?></td>
@@ -185,9 +184,10 @@
 							<td><a href="<?= get_link('delete',array('id'=>$row['id'])) ?>">Smazat</a></td>
 							<td><a href="<?= get_link('edit',array('id'=>$row['id'])) ?>">Upravit</a></td>
 						</tr>
-				<?php } }?>
+				<?php }?>
 			</tbody>
 		</table>
+			<?php }?>
 		<p>
 		<a href="<?= get_link('edit',array('id'=>'')) ?>">Nová položka</a>
 		</p>

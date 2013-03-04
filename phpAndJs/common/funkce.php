@@ -64,7 +64,7 @@ function vytvor_option($arr,$hodnota=""/*pri nezadani promenne se hodnota nastav
  * @param false/true jestli ma vytvorit na zacatku <option value="">vše</option>
  * @return zadny
  */
-function vytvor_option_db($tabulka,$sloupec,$where="",$hodnota="", $vychozi=false) {
+function vytvor_option_db($tabulka,$sloupec,$id='id', $where="",$hodnota="", $vychozi=false) {
 	
 	$query = "SELECT id, $sloupec AS nazev FROM $tabulka";
 	if($where != '') {
@@ -76,7 +76,8 @@ function vytvor_option_db($tabulka,$sloupec,$where="",$hodnota="", $vychozi=fals
 	$result = dotaz_db($query);
 	
 	while($row = mysql_fetch_assoc($result)) {
-		$arr[$row['id']] = $row['nazev'];
+		var_dump($row);
+		$arr[$row[$id]] = $row['nazev'];
 	}
 	
 	if($vychozi) {

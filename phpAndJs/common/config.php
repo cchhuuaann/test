@@ -10,7 +10,7 @@ $vychozi_model = "zamestnanec";
 $povolene_akce = array(
 			"zamestnanec" => array("list","edit","delete","tabulka_jx","get_pobocky_jx"),
 			"firma" => array("list","edit","delete","tabulka_jx"),
-			"pobocka" => array("list","edit","delete")
+			"pobocka" => array("list","edit","delete","tabulka_jx")
 		);
 
 $menu = array(

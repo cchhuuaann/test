@@ -11,21 +11,47 @@
 			<?= vykresli_menu() ?>
 			
 			<form action=""  method="get">
-				<label for="nazev">název firmy</label>
-				<input type="text" name="nazev" id="nazev" />
-					<br />
-				<label for="adresa">adresa</label>
-				<input type="text" name="adresa" id="adresa" />
-					<br />	
-				<label for="mesto">město</label>
-				<select id="mesto" name="mesto" >
-					<?= vytvor_option_db('firma','mesto','','',true)?>
-				</select>
-					<br />
-				<label for="email">email</label>
-				<input type="text" name="email" id="email" />
-					<br />					
-				<input type="submit" />
+				<table class="list">
+					<tr>
+						<td>
+							<label for="nazev">název firmy</label>
+						</td>
+						<td>
+							<input type="text" name="nazev" id="nazev" />
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="adresa">adresa</label>
+						</td>
+						<td>
+							<input type="text" name="adresa" id="adresa" />
+						</td>
+					</tr>
+					<tr>
+						<td>	
+							<label for="mesto">město</label>
+						</td>
+						<td>
+							<select id="mesto" name="mesto" >
+								<?= vytvor_option_db('firma','mesto','nazev','','',true)?>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="email">email</label>
+						</td>
+						<td>
+							<input type="text" name="email" id="email" />
+						</td>
+					</tr>
+					<tr>
+						<td>					
+							<input type="submit" />
+						</td>
+					</tr>
+				</table>
 			</form>
 			
 			<div id="tabulka">

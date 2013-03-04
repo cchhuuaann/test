@@ -1,11 +1,12 @@
 <?php
 
+	//firma - dodelat
 	
 
 	if (isset($_GET['id']) && is_numeric($_GET['id'])) {
 		$id = $_GET['id'];
 		
-		$result = dotaz_db("SELECT name FROM zamestnanec WHERE id=$id");
+		$result = dotaz_db("SELECT nazev FROM firma WHERE id=$id");
 		$row = mysql_fetch_assoc($result);
 		
 		if ($row === false) {
@@ -16,28 +17,44 @@
 	}
 	
 	if (isset($_POST['delete'])) {
-		dotaz_db("DELETE FROM pobocka_zamestnanec WHERE zamestnanec_id1 = $id");
-		$query = "DELETE FROM zamestnanec WHERE id=$id";
+		/*
+		$query = "DELETE FROM firma WHERE id=$id";
+		$result = dotaz_db($query);
+		*/
+		
+		$query = "SELECT id FROM pobocka WHERE firma_id = $id";
 		$result = dotaz_db($query);
 		
-		$_SESSION['message'] = "Záznam uživatele {$row['name']} byl smazán.";
+		$data = array();
+		
+		while($row = mysql_fetch_assoc($result)) {
+			$data[] = $row;
+		}
+		
+		
+		
+		var_dump($data);
+		
+		/*
+		$_SESSION['message'] = "Záznam firmy {$row['nazev']} byl smazán.";
 		$location = "Location: " . get_link("",array('id'=>''),false);
 		
 		header($location, true, 303);
 		exit;
+		*/
 	}	
 
 	
 ?><!doctype html>
 <html>
 	<head>
-		<?= vykresli_header("Smazání zaměstnance") ?>
+		<?= vykresli_header("Smazání firmy") ?>
 	</head>
 	<body>
 		<div id="all">
 			<?= vykresli_menu() ?>
 			<h1>
-				Opravdu chcete smazat uživatele <?= $row['name'] ?>?
+				Opravdu chcete smazat firmu <?= $row['nazev'] ?>?
 			</h1>
 			<form action="" method="post">
 				<input type="hidden" name="delete" value="1" />
