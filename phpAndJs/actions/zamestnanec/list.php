@@ -58,7 +58,7 @@
 						</td>
 						<td>
 							<select id="skupina" name="skupina" >
-								<?= vytvor_option_db('skupina','nazev','','',true)?>
+								<?= vytvor_option_db('skupina','nazev','id','','',true)?>
 							</select>
 						</td>
 					</tr>
@@ -68,7 +68,7 @@
 						</td>
 						<td>
 							<select id="firma" name="firma" >
-								<?= vytvor_option_db('firma','nazev','','',true)?>
+								<?= vytvor_option_db('firma','nazev','id','','',true)?>
 							</select>
 						</td>
 					</tr>
@@ -78,7 +78,7 @@
 						</td>
 						<td>
 							<select id="pobocka" name="pobocka" >
-								<?= vytvor_option_db('pobocka','nazev','','',true)?>
+								<?= vytvor_option_db('pobocka','nazev','id','','',true)?>
 							</select>
 						</td>
 					</tr>

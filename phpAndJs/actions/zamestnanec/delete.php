@@ -16,7 +16,7 @@
 	}
 	
 	if (isset($_POST['delete'])) {
-		dotaz_db("DELETE FROM pobocka_zamestnanec WHERE zamestnanec_id1 = $id");
+		dotaz_db("DELETE FROM zamestnanec_pobocka WHERE zamestnanec_id = $id");
 		$query = "DELETE FROM zamestnanec WHERE id=$id";
 		$result = dotaz_db($query);
 		

@@ -98,7 +98,7 @@
 	}
 	
 //retezec pro pripojovani
-	$join = "JOIN skupina AS s ON z.skupina_id = s.id LEFT JOIN firma AS f ON z.firma_id = f.id LEFT JOIN pobocka_zamestnanec AS spoj ON z.id = spoj.zamestnanec_id1 LEFT JOIN pobocka AS p ON p.id = spoj.pobocka_id1";
+	$join = "JOIN skupina AS s ON z.skupina_id = s.id LEFT JOIN firma AS f ON z.firma_id = f.id LEFT JOIN zamestnanec_pobocka AS spoj ON z.id = spoj.zamestnanec_id LEFT JOIN pobocka AS p ON p.id = spoj.pobocka_id";
 	
 //pole
 	$pole = "z.id, z.name, z.age, z.payment, z.request, s.nazev AS skupina_nazev, f.nazev AS firma_nazev, f.adresa AS firma_adresa, f.mesto AS firma_mesto, GROUP_CONCAT(p.nazev SEPARATOR ', ') AS pobocka_nazev_list";

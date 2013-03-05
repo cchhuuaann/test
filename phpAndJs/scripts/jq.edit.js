@@ -2,12 +2,23 @@
 
 $(document).ready(function(){
 	
+	$('#pobocka').multiselect({
+		checkAllText: "",
+		uncheckAllText: "",
+		noneSelectedText: "Vyberte pobočku",
+		selectedText: "Vybráno: #",
+		selectedList: "1",
+		show: ""
+		
+		
+	});
+	
+	
+	
 	var changeSelect = function(){
 		
 		var $selectP = $('select#pobocka');
 		var $selectF = $('select#firma');
-		
-		$selectP.hide(100);
 		
 		var data = {
 				'firma_id': $selectF.val()
@@ -20,7 +31,7 @@ $(document).ready(function(){
 			dataType: 'html',
 			success: function(resp){
 				$selectP.html(resp);
-				$selectP.show(100);
+				$("#pobocka").multiselect("refresh");
 			},
 			error: function( req, status, err ) {
 				  console.log( 'something went wrong', status, err );

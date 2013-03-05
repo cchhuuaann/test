@@ -1,6 +1,3 @@
-/**
- * Hlavni fce, ze ktere se bude vse spoustet po uplnem nacteni html
- */
 $(document).ready(function(){
 	
 	var $form = $('form');
@@ -8,27 +5,7 @@ $(document).ready(function(){
 	var stranky = 1;
 	var radit = '';
 	
-//zkouseni dialogu
-	var $varovani = $('<div>',{
-		class: 'varovani',
-		text: 'Ahoj'
-	});
-	
-	$($varovani).dialog({
-		buttons: [{
-		        	text: "OK",
-		        	click: function() {
-		        		$( this ).dialog( "close" );
-		        	}
-			}],
-		autoOpen: false
-		
-	});
-	
-	$($varovani).dialog('open');
-//konec testovani
-	
-	var  refTabulka = function(){
+	var  tabulka = function(){
 		
 		$tabulka.spin(spinnerOpts);
 		
@@ -45,15 +22,11 @@ $(document).ready(function(){
 		
 		$.ajax({
 			type: 'GET',
-			url: URL + 'zamestnanec?nav=tabulka_jx',
+			url: URL + 'firma?nav=statistika_jx',
 			data: data,
 			dataType: 'html',
 			success: function(resp){
 				$tabulka.html(resp);
-
-				if($form.is(':hidden')){
-					$form.fadeIn(1000);
-				}
 			},
 			error: function( req, status, err ) {
 				  console.log( 'something went wrong', status, err );
@@ -67,7 +40,7 @@ $(document).ready(function(){
 	var formular = function(event){
 		event.preventDefault();
 		
-		refTabulka();	
+		tabulka();	
 	};
 	
 	var strankovani = function(event){
@@ -75,7 +48,7 @@ $(document).ready(function(){
 		if( $(this).data('page') && !isNaN(parseInt( $(this).data('page') )) ) {
 			stranky = $(this).data('page');
 		}
-		refTabulka();
+		tabulka();
 	};
 	
 	var razeni = function(event){
@@ -92,7 +65,7 @@ $(document).ready(function(){
 	$tabulka.on('click', 'a.strana', strankovani);
 	$tabulka.on('click', 'a.order', razeni);
 	
-	refTabulka();
+	tabulka();
 	
 	
 });

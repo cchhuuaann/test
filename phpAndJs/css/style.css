@@ -20,7 +20,7 @@ a {
 	color: red;
 	text-decoration: none
 }
-li a {
+li.menu a {
 	color: grey;
 	font-size: 18px;
 	font-weight: bold
@@ -45,8 +45,7 @@ table.seznam tr {
 }
 table.seznam th,td {
 	margin: 0px;
-	padding: 5px;
-	border: 1px solid black
+	padding: 5px
 }
 table.edit {
 	padding: 5px;

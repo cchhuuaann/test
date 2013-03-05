@@ -1,9 +1,5 @@
 <?php
 	
-/*
- * Vyřešit <select> boxy, nekdy je potřeba ve value ID a někdy NAZEV 
- */
-
 	$where_conds = array();
 	
 	$where = "";
@@ -23,24 +19,24 @@
 		$order = '';
 	}
 	
-//filtrace podle nazvu pobocky
+//filtrace podle nazvu firmy
 	if (isset($_GET['nazev'])) {
 		$nazev = $_GET['nazev'];
 	} else {
 		$nazev = "";
 	}	
 	if (!empty($nazev)) {
-		$where_conds[] = "p.nazev LIKE '%" . mysql_real_escape_string($nazev) . "%'";
+		$where_conds[] = "f.nazev LIKE '%" . mysql_real_escape_string($nazev) . "%'";
 	}
 	
-//filtrace podle adresy pobocky
+//filtrace podle adresy firmy
 	if (isset($_GET['adresa'])) {
 		$adresa = $_GET['adresa'];
 	} else {
 		$adresa = "";
 	}
 	if (!empty($adresa)) {
-		$where_conds[] = "p.adresa LIKE '%" . mysql_real_escape_string($adresa) . "%'";
+		$where_conds[] = "f.adresa LIKE '%" . mysql_real_escape_string($adresa) . "%'";
 	}
 	
 //filtrace podle mesta
@@ -50,7 +46,7 @@
 		$mesto = "";
 	}
 	if ($mesto != "") {
-		$where_conds[] = "p.mesto = '" . mysql_real_escape_string($mesto) . "'";
+		$where_conds[] = "f.mesto = '" . mysql_real_escape_string($mesto) . "'";
 	}
 	
 //filtrace podle emailu
@@ -60,32 +56,20 @@
 		$email = "";
 	}
 	if (!empty($email)) {
-		$where_conds[] = "p.email LIKE '%" . mysql_real_escape_string($email) . "%'";
-	}
-	
-//filtrace podle firmy
-	if (isset($_GET['firma_nazev'])) {
-		$firma_nazev = $_GET['firma_nazev'];
-	} else {
-		$firma_nazev = "";
-	}
-	if (!empty($firma_nazev)) {
-		$where_conds[] = "firma.nazev = '" . mysql_real_escape_string($email) . "'";
+		$where_conds[] = "f.email LIKE '%" . mysql_real_escape_string($email) . "%'";
 	}
 
 //zde skadame finalni podminku
 	if (!empty($where_conds)) {
 		$where = "WHERE " . implode(" AND ",$where_conds);
 	}
-	
-//join
-	$join = "JOIN firma ON p.firma_id = firma.id";
-	
-//pole
-	$pole = "p.id AS id, p.nazev, p.adresa, p.mesto, p.psc, p.telefon, p.email, firma.nazev AS firma_nazev, firma.adresa AS firma_adresa, firma.mesto AS firma_mesto, firma.psc AS firma_psc";
 
+//select a join pro dotazy
+	$select = "f.id AS id, f.nazev AS nazev, f.adresa AS adresa, f.mesto AS mesto, f.psc AS psc, f.email AS email, SUM(z.payment) AS soucet_platu, ROUND(AVG(z.payment)) AS prumerny_plat, ROUND(1.4 * SUM(z.payment)) AS naklady_na_zamestnance, f.mesicni_naklady AS mesicni_naklady, ROUND((1.4 * SUM(z.payment)) + mesicni_naklady) AS celkove_naklady";
+	$join = " JOIN zamestnanec AS z ON z.firma_id = f.id";
+	
 //ziskani poctu radku
-	$query = "SELECT COUNT(DISTINCT p.id) as cnt FROM pobocka AS p $join $where";
+	$query = "SELECT COUNT(*) as cnt FROM firma f $where";
 	
 	$result = dotaz_db($query);
 	
@@ -106,7 +90,7 @@
 	$max = $per_page * $strana;
 	$limit = "LIMIT " . ($max - $per_page) . "," . $per_page;
 	
-	$query = "SELECT $pole FROM pobocka AS p $join $where GROUP BY p.id $order $limit";
+	$query = "SELECT $select FROM firma AS f $join $where GROUP BY nazev $order $limit";
 	
 	$result = dotaz_db($query);
 	
@@ -119,15 +103,7 @@
 ?>
 		<br />Vyhovuje <?=$count['cnt']?> položek z <?=$count['cnt']?>
 		
-		<p>
-		<?php
-			if (isset($_SESSION['message'])) {
-				echo $_SESSION['message'];
-				unset($_SESSION['message']);
-			}
-		?>
-		</p>
-			<?php
+			<?php 
 				if (!empty($data)) {
 			?>
 		<table class="seznam">
@@ -137,12 +113,12 @@
 						<a class="order" data-order="nazev" href="<?=get_link("", array('order'=>'nazev'))?>">Název</a>
 					</th>
 					<th>adresa</th>
-					<th>telefon</th>
 					<th>email</th>
-					<th>firma</th>
-					<th>adresa firmy</th>
-					<th>smazat</th>
-					<th>upravit</th>
+					<th>součet platů</th>
+					<th>průměrný plat</th>
+					<th>náklady na zaměstnance</th>
+					<th>měsíční náklady</th>
+					<th>celkové náklady</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -153,23 +129,17 @@
 							<td><?=$row['adresa'] ?>
 							<br /><?=$row['mesto'] ?>
 							<br /><?=$row['psc'] ?></td>
-							<td><?=$row['telefon'] ?></td>
 							<td><?=$row['email'] ?></td>
-							<td><?=$row['firma_nazev'] ?></td>
-							<td><?=$row['firma_adresa'] ?>
-							<br /><?=$row['firma_mesto'] ?>
-							<br /><?=$row['firma_psc'] ?></td>
-							<td><a href="<?= get_link('delete',array('id'=>$row['id'])) ?>">Smazat</a></td>
-							<td><a href="<?= get_link('edit',array('id'=>$row['id'])) ?>">Upravit</a></td>
+							<td><?=$row['soucet_platu'] ?></td>
+							<td><?=$row['prumerny_plat'] ?></td>
+							<td><?=$row['naklady_na_zamestnance'] ?></td>
+							<td><?=$row['mesicni_naklady'] ?></td>
+							<td><?=$row['celkove_naklady'] ?></td>
 						</tr>
 				<?php }?>
 			</tbody>
 		</table>
-			<?php }?>
-		<p>
-		<a href="<?= get_link('edit',array('id'=>'')) ?>">Nová položka</a>
-		</p>
-		<?php
+			<?php }
 		
 			if ($strana > 1) {
 				$get = $_GET;

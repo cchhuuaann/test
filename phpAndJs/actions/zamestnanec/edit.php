@@ -118,14 +118,14 @@
 			if ($row === false) {
 				dotaz_db(make_insert('zamestnanec', $values));
 				$id = mysql_insert_id($link);
-				dotaz_db(make_insert_sp('pobocka_zamestnanec',$_POST['pobocka'], $id));
+				dotaz_db(make_insert_sp('zamestnanec_pobocka',$_POST['pobocka'], $id));
 				
 				$message = "Nový záznam byl vytvořen.";
 			} else {
 				dotaz_db(make_update('zamestnanec', $values, "WHERE id={$id}"));
-				dotaz_db("DELETE FROM pobocka_zamestnanec WHERE zamestnanec_id1 = $id");
+				dotaz_db("DELETE FROM zamestnanec_pobocka WHERE zamestnanec_id = $id");
 				
-				dotaz_db(make_insert_sp('pobocka_zamestnanec',$_POST['pobocka'], $id));
+				dotaz_db(make_insert_sp('zamestnanec_pobocka',$_POST['pobocka'], $id));
 				
 				$message = "Upraven záznam id = {$id}";
 			}
@@ -202,7 +202,7 @@
 						</td>
 						<td>
 							<select id="skupina" name="skupina" >
-								<?= vytvor_option_db('skupina','nazev','','',$skupina)?>
+								<?= vytvor_option_db('skupina','nazev','id','',$skupina)?>
 							</select>
 						</td>
 					</tr>
@@ -212,7 +212,7 @@
 						</td>
 						<td>
 							<select id="firma" name="firma" >
-								<?= vytvor_option_db('firma','nazev','','',$firma)?>
+								<?= vytvor_option_db('firma','nazev','id','',$firma,false)?>
 							</select>
 						</td>
 					</tr>
@@ -222,7 +222,7 @@
 						</td>
 						<td>
 							<select id="pobocka" name="pobocka[]" size="6" multiple >
-								<?= vytvor_option_db_multi('pobocka','nazev','zamestnanec',$id, "WHERE t.firma_id = '{$firma}'")?>
+								<?= vytvor_option_db_multi('pobocka','nazev','zamestnanec',$id,"WHERE t.firma_id = '{$firma}'")?>
 							</select>
 						</td>
 					</tr>

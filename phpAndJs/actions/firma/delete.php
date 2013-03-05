@@ -17,11 +17,15 @@
 	}
 	
 	if (isset($_POST['delete'])) {
-		/*
+		
+		$query = "UPDATE zamestnanec SET firma_id = NULL WHERE firma_id = $id";
+		$result = dotaz_db($query);
+		
 		$query = "DELETE FROM firma WHERE id=$id";
 		$result = dotaz_db($query);
-		*/
 		
+		//mazani bez pomoci databazove fce cascade
+		/*
 		$query = "SELECT id FROM pobocka WHERE firma_id = $id";
 		$result = dotaz_db($query);
 		
@@ -31,17 +35,20 @@
 			$data[] = $row;
 		}
 		
+		foreach ($data as $key => $value) {
+			$data[$key] = " ";
+		}
 		
 		
 		var_dump($data);
+		*/
 		
-		/*
 		$_SESSION['message'] = "Záznam firmy {$row['nazev']} byl smazán.";
 		$location = "Location: " . get_link("",array('id'=>''),false);
 		
 		header($location, true, 303);
 		exit;
-		*/
+		
 	}	
 
 	

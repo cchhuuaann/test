@@ -2,9 +2,9 @@
 ?><!doctype html>
 <html>
 	<head>
-		<?= vykresli_header("Seznam poboček") ?>
+		<?= vykresli_header("Seznam firem") ?>
 		<script type="text/javascript" src="<?= URL ?>scripts/jq.spin.js"></script>
-		<script type="text/javascript" src="<?= URL ?>scripts/jq.list_pobocka.js?v=<?= JS_VERSION_STRING ?>"></script>
+		<script type="text/javascript" src="<?= URL ?>scripts/jq.statistika_firma.js?v=<?= JS_VERSION_STRING ?>"></script>
 	</head>
 	<body>
 		<div id="all">
@@ -14,7 +14,7 @@
 				<table class="list">
 					<tr>
 						<td>
-							<label for="nazev">název pobočky</label>
+							<label for="nazev">název firmy</label>
 						</td>
 						<td>
 							<input type="text" name="nazev" id="nazev" />
@@ -34,7 +34,7 @@
 						</td>
 						<td>
 							<select id="mesto" name="mesto" >
-								<?= vytvor_option_db('pobocka','mesto','nazev','','',true)?>
+								<?= vytvor_option_db('firma','mesto','nazev','','',true)?>
 							</select>
 						</td>
 					</tr>
@@ -47,17 +47,7 @@
 						</td>
 					</tr>
 					<tr>
-						<td>	
-							<label for="firma_nazev">firma</label>
-						</td>
-						<td>
-							<select id="firma_nazev" name="firma_nazev" >
-								<?= vytvor_option_db('firma','nazev','id','','',true)?>
-							</select>
-						</td>
-					</tr>
-					<tr>
-						<td>				
+						<td>					
 							<input type="submit" />
 						</td>
 					</tr>

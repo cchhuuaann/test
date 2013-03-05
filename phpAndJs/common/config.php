@@ -1,7 +1,7 @@
 <?php
 
 define('URL','http://test/phpAndJs/');
-define('JS_VERSION_STRING','0.3');
+define('JS_VERSION_STRING','0.4');
 
 $per_page = 4;
 
@@ -9,7 +9,7 @@ $vychozi_model = "zamestnanec";
 
 $povolene_akce = array(
 			"zamestnanec" => array("list","edit","delete","tabulka_jx","get_pobocky_jx"),
-			"firma" => array("list","edit","delete","tabulka_jx"),
+			"firma" => array("list","edit","delete","tabulka_jx","statistika","statistika_jx"),
 			"pobocka" => array("list","edit","delete","tabulka_jx")
 		);
 
@@ -30,6 +30,12 @@ $menu = array(
 		"name" => "seznam firem",
 		"model" => "firma",
 		"action" => "list",
+		"params" => array()
+	),
+	array(
+		"name" => "statistiky firem",
+		"model" => "firma",
+		"action" => "statistika",
 		"params" => array()
 	),
 	array(

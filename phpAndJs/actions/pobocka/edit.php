@@ -131,9 +131,15 @@
 			
 			if ($row === false) {
 				dotaz_db(make_insert('pobocka', $values));
+				$id = mysql_insert_id($link);
+				dotaz_db(make_insert_sp('pobocka_vybaveni',$_POST['vybaveni'], $id));
+				
 				$message = "Nový záznam byl vytvořen.";
 			} else {
 				dotaz_db(make_update('pobocka', $values, "WHERE id={$id}"));
+				dotaz_db("DELETE FROM pobocka_vybaveni WHERE pobocka_id = $id");
+				dotaz_db(make_insert_sp('pobocka_vybaveni',$_POST['vybaveni'], $id));
+				
 				$message = "Upraven záznam id = {$id}";
 			}
 			
@@ -156,6 +162,7 @@
 	<body>
 		<div id="all">
 			<?= vykresli_menu() ?>
+			<script type="text/javascript" src="<?= URL ?>scripts/jq.edit_pobocka.js?v=<?= JS_VERSION_STRING ?>"></script>
 			<h2>
 				<?= $row===false?"Vytvoření nové pobočky":"Úprava pobočky" ?>
 			</h2>
@@ -246,6 +253,16 @@
 						<td>
 							<select id="firma_id" name="firma_id" >
 								<?= vytvor_option_db('firma','nazev','id','','',false)?>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="vybaveni">pobočky</label>
+						</td>
+						<td>
+							<select id="vybaveni" name="vybaveni[]" size="6" multiple >
+								<?= vytvor_option_db_multi('vybaveni','nazev','pobocka',$id, "")?>
 							</select>
 						</td>
 					</tr>

@@ -76,7 +76,6 @@ function vytvor_option_db($tabulka,$sloupec,$id='id', $where="",$hodnota="", $vy
 	$result = dotaz_db($query);
 	
 	while($row = mysql_fetch_assoc($result)) {
-		var_dump($row);
 		$arr[$row[$id]] = $row['nazev'];
 	}
 	
@@ -107,12 +106,12 @@ function vytvor_option_db_multi($tabulka,$sloupec,$related,$related_id,$right_qu
 		$arr[$row['tid']] = $row["nazev"];
 	}
 	
-	$query = "SELECT t.{$tabulka}_id1 FROM {$tabulka}_{$related} AS t WHERE t.{$related}_id1 = '" . mysql_real_escape_string($related_id) . "'";
+	$query = "SELECT t.{$tabulka}_id FROM {$related}_{$tabulka} AS t WHERE t.{$related}_id = '" . mysql_real_escape_string($related_id) . "'";
 	
 	$result = dotaz_db($query);
 	
 	while($row = mysql_fetch_assoc($result)) {
-		$hodnoty[] =$row["{$tabulka}_id1"]; 
+		$hodnoty[] =$row["{$tabulka}_id"]; 
 	}
 	
 	vytvor_option($arr, $hodnoty);
@@ -277,7 +276,10 @@ function make_insert_sp($table,$arr,$id) {
 		$tmp[] = "($id,$arr[$i])";
 	}
 	
-	$dotaz = "INSERT INTO $table(zamestnanec_id1,pobocka_id1) VALUES" . implode(", ",$tmp);
+	$nazev = explode('_', $table);
+	
+	
+	$dotaz = "INSERT INTO $table({$nazev[0]}_id,{$nazev[1]}_id) VALUES" . implode(", ",$tmp);
 	
 	return $dotaz;
 }
@@ -322,7 +324,9 @@ function vykresli_menu(){
 			$class = "";
 		}
 		
-		echo "<li><a $class href=\"" . get_link($value['action'],$value['params'],true,$value['model']) . "\">". htmlspecialchars($value['name']) . "</a></li>\n";
+		$value['params']['id'] = false;
+		
+		echo "<li class=\"menu\"><a $class href=\"" . get_link($value['action'],$value['params'],true,$value['model']) . "\">". htmlspecialchars($value['name']) . "</a></li>\n";
 		
 	}
 	
@@ -340,6 +344,11 @@ function vykresli_header($title=""){
 			var URL = "<?= URL ?>"; 
 		</script>
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
+		<script type="text/javascript" src="<?= URL ?>scripts/jquery.multiselect.js"></script>
+		<script type="text/javascript" src="<?= URL ?>scripts/jq.common.js"></script>
+		<link rel="stylesheet" type="text/css" href="<?= URL ?>css/jquery-ui-1.10.1.custom.css" />
+		<link rel="stylesheet" type="text/css" href="<?= URL ?>css/jquery.multiselect.css" />
 		<link rel="stylesheet" type="text/css" href="<?= URL ?>css/style.css" />
 		<title><?= htmlspecialchars($title) ?></title>
 <?php
