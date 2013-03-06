@@ -160,7 +160,8 @@
 							<label for="name">Jméno a příjmení </label>
 						</td>
 						<td>
-							<?=get_input('name', 'text', is_array($row)?$row['name']:'') ?>
+							<?=get_input('name', 'text', is_array($row)?$row['name']:'', 'class="check" data-validate="mandatory"') ?>
+							
 						</td>
 						<td>
 							<?= isset($errors['name'])?"<p>{$errors['name']}</p>":"" ?>
@@ -171,7 +172,7 @@
 							<label for="age">Věk </label>
 						</td>
 						<td>
-							<?=get_input('age', 'text', is_array($row)?$row['age']:'') ?>
+							<?=get_input('age', 'text', is_array($row)?$row['age']:'', 'class="check" data-validate="mandatory number"') ?>
 						</td>
 						<td>
 							<?= isset($errors['age'])?"<p>{$errors['age']}</p>":"" ?>
@@ -182,7 +183,10 @@
 							<label for="payment">Výplata </label>
 						</td>
 						<td>
-							<?=get_input('payment', 'text', is_array($row)?$row['payment']:'') ?>
+							<?=get_input('payment', 'text', is_array($row)?$row['payment']:'', 'class="check" data-validate="mandatory number"') ?>
+						</td>
+						<td>
+							<div id="slider" style="width: 150px"></div>
 						</td>
 						<td>
 							<?= isset($errors['payment'])?"<p>{$errors['payment']}</p>":"" ?>

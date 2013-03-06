@@ -27,9 +27,6 @@ $(document).ready(function(){
 			dataType: 'html',
 			success: function(resp){
 				$tabulka.html(resp);
-			},
-			error: function( req, status, err ) {
-				  console.log( 'something went wrong', status, err );
 			}
 		});
 		

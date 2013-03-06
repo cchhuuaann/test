@@ -196,10 +196,11 @@ function get_link($akce, $parametry=Array(),$escape=true, $novy_model="") {
  * @param name nazev form. prvku
  * @param type typ prvku, bude: text, hidden, checkbox
  * @param hodnota vychozi hodnota
+ * @param dalsi atributy inputu
  * 
  * @return string vysledny vystup do echo
  */
-function get_input($name, $type, $hodnota) {
+function get_input($name, $type, $hodnota, $dalsi_atributy="") {
 	$out = "<input ";
 	$out .= 'name="' . $name . '" ';
 	$out .= 'id="' . $name . '" ';
@@ -220,7 +221,7 @@ function get_input($name, $type, $hodnota) {
 		}
 	}
 	
-	$out .= 'value="' . htmlspecialchars($value) . '"' . $checked . ' />';
+	$out .= 'value="' . htmlspecialchars($value) . '"' . $checked . $dalsi_atributy . ' />';
 	
 	return $out;
 }

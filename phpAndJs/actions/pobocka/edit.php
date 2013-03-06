@@ -174,7 +174,7 @@
 							<label for="nazev">Název</label>
 						</td>
 						<td>
-							<?=get_input('nazev', 'text', is_array($row)?$row['nazev']:'') ?>
+							<?=get_input('nazev', 'text', is_array($row)?$row['nazev']:'', 'class="check" data-validate="mandatory"') ?>
 						</td>
 						<td>
 							<?= isset($errors['nazev'])?"<p>{$errors['nazev']}</p>":"" ?>
@@ -185,7 +185,7 @@
 							<label for="adresa">Adresa</label>
 						</td>
 						<td>
-							<?=get_input('adresa', 'text', is_array($row)?$row['adresa']:'') ?>
+							<?=get_input('adresa', 'text', is_array($row)?$row['adresa']:'', 'class="check" data-validate="mandatory"') ?>
 						</td>
 						<td>
 							<?= isset($errors['adresa'])?"<p>{$errors['adresa']}</p>":"" ?>
@@ -196,7 +196,7 @@
 							<label for="telefon">telefon</label>
 						</td>
 						<td>
-							<?=get_input('telefon', 'text', is_array($row)?$row['telefon']:'') ?>
+							<?=get_input('telefon', 'text', is_array($row)?$row['telefon']:'', 'class="check" data-validate="mandatory number"') ?>
 						</td>
 						<td>
 							<?= isset($errors['telefon'])?"<p>{$errors['telefon']}</p>":"" ?>
@@ -207,7 +207,7 @@
 							<label for="email">email</label>
 						</td>
 						<td>
-							<?=get_input('email', 'text', is_array($row)?$row['email']:'') ?>
+							<?=get_input('email', 'text', is_array($row)?$row['email']:'', 'class="check" data-validate="mandatory"') ?>
 						</td>
 						<td>
 							<?= isset($errors['email'])?"<p>{$errors['email']}</p>":"" ?>
@@ -218,7 +218,7 @@
 							<label for="mesto">Město</label>
 						</td>
 						<td>
-							<?=get_input('mesto', 'text', is_array($row)?$row['mesto']:'') ?>
+							<?=get_input('mesto', 'text', is_array($row)?$row['mesto']:'', 'class="check" data-validate="mandatory"') ?>
 						</td>
 						<td>
 							<?= isset($errors['mesto'])?"<p>{$errors['mesto']}</p>":"" ?>
@@ -229,7 +229,7 @@
 							<label for="psc">PSČ</label>
 						</td>
 						<td>
-							<?=get_input('psc', 'text', is_array($row)?$row['psc']:'') ?>
+							<?=get_input('psc', 'text', is_array($row)?$row['psc']:'', 'class="check" data-validate="mandatory number"') ?>
 						</td>
 						<td>
 							<?= isset($errors['psc'])?"<p>{$errors['psc']}</p>":"" ?>
@@ -240,7 +240,7 @@
 							<label for="mesicni_naklady">měsíční náklady</label>
 						</td>
 						<td>
-							<?=get_input('mesicni_naklady', 'text', is_array($row)?$row['mesicni_naklady']:'') ?>
+							<?=get_input('mesicni_naklady', 'text', is_array($row)?$row['mesicni_naklady']:'', 'class="check" data-validate="mandatory number"') ?>
 						</td>
 						<td>
 							<?= isset($errors['mesicni_naklady'])?"<p>{$errors['mesicni_naklady']}</p>":"" ?>

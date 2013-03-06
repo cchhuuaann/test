@@ -1,5 +1,5 @@
 body {
-	background-color: #ffffcc
+	background-color: #feeebd
 }
 div#all {
 	width: 1000px;
@@ -9,8 +9,10 @@ div#all {
 	border: 1px solid black;
 }
 div#menu ul {
-	background-color: #ffff66;
-	padding: 5px
+	background-color: #fece2f;
+	padding: 10px;
+	border: 1px solid #d19405;
+	border-radius: 8px
 }
 div#menu ul li {
 	display: inline;
@@ -21,13 +23,13 @@ a {
 	text-decoration: none
 }
 li.menu a {
-	color: grey;
+	color: #383838;
 	font-size: 18px;
 	font-weight: bold
 }
-a.active {
+li.menu a.active {
 	font-weight: bold;
-	color: black
+	color: #0074c7
 }
 div#tabulka {
 	/*width: 950px;*/

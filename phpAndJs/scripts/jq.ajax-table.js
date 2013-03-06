@@ -8,26 +8,6 @@ $(document).ready(function(){
 	var stranky = 1;
 	var radit = '';
 	
-//zkouseni dialogu
-	var $varovani = $('<div>',{
-		class: 'varovani',
-		text: 'Ahoj'
-	});
-	
-	$($varovani).dialog({
-		buttons: [{
-		        	text: "OK",
-		        	click: function() {
-		        		$( this ).dialog( "close" );
-		        	}
-			}],
-		autoOpen: false
-		
-	});
-	
-	$($varovani).dialog('open');
-//konec testovani
-	
 	var  refTabulka = function(){
 		
 		$tabulka.spin(spinnerOpts);
@@ -54,9 +34,6 @@ $(document).ready(function(){
 				if($form.is(':hidden')){
 					$form.fadeIn(1000);
 				}
-			},
-			error: function( req, status, err ) {
-				  console.log( 'something went wrong', status, err );
 			}
 		});
 		
