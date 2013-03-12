@@ -1,0 +1,17 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	border-width: 0;
+}
+
+body {
+	background: #015896 url(images/background.jpg) 0 0 scroll repeat-x;
+}
+
+div#nav {
+	width: 930px;
+	height:	auto;
+	margin: 58px auto 0 auto;
+	padding: 0;
+	border: 1px solid black;
+}
