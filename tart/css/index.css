@@ -1,0 +1,72 @@
+
+/***********************
+ ***Pro stranku index***
+ ***********************/
+
+div#index {
+	background-image: url('images/index/background_index.jpg');
+	background-position: 0px -44px;
+	height: 642px;
+}
+
+img#logo_dve {
+	position: absolute;
+	top: 107px;
+	left: 292px;
+	width: 213px;
+	height: 75px;
+}
+
+img#nanotechnologie {
+	position: absolute;
+	top: 222px;
+	left: 395px;
+	width: 379px;
+	height: 31px;
+}
+
+img#detail {
+	position: absolute;
+	top: 356px;
+	left: 444px;
+	width: 254px;
+	height: 244px;
+}
+ div#linka {
+ 	position: absolute;
+ 	padding: 0;
+ 	padding-left: 10px;
+ 	left: 0;
+ 	bottom: 22px;
+ 	width: 386px;
+ }
+ 
+ div#linka:before {
+ 	content: '';
+ 	display: block;
+ 	width: 386px;
+ 	height: 1px;
+ 	background-image: url('images/index/linka.png');
+ }
+ 
+ div#linka:after {
+ 	content: '';
+ 	display: block;
+ 	width: 386px;
+ 	height: 1px;
+ 	background-image: url('images/index/linka.png');
+ }
+ 
+ div#linka p {
+ 	font-size: 12px;
+ 	line-height: 1.6em;
+ 	text-align: left;
+ 	margin-left: 30px;
+ 	margin-right: 15px;
+ 	margin-bottom: 10px;
+ }
+ 
+  div#linka p:first-child {
+ 	margin-top: 10px;
+ 	margin-bottom: 18px;
+ }

@@ -291,14 +291,21 @@ function vykresli_menu(){
 	
 	echo "<div id=\"nav\"><ul>";
 	
+	$tmp = 0;
+	
 	foreach($menu as $value) {
+		$tmp += 1;
+		
 		if($model == $value['model'] && $nav == $value['action']) {
 			$class = " class=\"active\"";
 		} else {
 			$class = "";
 		}
+		if($tmp == 1) {
+			echo "<li class=\"nav\"><a href=\"" . URL . "\"><img src=\"" . URL . "css/images/logo.jpg\" alt=\"Tart\" /></a></li>";
+		}
 		
-		echo "<li class=\"nav\"><a $class href=\"" . get_link($value['model']) . "\">". htmlspecialchars($value['name']) . "</a></li>\n";
+		echo "<li $class ><a href=\"" . get_link($value['model']) . "\">". htmlspecialchars($value['name']) . "</a></li>\n";
 		
 	}
 	
@@ -310,6 +317,7 @@ function vykresli_menu(){
  * @param
  */
 function vykresli_header($title=""){
+	global $model;
 ?>
 		<meta charset="utf-8" />
 		<script type="text/javascript">
@@ -318,6 +326,7 @@ function vykresli_header($title=""){
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 		<script type="text/javascript" src="<?= URL ?>scripts/jq.common.js"></script>
 		<link rel="stylesheet" type="text/css" href="<?= URL ?>css/style.css" />
+		<link rel="stylesheet" type="text/css" href="<?= URL ?>css/<?= $model ?>.css" />
 		<title><?= htmlspecialchars($title) ?></title>
 <?php
 }
