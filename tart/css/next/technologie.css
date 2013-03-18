@@ -1,0 +1,76 @@
+
+/***********************
+ ***Pro stranku technologie***
+ ***********************/
+
+div#body {
+	background-image: url('../images/background_second.jpg');
+	background-position: -1px -44px;
+	height: 2006px;
+	font-weight: bold;
+}
+
+h2 {
+	font-size: 14px;
+	color: #ffcb05;
+}
+
+
+/***
+ *logo
+ ***/
+img#logo_dve {
+	width: 213px;
+	height: 75px;
+	margin: 63px 0 0 46px;
+	float: left; 
+}
+
+/***
+ *postup vyroby
+ ***/
+#postup {
+	width: 611px;
+	height: auto;
+	float: right;
+	margin: 40px 10px 0 0;
+}
+
+#postup:before {
+	display: block;
+	width: 611px;
+	height: 1px;
+	content: "";
+	background-image: url('../images/technologie/linka.png');
+}
+
+#postup:after {
+	display: block;
+	width: 611px;
+	height: 1px;
+	content: "";
+	margin-top: 22px; 
+	background-image: url('../images/technologie/linka.png');
+}
+
+#postup h2,p {
+	font-size: 12px;
+}
+
+#postup h2 {
+	margin: 15px 0 8px 50px;
+}
+
+#postup p {
+	line-height: 1.5em;
+	margin: 0 30px 4px 50px;
+}
+
+#postup span {
+	color: #ffcb05;
+}
+
+
+
+
+ 

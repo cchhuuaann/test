@@ -3,8 +3,8 @@
  ***Pro stranku index***
  ***********************/
 
-div#index {
-	background-image: url('images/index/background_index.jpg');
+div#body {
+	background-image: url('images/index/background.jpg');
 	background-position: 0px -44px;
 	height: 642px;
 }

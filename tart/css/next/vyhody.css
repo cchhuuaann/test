@@ -1,0 +1,158 @@
+
+/***********************
+ ***Pro stranku vyhody***
+ ***********************/
+
+div#body {
+	background-image: url('../images/background_second.jpg');
+	background-position: -1px -44px;
+	height: auto; /*1600px;*/
+	font-weight: bold;
+}
+
+h2 {
+	font-size: 14px;
+	color: #ffcb05;
+}
+
+
+/***
+ *levy sloupec
+ ***/
+#left {
+	margin: 27px 0 0 47px;
+	float: left;
+}
+
+img#logo_dve {
+	width: 213px;
+	height: 75px;
+}
+
+#left h2 {
+	margin-top: 54px;
+	margin-bottom: 39px;
+}
+
+#left ul {
+	list-style: square;
+	list-style-position: inside;
+	padding-left: 0;
+}
+
+#left ul li {
+	font-size: 12px;
+	margin-bottom: 22px;
+	font-weight: bold;
+}
+
+/***
+ *pravy sloupec
+ ***/
+#right {
+ 	width:483px; 
+ 	float: right;
+ 	margin: 74px 76px 48px 0;
+ 	text-align: right;
+}
+ 
+#right h2 {
+ 	margin-top: 0;
+ 	margin-bottom: 38px;
+ 	text-align: left;
+}
+ 
+#right h2:first-child {
+ 	margin-left: 10px;
+}
+ 
+#porovnani {
+ 	width: 386px;
+ 	height: 158px;
+ 	margin-bottom: 38px;
+}
+ 
+#zatezovy_test {
+ 	width: 359px;
+ 	height: 696px;
+ 	float: right;
+}
+
+#right ul {
+	list-style: none;
+	width: 100px;
+	padding: 0px;
+	font-size: 12px;
+	font-weight: normal;
+	text-align: center;
+	line-height: 1.5em;
+}
+/*
+#right ul li {
+}
+*/
+#right ul li#prvni {
+	margin-top: 76px;
+}
+
+#right ul li#prvni:before {
+	display: block;
+	width: 70px;
+	height: 82px;
+	content: "";
+	background-image: url('../images/vyhody/prvni_den.png');
+	margin: 0 auto 12px auto;
+}
+
+#right ul li#treti {
+	margin-top: 55px;
+}
+
+#right ul li#treti:before {
+	display: block;
+	width: 70px;
+	height: 82px;
+	content: "";
+	background-image: url('../images/vyhody/treti_den.png');
+	margin: 0 auto 12px auto;
+}
+
+#right ul li#patnacty {
+	margin-top: 75px;
+}
+
+#right ul li#patnacty:before {
+	display: block;
+	width: 70px;
+	height: 82px;
+	content: "";
+	background-image: url('../images/vyhody/patnacty_den.png');
+	margin: 0 auto 12px auto;
+}
+
+ 
+/***
+ *fotogalerie
+ ***/
+#fotogalerie {
+ 	width: auto;
+ 	height: auto;
+ 	clear: both;
+ 	margin: 0 0 0 74px;
+ 	padding-bottom: 47px;
+}
+ 
+#fotogalerie h2 {
+	margin-bottom: 26px;
+}
+
+#fotogalerie img.foto {
+	width: 116px;
+	height: 145px;
+	border: 2px solid #0c6da7;
+	float: left;
+	margin: 0px 18px 18px 0;
+}
+
+
+ 

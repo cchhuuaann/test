@@ -2,13 +2,13 @@
 ?><!doctype html>
 <html>
 	<head>
-		<?= vykresli_header("") ?>
+		<?= vykresli_header("TART - BUFO barrier") ?>
 	</head>
 	<body>
-		<div class="body" id="index">
+		<div id="body">
 			<?= vykresli_menu() ?>
 			
-			<img id="logo_dve" src="<?= URL ?>css/images/index/logo_dve.png" alt="BUFO barrier" />
+			<img id="logo_dve" src="<?= URL ?>css/images/logo_dve.png" alt="BUFO barrier" />
 			<img id="nanotechnologie" src="<?= URL ?>css/images/index/nanotechnologie.png" alt="NanoTechnologie" />
 			<img id="detail" src="<?= URL ?>css/images/index/detail.png" alt="detail" />
 			
