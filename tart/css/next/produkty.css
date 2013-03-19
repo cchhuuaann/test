@@ -1,0 +1,223 @@
+
+/***********************
+ ***Pro stranku produkty***
+ ***********************/
+
+div#body {
+	background-image: url('../images/background_second.jpg');
+	background-position: -1px -44px;
+	padding-bottom: 13px;
+	font-weight: bold;
+	border: 0px solid white;
+}
+
+h2 {
+	font-size: 14px;
+	color: #ffcb05;
+}
+
+/***
+ *Tabulky
+ ***/
+table,caption,thead,tbody,tr,th,td {
+	border: 0 solid white;
+	
+}
+table {
+	border-collapse: collapse;
+	background-color: #013f70;
+	font-weight: bold;
+}
+
+table caption {
+	padding-bottom: 16px;
+}
+
+table caption,thead {
+	text-align: left;
+	color: #ffcb05;
+}
+
+table td,th {
+	padding-left: 15px;
+	padding-right: 18px;
+}
+
+table .normal {
+	padding-left: 30px;
+}
+
+table td.normal {
+	font-weight: normal;
+}
+
+table tbody {
+	font-weight: 12px;
+}
+
+table tr {
+	border-bottom-width: 1px;
+}
+
+table thead {
+	background-color: #015896;
+}
+
+table thead>tr:first-child {
+	border-top-width: 1px;
+}
+
+table th,td {
+	vertical-align: middle;
+}
+
+
+/***
+ *Tabulka zakladnich typu
+ ***/
+#typy {
+	width: 835px;
+	height: 464px;
+	margin: 42px 0 50px 45px;
+}
+
+#typy thead tr {
+	height: 40px;
+}
+
+#typy tbody tr {
+	height: 44px;
+}
+
+#typy div {
+	width: 135px;
+	height: 44px;
+	background-image: url('../images/produkty/rozmery.png');
+	background-repeat: no-repeat;
+}
+
+#typy div#jedna {
+	background-position: 0 9px;
+}
+
+#typy div#dva {
+	background-position: 0 -35px;
+}
+
+#typy div#tri {
+	background-position: 0 -81px;
+}
+
+#typy div#ctyri {
+	background-position: 0 -127px;
+}
+
+#typy div#pet {
+	background-position: 0 -173px;
+}
+
+#typy div#sest {
+	background-position: 0 -219px;
+}
+
+#typy div#sedm {
+	background-position: 0 -265px;
+}
+
+#typy div#osm {
+	background-position: 0 -311px;
+}
+
+#typy div#devet {
+	height: 54px;
+	background-position: 0 -355px;
+}
+
+ 
+/**
+ *Tabulka rozmeru
+ ***/
+#rozmery {
+	width: 421px;
+	height: 258px;
+	margin-bottom: 10px;
+}
+
+#rozmery caption {
+	padding-bottom: 21px;
+}
+
+#rozmery tr {
+	height: 45px;
+}
+
+
+/***
+ *poznamka
+ ***/
+div#poznamka {
+	width: 421px;
+	margin: 0 0 0 45px;
+	float: left;
+	font-weight: normal;
+}
+
+/***
+ *Potisk
+ ***/
+#potisk {
+	width: 350px;
+	margin: 0 0 0 70px;
+	float: left;
+	font-weight: bold;
+}
+
+#potisk h2 {
+	margin: 0 0 0 0;
+}
+
+#potisk p {
+	margin: 35px 0 0 0;
+}
+ 
+#potisk ul {
+	list-style: disc;
+	padding: 0;
+	padding-left: 10px; 
+ 	font-weight: normal;
+ 	margin: 0;
+}
+
+#potisk ul li {
+	margin: 8px 0 0 0;
+}
+
+
+/***
+ *fotogalerie
+ ***/
+#fotogalerie {
+ 	width: auto;
+ 	height: auto;
+ 	clear: both;
+ 	margin: 438px 0 0 74px;
+ 	padding-bottom: 47px;
+}
+ 
+#fotogalerie h2 {
+	margin-bottom: 26px;
+}
+
+#fotogalerie ul {
+	padding: 0;
+	list-style: none;
+}
+
+
+#fotogalerie ul li img {
+	width: 116px;
+	height: 145px;
+	border: 2px solid #0c6da7;
+	float: left;
+	margin: 0px 18px 18px 0;
+}

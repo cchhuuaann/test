@@ -6,7 +6,7 @@
 div#body {
 	background-image: url('../images/background_second.jpg');
 	background-position: -1px -44px;
-	height: 2006px;
+	padding-bottom: 30px;
 	font-weight: bold;
 }
 
@@ -69,6 +69,97 @@ img#logo_dve {
 #postup span {
 	color: #ffcb05;
 }
+
+/***
+ *schema vyroby
+ ***/
+#schema {
+	width: 837px;
+	height: 336px;
+	clear: both;
+	margin: 10px 0 60px 46px;
+}
+
+/***
+ *vyroba v bodech
+ ***/
+#body>ul {
+	padding: 0;
+	list-style: none;
+}
+
+#body>ul>li {
+	display: block;
+	width: 330px;
+	height: 296px;
+	float: left;
+	margin: 0 24px 0 92px;
+}
+
+#body>ul>li:before {
+	content: "";
+	display: block;
+	width: 280px;
+	height: 156px;
+	position: relative;
+	border: 1px solid white;	
+}
+
+#body>ul>li#jedna:before {
+	background-image: url('../images/technologie/extrudery.jpg');
+}
+
+#body>ul>li#dva:before {
+	background-image: url('../images/technologie/smesovaci_zarizeni.jpg');
+}
+
+#body>ul>li#tri:before {
+	background-image: url('../images/technologie/lici_hlavy.jpg');
+}
+
+#body>ul>li#ctyri:before {
+	background-image: url('../images/technologie/formatovani_orez.jpg');
+}
+
+#body>ul>li#pet:before {
+	background-image: url('../images/technologie/laminace.jpg');
+}
+
+#body>ul>li#sest:before {
+	background-image: url('../images/technologie/pasek_s_potiskem.jpg');
+}
+
+#body>ul>li#sedm:before {
+	background-image: url('../images/technologie/laminace_4.jpg');
+}
+
+#body>ul>li#osm:before {
+	background-image: url('../images/technologie/navijeni.jpg');
+}
+
+#body>ul>li h2 {
+	margin: 0;
+	font-size: 12px;
+	line-height: 1.75em;
+}
+
+#body>ul>li p,ul,li {
+	font-weight: normal;
+	margin:0;
+	padding: 0;
+	line-height: 1.4em;
+}
+
+#body>ul>li ul {
+	padding: 0;
+	list-style: none;
+}
+
+#body>ul>li li:before {
+	content: "- ";
+}
+
+
 
 
 

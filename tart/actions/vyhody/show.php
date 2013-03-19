@@ -42,11 +42,22 @@
 			
 			<div id="fotogalerie">
 				<h2>FOTOGALERIE</h2>
-				<?php
-					for($i = 1; $i <= 12; $i++) {
-						echo "<img class=\"foto\"  src=\"" . URL . "css/images/vyhody/foto.jpg\" alt=\"foto\" />\n";
-					}
-				?>
+				
+				<ul class="gallery clearfix">
+					<li><a href="<?= URL ?>images/fullscreen/foto.jpg" rel="prettyPhoto[gallery]" title="Foto"><img src="<?= URL ?>images/thumbnails/foto.jpg" alt="foto" /></a></li>
+					<li><a href="<?= URL ?>images/fullscreen/foto.jpg" rel="prettyPhoto[gallery]" title="Foto"><img src="<?= URL ?>images/thumbnails/foto.jpg" alt="foto" /></a></li>
+					<li><a href="<?= URL ?>images/fullscreen/foto.jpg" rel="prettyPhoto[gallery]" title="Foto"><img src="<?= URL ?>images/thumbnails/foto.jpg" alt="foto" /></a></li>
+					<li><a href="<?= URL ?>images/fullscreen/foto.jpg" rel="prettyPhoto[gallery]" title="Foto"><img src="<?= URL ?>images/thumbnails/foto.jpg" alt="foto" /></a></li>
+					<li><a href="<?= URL ?>images/fullscreen/foto.jpg" rel="prettyPhoto[gallery]" title="Foto"><img src="<?= URL ?>images/thumbnails/foto.jpg" alt="foto" /></a></li>
+					<li><a href="<?= URL ?>images/fullscreen/foto.jpg" rel="prettyPhoto[gallery]" title="Foto"><img src="<?= URL ?>images/thumbnails/foto.jpg" alt="foto" /></a></li>
+					<li><a href="<?= URL ?>images/fullscreen/foto.jpg" rel="prettyPhoto[gallery]" title="Foto"><img src="<?= URL ?>images/thumbnails/foto.jpg" alt="foto" /></a></li>
+					<li><a href="<?= URL ?>images/fullscreen/foto.jpg" rel="prettyPhoto[gallery]" title="Foto"><img src="<?= URL ?>images/thumbnails/foto.jpg" alt="foto" /></a></li>
+					<li><a href="<?= URL ?>images/fullscreen/foto.jpg" rel="prettyPhoto[gallery]" title="Foto"><img src="<?= URL ?>images/thumbnails/foto.jpg" alt="foto" /></a></li>
+					<li><a href="<?= URL ?>images/fullscreen/foto.jpg" rel="prettyPhoto[gallery]" title="Foto"><img src="<?= URL ?>images/thumbnails/foto.jpg" alt="foto" /></a></li>
+					<li><a href="<?= URL ?>images/fullscreen/foto.jpg" rel="prettyPhoto[gallery]" title="Foto"><img src="<?= URL ?>images/thumbnails/foto.jpg" alt="foto" /></a></li>
+					<li><a href="<?= URL ?>images/fullscreen/foto.jpg" rel="prettyPhoto[gallery]" title="Foto"><img src="<?= URL ?>images/thumbnails/foto.jpg" alt="foto" /></a></li>
+				</ul>
+				
 				<div class="clear"></div>
 			</div>
 			

@@ -316,13 +316,15 @@ function vykresli_header($title=""){
 	global $model;
 ?>
 		<meta charset="utf-8" />
-		<!-- <script type="text/javascript">
+		<script type="text/javascript">
 			var URL = "<?= URL ?>"; 
 		</script>
-		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-		<script type="text/javascript" src="<?= URL ?>scripts/jq.common.js"></script> -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js" type="text/javascript"></script>
+		<script src="<?= URL ?>scripts/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="<?= URL ?>scripts/jq.common.js"></script>
 		<link rel="stylesheet" type="text/css" href="<?= URL ?>css/style.css" />
 		<link rel="stylesheet" type="text/css" href="<?= URL ?>css/next/<?= $model ?>.css" />
+		<link rel="stylesheet" href="<?= URL ?>css/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main stylesheet" />
 		<title><?= htmlspecialchars($title) ?></title>
 <?php
 }

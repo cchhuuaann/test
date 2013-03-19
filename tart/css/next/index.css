@@ -4,7 +4,7 @@
  ***********************/
 
 div#body {
-	background-image: url('images/index/background.jpg');
+	background-image: url('../images/index/background.jpg');
 	background-position: 0px -44px;
 	height: 642px;
 }
@@ -46,7 +46,7 @@ img#detail {
  	display: block;
  	width: 386px;
  	height: 1px;
- 	background-image: url('images/index/linka.png');
+ 	background-image: url('../images/index/linka.png');
  }
  
  div#linka:after {
@@ -54,7 +54,7 @@ img#detail {
  	display: block;
  	width: 386px;
  	height: 1px;
- 	background-image: url('images/index/linka.png');
+ 	background-image: url('../images/index/linka.png');
  }
  
  div#linka p {
