@@ -1,40 +1,39 @@
 
 /***********************
- ***Pro stranku kontakty***
+ ***Pro stranku kontakty
  ***********************/
-
 div#body {
 	background-image: url('../images/kontakty/background_kontakty.jpg');
 	background-position: -1px -44px;
 	height: 640px;
 	border: 0px solid white;
 }
-
 h2 {
 	font-size: 12px;
 	font-weight: bold;
 }
 
+/***
+ *Kontaky
+ ***/
 #kontakty {
 	width: 250px;
-	margin: 40px 0 0 48px;
+	margin: 31px 0 0 48px;
 	text-align: center;
+	float: left;
+	font-size: 12px;
 }
-
 #kontakty p {
-	margin: 30px 0 0 0;
-	line-height: 1.75em;
+	margin: 28px 0 0 0;
+	line-height: 2em;
 }
-
 #kontakty p#last {
 	margin-top: 48px;
 }
-
 #kontakty a {
 	color: #81c7f8;
 	text-decoration: underline;
 }
-
 #kontakty span {
 	display: block;
 	margin-top: 7px;
@@ -43,5 +42,64 @@ h2 {
 }
 
 /***
- *
+ *Mapa
  ***/
+#mapa {
+	height: 350px;
+	width: 600px;
+	position: relative;
+	float: left;
+	margin-top: 126px;
+	background-image: url('../images/kontakty/mapa.png');
+	background-position: 30px 0;
+	background-repeat: no-repeat;
+}
+#mapa ul {
+	width: auto;
+	position: absolute;
+	top: -20px;
+	right: -20px;
+	list-style: none;
+	font-size: 12px;
+	font-weight: normal;
+}
+#mapa ul li {
+	line-height: 2em;
+	position: relative;
+}
+#mapa ul li:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 3px;
+}
+#mapa ul li.prvni:before {
+	width: 18px;
+	height: 18px;
+	left: -22px;
+	background-image: url('../images/kontakty/centrala.png');
+}
+#mapa ul li.druhy:before {
+	width: 17px;
+	height: 18px;
+	left: -21px;
+	background-image: url('../images/kontakty/obchodni_zastupce.png');
+}
+#mapa ul li.treti:before {
+	width: 18px;
+	height: 17px;
+	left: -22px;
+	background-image: url('../images/kontakty/vyrobni_zavody.png');
+}
+#mapa ul li.ctvrty:before {
+	width: 17px;
+	height: 18px;
+	left: -21px;
+	background-image: url('../images/kontakty/export.png');
+}
+#mapa ul li.paty:before {
+	width: 17px;
+	height: 17px;
+	left: -21px;
+	background-image: url('../images/kontakty/distribucni_centra.png');
+}

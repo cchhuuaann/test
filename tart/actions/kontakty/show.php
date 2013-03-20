@@ -15,6 +15,18 @@
 			<p id="last">IČ: 46901876<br />DIČ: CZ46901876<span>Společnost je zapsána v OR<br />vedeném u KS v Brně, oddíl C, vložka 5862.</span></p>
 		</div>	
 		
+		<div id="mapa">
+			<ul>
+				<li class="prvni">Centrála</li>
+				<li class="druhy">Obchodní zastoupení</li>
+				<li class="treti">Výrobní závod</li>
+				<li class="ctvrty">Export</li>
+				<li class="paty">Distribuční centra</li>
+			</ul>
+		</div>
+		
+		<div class="clear"></div>
+		
 		</div>
 		<div id="footer"><a href="">www.tart.cz</a><a href="">www.umenibalit.cz</a></div>
 	</body>

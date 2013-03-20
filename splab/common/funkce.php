@@ -291,8 +291,6 @@ function vykresli_menu(){
 	
 	echo "<div id=\"nav\"><ul>";
 
-	echo "<li class=\"nav\"><a href=\"" . URL . "\"><img src=\"" . URL . "css/images/logo.jpg\" alt=\"Tart\" /></a></li>";
-	
 	foreach($menu as $value) {
 		
 		if($model == $value['model'] && $nav == $value['action']) {
@@ -304,6 +302,8 @@ function vykresli_menu(){
 		echo "<li $class ><a href=\"" . get_link($value['model']) . "\">". htmlspecialchars($value['name']) . "</a></li>\n";
 		
 	}
+	
+	echo "<li class=\"last\"><a href=\"\">Projekt OPVK</a></li>";
 	
 	echo "</ul></div>";
 	
@@ -323,11 +323,7 @@ function vykresli_header($title=""){
 		<script src="<?= URL ?>scripts/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript" src="<?= URL ?>scripts/jq.common.js"></script>
 		<link rel="stylesheet" type="text/css" href="<?= URL ?>css/style.css" />
-		<link rel="stylesheet" type="text/css" href="<?= URL ?>css/next/<?= $model ?>.css" />
 		<link rel="stylesheet" href="<?= URL ?>css/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main stylesheet" />
-		<!--[if lte IE 7]>
-			<link rel="stylesheet" type="text/css" href="<?= URL ?>css/iestyle.css" />
-		<![endif]-->
 		<title><?= htmlspecialchars($title) ?></title>
 <?php
 }

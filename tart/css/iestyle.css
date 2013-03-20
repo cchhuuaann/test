@@ -1,0 +1,38 @@
+div#body>div#nav>ul>li {
+	line-height: 4em;
+}
+
+div#body>div#right>ul {
+	margin-left: 0px;
+	margin-right: 369px;
+}
+
+div#body>div#right>ul>li#prvni {
+	margin-top: 90px;
+}
+
+div#body>div#right>ul>li#treti {
+	margin-top: 150px;
+}
+
+div#body>div#right>ul>li#patnacty {
+	margin-top: 165px;
+}
+div#body>div#fotogalerie {
+	margin-top: 0px;
+}
+
+div#body>div#fotogalerie>ul {
+	margin-left: 0px;
+}
+
+div#body>div#fotogalerie>ul>li {
+	width: 116px;
+	height: 145px;
+	float: left;
+	margin: 0px 18px 18px 0;
+}
+
+div#body>div#potisk>ul {
+	padding-left: 20px;
+}
