@@ -290,11 +290,23 @@ function vykresli_menu(){
 	global $menu,$model,$nav;
 	
 	echo "<div id=\"nav\"><ul>";
-
+	
+	$count = count($menu);
+	$i = 0;
+	
 	foreach($menu as $value) {
+		$i += 1;
 		
 		if($model == $value['model'] && $nav == $value['action']) {
-			$class = " class=\"active\"";
+			
+			if($count == $i) {
+				$class = " class=\"active last\"";
+			} else {
+				$class = " class=\"active\"";
+			}
+			
+		} elseif($count == $i) {
+			$class = "class=\"last\"";
 		} else {
 			$class = "";
 		}
@@ -302,8 +314,6 @@ function vykresli_menu(){
 		echo "<li $class ><a href=\"" . get_link($value['model']) . "\">". htmlspecialchars($value['name']) . "</a></li>\n";
 		
 	}
-	
-	echo "<li class=\"last\"><a href=\"\">Projekt OPVK</a></li>";
 	
 	echo "</ul></div>";
 	
@@ -313,14 +323,13 @@ function vykresli_menu(){
  * @param
  */
 function vykresli_header($title=""){
-	global $model;
 ?>
 		<meta charset="utf-8" />
 		<script type="text/javascript">
 			var URL = "<?= URL ?>"; 
 		</script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js" type="text/javascript"></script>
-		<script src="<?= URL ?>scripts/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
+		<script src="<?= URL ?>scripts/jq.slides.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript" src="<?= URL ?>scripts/jq.common.js"></script>
 		<link rel="stylesheet" type="text/css" href="<?= URL ?>css/style.css" />
 		<link rel="stylesheet" href="<?= URL ?>css/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main stylesheet" />

@@ -10,7 +10,8 @@ $povolene_akce = array(
 			"vyzkum" => array("show"),
 			"studium" => array("show"),
 			"spoluprace" => array("show"),
-			"kontakty" => array("show")
+			"kontakty" => array("show"),
+			"projekt" => array("show")
 		);
 
 $menu = array(
@@ -30,13 +31,18 @@ $menu = array(
 			"action" => "show"
 	),
 	array(
-		"name" => "Spoluprace",
+		"name" => "Spolupráce",
 		"model" => "spoluprace",
 		"action" => "show"
 	),
 	array(
 		"name" => "Kontakty",
 		"model" => "kontakty",
+		"action" => "show"
+	),
+	array(
+		"name" => "Projekt OPVK",
+		"model" => "projekt",
 		"action" => "show"
 	)
 );

@@ -8,3 +8,6 @@ RewriteCond %{REQUEST_FILENAME} !-d
 
 # prevod cesty za / jako GET parametr model
 RewriteRule ^([a-zA-Z0-9\_\-]*)$ index.php?model=$1   [L,QSA]
+
+#zakaz vypisu adresare
+Options -Indexes

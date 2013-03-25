@@ -1,7 +1,7 @@
 /***
  *zakladni nastaveni
  ***/
-html, body, div, #nav ul, #nav ul li, img, a {
+html, body, div, #nav ul, #nav ul li, img, h1, h2, a, form, input {
 	margin: 0;
 	padding: 0;
 	border: 0px solid #000000;
@@ -21,7 +21,7 @@ body {
 
 div#body {
 	width: 960px;
-	height: 1247px;
+	height: auto;
 	margin: 0 auto;
 	padding: 0px 32px 20px 32px;
 	background-color: #ffffff;
@@ -51,42 +51,90 @@ div#body:after {
 }
 
 /***
- *Pomocne
+ *nastaveni tridy info
  ***/
- div#body div.info {
- 	position: relative;
- }
+div#body div.info {
+	position: relative;
+	padding: 20px 32px;
+}
+div#body div.info h2 {
+	font-size: 16px;
+	font-weight: bold;
+	color: #00396d;
+}
 div#body div.info:before {
 	content: "";
 	display: block;
 	position: absolute;
 	top: -17px;
+	left: -0px;
 	width: 100%;
 	height: 17px;
 	background: #115797 url('background_images/sipka_before.png') 22px 0px no-repeat;
 }
 
-div#body div.left {
+/***
+ *pomocne
+ ***/
+div#body>div.left {
 	float: left;
+	width: 186px;
+	height: auto;
 }
 
-div#body .clear {
+div#body>div.right {
+	float: right;
+	width: 664px;
+	height: auto;
+}
+
+.clear {
 	clear: both;
 }
 
 div#body div {
-	border: 1px dashed #115797;
+	border: 0px dashed #115797;
 }
 
 /***
  *Header stranky
  ***/
 div#body div#header {
-	width: 960px;
-	height: 136px;
+	width: 896px;
+	height: 72px;
+	padding: 32px;
+	position: relative;
 	background-image: url('background_images/background_header.png');
 	background-position: top right;
 	background-repeat: no-repeat;
+}
+div#body div#header div#logo img {
+	width: 294px;
+	height: 57px;
+}
+div#body div#header div#logo p {
+	color: #2383c6;
+}
+div#body div#header div#logo p span {
+	font-weight: bold;
+	color: #00396d;
+}
+div#body div#header div#lang {
+	position: absolute;
+	top: 45px;
+	right: 32px;
+	width: 66px;
+	height: 16px;
+}
+div#body div#header div#lang img {
+	width: 28px;
+	heightt: 16px;
+}
+div#body div#header div#lang img.cz {
+	float: left;
+}
+div#body div#header div#lang img.en {
+	float: right;
 }
 
 
@@ -120,42 +168,129 @@ div#body div#nav ul li a {
 	color: #ffffff;
 	font-size: 18px;
 }
+div#body div#nav ul li.active a {
+	background: #115797 url('background_images/sipka_menu.png') bottom center no-repeat;
+}
+div#body div#nav ul li a:hover {
+	background: #115797 url('background_images/sipka_hover.png') bottom center no-repeat;
+}
+
 
 /***
  *Slider
  ***/
-div#body div#slide {
+div#body div.slide {
+	position: relative;
 	width: 960px;
 	height: 292px;
 	margin-top: 32px;
 	margin-bottom: 23px; 
 }
+div#body div.slide img.front_image {
+	display: none;
+	position: absolute;
+	width: 960px;
+	height: 277px;
+}
+div#body div.slide img.active {
+	display: inline-block;
+}
+div#body div.slide div#text {
+	width: 399px;
+	height: 136px;
+	position: absolute;
+	background-image: url('background_images/intro_text.png');
+	background-repeat: no-repeat;
+	margin: 38px 0 0 32px;
+	padding: 32px 22px;
+}
+div#body div.slide div#text h1 {
+	font-size: 28px;
+	color: #00396d;
+	font-weight: bold;
+}
+div#body div.slide div#text p {
+	margin: 12px 0 0 0;
+	padding: 0;
+}
+div#body div.slide div.switches {
+	width: 150px;
+	height: 15px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	padding-left: 32px;
+}
+div#body div.slide div.switches a.switch {
+	display: block;
+	float: left;
+	position: relative;
+	width: 15px;
+	height: 15px;
+	background-color: #115797;
+	margin-right: 10px;
+}
+div#body div.slide div.switches a.active {
+	width: 15px;
+	height: 30px;
+	top: -15px;
+	background-color: #009fda;
+	margin-right: 10px;
+}
+
 
 /***
  *Nadchazejici akce
  ***/
 div#body div#nadchazejici {
-	width: 250px;
-	height: 143px;
+	width: 186px;
+	height: 93px;
 	margin-top: 17px;
 	margin-bottom: 34px;
+}
+div#body div#nadchazejici p {
+	font-size: 12px;
+	color: #000000;
+	margin: 9px 0 0 0;
+}
+div#body div#nadchazejici p span {
+	font-size: 14px;
+	color: #009ee0;
+	text-decoration: underline;
 }
 
 /***
  *Vyhledavani
  ***/
 div#body div#vyhledavani {
-	width: 250px;
+	width: 186px;
 	height: 160px;
+}
+div#body div#vyhledavani form input#search {
+	width: 128px;
+	height: 10px;
+	float: left;
+	padding: 10px;
+	margin-top: 20px;
+	background-image: url('background_images/search.png');
+	background-repeat: no-repeat;
+}
+div#body div#vyhledavani form input#submit {
+	width: 32px;
+	height: 30px;
+	margin-top: 20px;
+	margin-left: 5px;
+	background-image: url('background_images/submit.png');
+	background-repeat: no-repeat;
 }
 
 /***
  *Obsah
  ***/
 div#body div#obsah {
-	width: 664px;
+	width: 600px;
 	height: 342px;
-	float: right;
+	padding: 0 32px;
 	margin-bottom: 9px;
 	background-image: url('background_images/background_uvod_obsah.jpg');
 }
@@ -164,22 +299,107 @@ div#body div#obsah h2 {
 	padding: 0;
 	font-size: 28px;
 	color: #00396d;
+	font-weight: bold;
+}
+div#body div#obsah>div {
+	width: 183px;
+	height: 55px;
+	position: relative;
+	float: left;
+	padding-left: 85px;
+	margin: 20px 14px 0 0;
+	font-size: 16px;
+	font-weight: bold;
+	color: #00396d;
+	padding-top: 15px;
+	background: url('background_images/gradient.png') 20px 0 no-repeat;
+}
+div#body div#obsah div#data_mining {
+	padding-top: 25px;
+	height: 45px;
+}
+div#body div#obsah>div>div.icons {
+	width: 70px;
+	height: 70px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+div#body div#obsah div#data_mining div.icons {
+	background: url('background_images/icons.png') 0 0 no-repeat;
+}
+div#body div#obsah div#zpracovani_ak div.icons {
+	background: url('background_images/icons.png') -70px 0 no-repeat;
+}
+div#body div#obsah div#interakce div.icons {
+	background: url('background_images/icons.png') -140px 0 no-repeat;
+}
+div#body div#obsah div#zpracovani_med div.icons {
+	background: url('background_images/icons.png') -210px 0 no-repeat;
+}
+div#body div#obsah div#neortogonalni div.icons {
+	background: url('background_images/icons.png') -280px 0 no-repeat;
 }
 
 /***
  *Aktualni akce
  ***/
-div#body div#aktualni {
-	width: 664px;
-	height: 180px;
-	float: right;
+div#body div.right div#aktualni {
+	width: 600px;
+	height: 140px;
 	margin-top: 17px;
+}
+div#aktualni div.left {
+	width: 285px;
+	float: left;
+}
+div#aktualni div.right {
+	width: 285px;
+	float: right;
+}
+div#body div.right div#aktualni p {
+	font-size: 12px;
+	color: #000000;
+	margin: 10px 0 20px 0;
+}
+div#body div.right div#aktualni p a,div#body div.right div#aktualni p span {
+	color: #009ee0;
+	text-decoration: underline;
 }
 
 /***
  *Paticka
  ***/
 div#footer {
-	
+	width: 960px;
+	height: 153px;
+	margin: 0 auto;
+	padding: 0px 32px 20px 32px;
+	background-color: #ffffff;
+	position: relative;
+	border: 0px dashed #115797;
+}
+div#footer div.left {
+	width: 251px;
+	border-top: 1px solid #115797;
+	float: left;
+}
+div#footer div.left ul {
+	list-style: none;
+	padding: 0;
+	margin-top: 20px;
+	font-size: 12px;
+	line-height: 2em;
+}
+div#footer div.left ul li a {
+	text-decoration: underline;
+	color: #00aeef;
+}
+div#footer div.right {
+	width: 696px;
+	height: 152px;
+	border-top: 1px solid #115797;
+	float: right;
+	background: #ffffff url('background_images/footer.png') 58px 0px no-repeat;
 }
 
