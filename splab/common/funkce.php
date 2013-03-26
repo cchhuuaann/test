@@ -336,7 +336,53 @@ function vykresli_header($title=""){
 		<title><?= htmlspecialchars($title) ?></title>
 <?php
 }
+
+/**
+ *Funkce pro vykresleni slideru 
+ */
+function vykresli_slider(){
+?>
+	<div class="slide">
+		<img class="front_image first active" alt="" src="../images/intro/intro_1.jpg" />
+		<img class="front_image" alt="" src="../images/intro/intro_2.jpg" />
+		<img class="front_image" alt="" src="../images/intro/intro_3.jpg" />
+		<img class="front_image" alt="" src="../images/intro/intro_4.jpg" />
+		<img class="front_image" alt="" src="../images/intro/intro_5.jpg" />
+		<img class="front_image" alt="" src="../images/intro/intro_6.jpg" />
+		<div id="text">
+			<h1>Signal processing laboratory</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget lacus vulputate orci cursus semper sit amet Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget lacus vulputate orci cursus mi.</p>
+		</div>
+		<div class="switches">
+			<a class="switch active" href="" rel="1"></a>
+			<a class="switch" href="" rel="2"></a>
+			<a class="switch" href="" rel="3"></a>
+			<a class="switch" href="" rel="4"></a>
+			<a class="switch" href="" rel="5"></a>
+			<a class="switch" href="" rel="6"></a>
+		</div>
+	</div>
+<?php
+}
+
+/**
+ *Funkce pro vykresleni submenu v zavislosti na strance 
+ */
+function vykresli_submenu($model,$nav) {
+	global $submenu;
+	echo "<div class=\"submenu\"><ul>";
 	
+	foreach($submenu[$model] as $value) {
+		$adresa = URL . "{$model}/{$nav}.php";
+		echo "<li><a href=\"{$adresa}\">{$value}</a></li>";
+	}
+	
+	echo "</ul></div>";
+	
+	if($model == 'vyzkum') {
+		echo "<div class=\"submenu\"><ul><li>Informace pro firmy</li></ul></div>";
+	}
+}
 	
 	
 	
