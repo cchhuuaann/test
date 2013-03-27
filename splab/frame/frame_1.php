@@ -39,14 +39,21 @@
 ?>
 				
 				<div class="info" id="nadchazejici">
-					<h2>NADHÁZEJÍCÍ AKCE</h2>
-					<p>
-						<span>21.7.2011</span>
-					</p>
-					<p>
-						Telecommunication and Signal<br />Processing conference<br />v Budapešti
-					</p>
+				<?php
+					
+					$query = "SELECT id,nadpis,podnadpis,datum,UNIX_TIMESTAMP(datum) AS datum_timestamp FROM novinky WHERE typ=0 ORDER BY datum ASC LIMIT 0,1";
+					$result = dotaz_db($query);
+					
+					$row = mysql_fetch_assoc($result);
+					echo "<h2><a href=\"" . URL . "nadchazejici_akce?nav=detail&id=" . $row['id'] . "\">" . $row['nadpis'] . "</a></h2>";
+					echo "<p><span>" . date('d.m.Y',$row['datum_timestamp']) . "</span></p>";
+					echo "<p>" . $row['podnadpis'] . "</p>";
+						
+					echo "<div class=\"vice\"><a href=\"" . URL . "nadchazejici_akce" . "\">více...</a></div>";
+					
+				?>
 				</div>
+				
 				<div class="info" id="vyhledavani">
 					<h2>VYHLEDÁVÁNÍ</h2>
 					<form action="" method="get">
@@ -60,15 +67,15 @@
 			<div class="right">
 			
 <?php
-	/*
-	if(!$error) {
-		$cesta = "../actions/{$model}/index.php";
+	
+	if($error) {
+		$cesta = "actions/404/index.php";
 	} else {
-		$cesta = "../actions/404/index.php";
+		$cesta = "actions/{$model}/{$nav}.php";
 	} 
 	
 	require($cesta);
-	*/
+	
 ?>
 				
 			</div>

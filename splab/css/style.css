@@ -6,6 +6,7 @@ div,
 img,
 h1,
 h2,
+h3,
 a,
 form,
 input {
@@ -65,6 +66,11 @@ div#body div.info h2 {
   font-weight: bold;
   color: #00396d;
 }
+div#body div.info h2 a {
+  font-size: 16px;
+  font-weight: bold;
+  color: #00396d;
+}
 div#body div.info:before {
   content: "";
   display: block;
@@ -86,6 +92,12 @@ div#body>div.right {
   width: 664px;
   height: auto;
   margin-top: 23px;
+}
+div#body div.page {
+  width: 600px;
+  height: 342px;
+  padding: 0 32px;
+  margin-bottom: 9px;
 }
 .clear {
   clear: both;
@@ -249,11 +261,16 @@ div#body div.left div.submenu:after {
   left: 0px;
   background: url('background_images/after_submenu.png') 0 0 no-repeat;
 }
-div#body div.left div.submenu ul {
+div#body div.left div.submenu>ul {
   list-style: none;
   padding: 0;
 }
-div#body div.left div.submenu ul li a {
+div#body div.left div.submenu li ul {
+  list-style: disc;
+  padding-left: 8px;
+  margin-left: 50px;
+}
+div#body div.left div.submenu>ul>li>a {
   position: relative;
   display: block;
   padding-left: 17px;
@@ -262,13 +279,26 @@ div#body div.left div.submenu ul li a {
   font-weight: normal;
   color: #115797;
 }
-div#body div.left div.submenu ul li a:hover {
+div#body div.left div.submenu li ul li {
+  color: #f26700;
+  margin: 5px 0px;
+}
+div#body div.left div.submenu li ul li a {
+  font-size: 12px;
+  font-weight: normal;
+  color: #115797;
+}
+div#body div.left div.submenu li ul li a:hover {
   font-weight: bold;
 }
-div#body div.left div.submenu ul li a.active {
+div#body div.left div.submenu>ul>li>a:hover {
   font-weight: bold;
 }
-div#body div.left div.submenu ul li a:before {
+div#body div.left div.submenu>ul>li>a.active {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+div#body div.left div.submenu>ul>li>a:before {
   content: "";
   display: block;
   position: absolute;
@@ -278,17 +308,31 @@ div#body div.left div.submenu ul li a:before {
   left: 0px;
   background: url('background_images/sipka_submenu.png') 0 0 no-repeat;
 }
-div#body div.left div.submenu ul li a:hover:before {
+div#body div.left div.submenu>ul>li>a.active:before {
+  background: url('background_images/sipka_submenu.png') -14px 0 no-repeat;
+}
+div#body div.left div.submenu>ul>li>a:hover:before {
   background: url('background_images/sipka_submenu.png') -7px 0 no-repeat;
 }
-div#body div.left div.submenu ul li a.active:before {
-  background: url('background_images/sipka_submenu.png') -14px 0 no-repeat;
+div#body div.right div#cesta {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+  color: #115797;
+}
+div#body div.right div#cesta a {
+  text-decoration: underline;
+  color: #115797;
 }
 div#body div#nadchazejici {
   width: 186px;
-  height: 93px;
+  min-height: 93px;
+  height: auto;
   margin-top: 17px;
   margin-bottom: 34px;
+}
+div#body div#nadchazejici h2 a {
+  text-decoration: underline;
 }
 div#body div#nadchazejici p {
   font-size: 12px;
@@ -296,6 +340,37 @@ div#body div#nadchazejici p {
   margin: 9px 0 0 0;
 }
 div#body div#nadchazejici p span {
+  font-size: 14px;
+  color: #009ee0;
+  text-decoration: underline;
+}
+div#body div#nadchazejici div.vice {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+div#body div#nadchazejici div.vice a {
+  color: #00396d;
+}
+div#body div.right div.novinky {
+  width: 600px;
+  height: auto;
+  padding: 10px 32px;
+  margin-bottom: 10px;
+  border: 1px solid #00396d;
+}
+div#body div.right div.novinky h2,
+div#body div.right div.novinky h2 a {
+  font-size: 16px;
+  font-weight: bold;
+  color: #00396d;
+}
+div#body div.right div.novinky p {
+  font-size: 12px;
+  color: #000000;
+  margin: 5px 0 0 0;
+}
+div#body div.right div.novinky p span {
   font-size: 14px;
   color: #009ee0;
   text-decoration: underline;
@@ -322,13 +397,9 @@ div#body div#vyhledavani form input#submit {
   background-repeat: no-repeat;
 }
 div#body div#obsah {
-  width: 600px;
-  height: 342px;
-  padding: 0 32px;
-  margin-bottom: 9px;
   background-image: url('background_images/background_uvod_obsah.jpg');
 }
-div#body div#obsah h2 {
+div#body div.page h2 {
   margin: 0;
   padding: 0;
   font-size: 28px;
@@ -374,10 +445,70 @@ div#body div#obsah div#zpracovani_med div.icons {
 div#body div#obsah div#neortogonalni div.icons {
   background: url('background_images/icons.png') -280px 0 no-repeat;
 }
+div#body div#vyzkum {
+  height: auto;
+  margin-bottom: 40px;
+}
+div#body div#vyzkum ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+div#body div#vyzkum ul li {
+  position: relative;
+  padding-top: 10px;
+  height: 60px;
+  margin-left: 90px;
+  margin-bottom: 20px;
+}
+div#body div#vyzkum ul li:before {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  top: 0px;
+  left: -90px;
+  background: url('background_images/icons.png') 0 0 no-repeat;
+}
+div#body div#vyzkum ul li#data-mining:before {
+  background-position: 0 0;
+}
+div#body div#vyzkum ul li#interakce_clovek-stroj:before {
+  background-position: -140px 0;
+}
+div#body div#vyzkum ul li#neortogonalni_reprezentace_signalu:before {
+  background-position: -280px 0;
+}
+div#body div#vyzkum ul li#zpracovani_akustickych_signalu:before {
+  background-position: -70px 0;
+}
+div#body div#vyzkum ul li#zpracovani_medicinskych_signalu:before {
+  background-position: -210px 0;
+}
+div#body div#vyzkum ul li h3 a {
+  font-size: 16px;
+  color: #00396d;
+}
+div#body div#vyzkum ul li h3 a:hover {
+  text-decoration: underline;
+}
+div#body div#vyzkum ul li p {
+  margin: 7px 0px 0px 0px;
+}
 div#body div.right div#aktualni {
   width: 600px;
   height: 140px;
+  position: relative;
   margin-top: 17px;
+}
+div#body div#aktualni div.vice {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+div#body div#aktualni div.vice a {
+  color: #00396d;
 }
 div#aktualni div.left {
   width: 285px;
@@ -392,8 +523,18 @@ div#body div.right div#aktualni p {
   color: #000000;
   margin: 10px 0 20px 0;
 }
+div#body div.right div#novinky p {
+  font-size: 12px;
+  color: #000000;
+  margin: 10px 0 20px 0;
+}
 div#body div.right div#aktualni p a,
 div#body div.right div#aktualni p span {
+  color: #009ee0;
+  text-decoration: underline;
+}
+div#body div.right div.novinky p a,
+div#body div.right div#novinky p span {
   color: #009ee0;
   text-decoration: underline;
 }

@@ -2,7 +2,7 @@
 
 ?>
 
-<div id="obsah">
+<div class="page" id="obsah">
 	<h2>Výzkum v oblastech</h2>
 			
 	<div id="data_mining">
@@ -31,18 +31,7 @@
 	</div>
 				
 </div>
-			
-<div class="info clear" id="aktualni">
-	<div class="left">
-		<h2>AKTUÁLNÍ INFORMACE</h2>
-		<p><span>Uvedení prototypu detektoru emocí</span> Maecenas ullamcorper tellus ut enim dignissim ortis.</p>
-		<p>12.7.2011 <a href="">zobrazit celou zprávu</a></p>
-	</div>
-		
-	<div class="right">
-		<h2>AKTUÁLNÍ INFORMACE</h2>
-		<p><span>Uvedení prototypu detektoru emocí</span> Maecenas ullamcorper tellus ut enim dignissim ortis.</p>
-		<p>12.7.2011 <a href="">zobrazit celou zprávu</a></p>
-	</div>
-				
-</div>
+
+<?php 
+	vykresli_aktual_info();
+?>

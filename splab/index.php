@@ -2,6 +2,7 @@
 	session_start();
 	
 	require('common/config.php');
+	require('common/db.php');
 	require('common/funkce.php');
 	
 /*
@@ -16,21 +17,38 @@
  * konec prevodu
  */
 
-	$frame_number = 1;
-	
 	$error = false;
 	
 	if(!isset($_GET['model'])) {
+		
+		if(isset($_GET['nav'])) {
+			$error = true;
+		}
 		$model = $vychozi_model;
 		$nav = $povolene_akce[$model][0];
+		
 	} else if(in_array($_GET['model'], array_keys($povolene_akce))) {
+		
 		$model = $_GET['model'];
-		$nav = $povolene_akce[$model][0];
+		
+		if(!isset($_GET['nav'])) {
+			$nav = $povolene_akce[$model][0];
+		} else if(in_array($_GET['nav'], array_keys($povolene_akce[$model]))) {
+			$nav = $_GET['nav'];
+			
+		} else {
+			$nav = $_GET['nav'];
+			$error = true;
+		}
+		
+		
 	} else {
+		
 		$model = $_GET['model'];
 		$error = true;
+		
 	}
-	
+		
 	if($error) {
 		header("HTTP/1.0 404 Not Found");
 	} else {

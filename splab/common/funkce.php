@@ -287,7 +287,7 @@ function make_update($table, $array, $where) {
  * 
  */	
 function vykresli_menu(){
-	global $menu,$model,$nav;
+	global $povolene_akce,$menu,$submenu,$model,$nav;
 	
 	echo "<div id=\"nav\"><ul>";
 	
@@ -297,7 +297,7 @@ function vykresli_menu(){
 	foreach($menu as $value) {
 		$i += 1;
 		
-		if($model == $value['model'] && $nav == $value['action']) {
+		if($model == $value['model'] && in_array($nav, $povolene_akce[$value['model']]) /*$nav == $value['action']*/) {
 			
 			if($count == $i) {
 				$class = " class=\"active last\"";
@@ -366,27 +366,120 @@ function vykresli_slider(){
 }
 
 /**
+ * funkce pro vykresleni info aktualnich informaci
+ */
+function vykresli_aktual_info() {
+
+	echo "<div class=\"info clear\" id=\"aktualni\">";
+
+	$query = "SELECT id,nadpis,podnadpis,datum,UNIX_TIMESTAMP(datum) AS datum_timestamp FROM novinky WHERE typ=1 ORDER BY datum ASC LIMIT 0,2";
+	$result = dotaz_db($query);
+
+	$class = "class=\"left\"";
+	
+	while($row = mysql_fetch_assoc($result)) {
+		echo "<div {$class}>";
+		echo "<h2>" . $row['nadpis'] . "</h2>";
+		echo "<p>" . $row['podnadpis'] . "</p>";
+		echo "<p>" . date('d.m.Y',$row['datum_timestamp']) . " <a href=\"" . URL . "aktualni_informace?nav=detail&id=" . $row['id'] . "\">zobrazit celou zprávu</a></p>";
+		$class="class=\"right\"";
+		echo "</div>";
+	}
+	echo "<div class=\"vice\"><a href=\"" . URL . "aktualni_informace" . "\">více...</a></div>";
+	
+	/*
+	<div class="left">
+		<h2>AKTUÁLNÍ INFORMACE</h2>
+		<p><span>Uvedení prototypu detektoru emocí</span> Maecenas ullamcorper tellus ut enim dignissim ortis.</p>
+		<p>12.7.2011 <a href="">zobrazit celou zprávu</a></p>
+	</div>
+		
+	<div class="right">
+		<h2>AKTUÁLNÍ INFORMACE</h2>
+		<p><span>Uvedení prototypu detektoru emocí</span> Maecenas ullamcorper tellus ut enim dignissim ortis.</p>
+		<p>12.7.2011 <a href="">zobrazit celou zprávu</a></p>
+	</div>
+	*/
+				
+	echo "</div>";
+}
+
+/**
  *Funkce pro vykresleni submenu v zavislosti na strance 
+ *@param - nazev podstranky z menu
+ *@param - nazev podstranky z submenu
  */
 function vykresli_submenu($model,$nav) {
 	global $submenu;
+	
 	echo "<div class=\"submenu\"><ul>";
 	
-	foreach($submenu[$model] as $value) {
-		$adresa = URL . "{$model}/{$nav}.php";
-		echo "<li><a href=\"{$adresa}\">{$value}</a></li>";
+	foreach($submenu[$model] as $key => $value) {
+		$adresa = URL . "{$model}?nav={$key}";
+		if ($key == $nav) {
+			$class = "class=\"active\"";
+		} else {
+			$class = "";
+		}
+		echo "<li><a href=\"{$adresa}\" {$class}>{$value}</a></li>";
+		if($class != "") {
+			echo "<li>";
+			
+			echo <<<ABC
+				<ul>
+ 					<li>
+ 						<a href="">aktuálně</a>
+ 					</li>
+ 					<li>
+ 						<a href="">členové</a>
+ 					</li>
+ 					<li>
+ 						<a href="">laboratoře</a>
+ 					</li>
+ 					<li>
+ 						<a href="">projekty</a>
+ 					</li>
+ 				</ul>		
+ABC;
+			
+			
+			echo "</li>";
+		}
+		
 	}
 	
 	echo "</ul></div>";
 	
 	if($model == 'vyzkum') {
-		echo "<div class=\"submenu\"><ul><li>Informace pro firmy</li></ul></div>";
+		$adresa = URL . "{$model}?nav=informace_pro_firmy"; 
+		echo "<div class=\"submenu\"><ul><li><a href=\"{$adresa}\">Informace pro firmy</a></li></ul></div>";
 	}
 }
+
+/**
+ * funkce pro zobrazeni navigace 
+ */
+function vykresli_navigaci($model="",$nav="") {
+	global $menu,$submenu;	
+
+	$cesta = URL;
+	$navigace = "<a href=\"{$cesta}\">Úvod</a>";
 	
+	if($model != "") {
+		$cesta .= $model;
+		$count = count($menu);
+		for($i = 0; $i < $count; $i++) {
+			if($menu[$i]['model'] == $model) {
+				$navigace .= " &gt; <a href=\"{$cesta}\">" . $menu[$i]['name'] . "</a>";
+				break;
+			}
+		}
+	}
 	
+	if($nav != "") {
+		$cesta .= "?nav=".$nav;
+		$navigace .= " &gt; <a href=\"{$cesta}\">" . $submenu[$model][$nav] . "</a>";
+	}
 	
-	
-	
-	
-	
+	echo $navigace; 
+}
