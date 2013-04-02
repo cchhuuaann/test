@@ -452,7 +452,7 @@ ABC;
 	
 	if($model == 'vyzkum') {
 		$adresa = URL . "{$model}?nav=informace_pro_firmy"; 
-		echo "<div class=\"submenu\"><ul><li><a href=\"{$adresa}\">Informace pro firmy</a></li></ul></div>";
+		echo "<div class=\"submenu second\"><ul><li><a href=\"{$adresa}\">Informace pro firmy</a></li></ul></div>";
 	}
 }
 
