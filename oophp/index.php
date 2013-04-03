@@ -2,12 +2,45 @@
 
 	header("Content-Type: text/html; Charset=utf-8");
 
-	class Zakaznik {
-		private $name;
-		private $age;
-		private $company;
-		private $data = array();
+	abstract class Clovek {
+		protected $name;
+		protected $age;
+		protected $data = array();
+		
+		public function __set($name,$value) {
+			//echo "Setting '$name' to '$value'<br />\n";
+			$this->data[$name] = $value;
+		}
+		
+		public function __get($name) {
+			//echo "Getting '$name'<br />\n";
+			if(array_key_exists($name, $this->data)) {
+				return $this->data[$name];
+			}
+				
+			$trace = debug_backtrace();
+			trigger_error(
+			'Undefined property via __get(): ' . $name .
+			' in ' . $trace[0]['file'] .
+			' on line ' . $trace[0]['line'],
+			E_USER_NOTICE);
+			return NULL;
+		}
+		
+		abstract public function getInfo();
+		
+		public function getName() {
+			return $this->name;
+		}
+		
+		public function getAge() {
+			return $this->age;
+		}
+	}
+	
+	class Zakaznik extends Clovek {
 		const AGEMAX = 30;
+		private $company;
 		
 		public function __construct($name,$age,$company) {
 			$this->name = $name;
@@ -30,24 +63,8 @@
 			return "";
 		}
 		
-		public function __set($name,$value) {
-			//echo "Setting '$name' to '$value'<br />\n";
-			$this->data[$name] = $value;
-		}
-		
-		public function __get($name) {
-			//echo "Getting '$name'<br />\n";
-			if(array_key_exists($name, $this->data)) {
-				return $this->data[$name];
-			}
-			
-			$trace = debug_backtrace();
-			trigger_error(
-				'Undefined property via __get(): ' . $name .
-				' in ' . $trace[0]['file'] .
-				' on line ' . $trace[0]['line'],
-				E_USER_NOTICE);
-			return NULL;
+		public function getInfo() {
+			return $this->__toString();
 		}
 	}
 	
@@ -68,18 +85,9 @@
 	}
 	
 	foreach($employee as $value) {
-		echo $value;
+		echo $value->getInfo();
 		echo "<br /><br /><br />";
 	}
 	
-	$arr = array(
-			'a'=>"auto", 'b'=>"kolo"
-			);
-
-			$arr = (object) $arr;
-			
-	var_dump($arr);
-	
-	var_dump($arr->a);
 	
 	
