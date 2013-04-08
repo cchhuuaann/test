@@ -134,8 +134,15 @@
 			return $result;
 		}
 		
-		public function UpdateStored($tabulka,$where_cast) {
-			;
+		public function updateStored($tabulka,$where_cast) {
+			$update_arr = array();
+			
+			foreach($this->buffer as $key => $value) {
+				$update_arr[] = "{$key}={$value}";
+			}
+			
+			
+			
 		} 
 	}
 	
@@ -148,14 +155,15 @@
 		);
 	
 	$arr = array(
-			"name"=>"John",
-			"age"=> 24,
-			"company"=>"www"
+			"name"=>"Mike",
+			"age"=> 21,
+			"company"=>"xxx"
 		);
 	
 	$databaze = Database::getInstance($config_array);
 	$databaze->store($arr);
 	var_dump($databaze->insertStored('zamestnanec'));
+	$databaze->updateStored("zamestnanec","");
 	
 	
 	
