@@ -18,12 +18,12 @@
 			
 			$this->linkIdentifier = mysql_connect($config_arr['server'],$config_arr['user'],$config_arr['pass']);
 			if(!$this->linkIdentifier) {
-				die('Could not connect: ' . mysql_error());
+				throw new Exception('Could not connect: ' . mysql_error());
 			}
 			
 			$select_db = mysql_select_db($config_arr['db_name'],$this->linkIdentifier);
 			if(!$select_db) {
-				die('Can\'t use ' . $config_arr['db_name'] . ' : ' . mysql_error());
+				throw new Exception('Can\'t use ' . $config_arr['db_name'] . ' : ' . mysql_error());
 			}
 			
 			mysql_query('SET NAMES ' . $config_arr['encoding']);
@@ -64,26 +64,40 @@
 			
 			return self::$instance;
 		}
-				
-		public function query($dotaz) {
+
+		private function _callQuery($dotaz) {
+			return mysql_query($dotaz,$this->linkIdentifier);
+		}
+		
+		
+		private function _escapeQuery($dotaz) {
+			$parametry = func_get_args();
 			$dotaz_arr = explode('?', $dotaz);
+			array_shift($parametry);
+			var_dump($parametry);
 			$num_args = func_num_args();
 			$num_dotaz = count($dotaz_arr);
-			
+				
 			if($num_args != $num_dotaz) {
-				die('Chyba: spatny pocet argumentu.');
+				throw new Exception('Chyba: spatny pocet argumentu.');
 			}
 			
-			$query = $dotaz_arr[0];
+			$dotaz = $dotaz_arr[0];
+			array_shift($dotaz_arr);
 			
-			for($i = 1; $i < ($num_args); $i++) {
-				$arg = func_get_arg($i);
-				$query .= $this->mysqlQuote($arg) . $dotaz_arr[$i];
+			foreach($parametry as $value) {
+				$dotaz .= $this->mysqlQuote($value) . $dotaz_arr[0];
+				array_shift($dotaz_arr);
 			}
-			var_dump($query);
-			$result = mysql_query($query,$this->linkIdentifier);
 			
-			return $result;
+			return $dotaz;
+		}
+		
+		public function query($dotaz) {
+			$param_arr = func_get_args();
+			$dotaz = call_user_func_array(array($this,"_escapeQuery"), $param_arr);
+			
+			return $this->_callQuery($dotaz);
 		}
 		
 		public function getRows($dotaz) {
@@ -127,22 +141,29 @@
 			$columns = implode(',', array_keys($this->buffer));
 			$values = implode('\',\'', $this->buffer);
 			
-			$query = "INSERT INTO {$tabulka} ({$columns}) VALUES ('{$values}')";
-			var_dump($query);
-			$result = mysql_query($query,$this->linkIdentifier);
+			$dotaz = "INSERT INTO {$tabulka} ({$columns}) VALUES ('{$values}')";
 			
-			return $result;
+			return $this->_callQuery($dotaz);
 		}
 		
 		public function updateStored($tabulka,$where_cast) {
 			$update_arr = array();
 			
 			foreach($this->buffer as $key => $value) {
-				$update_arr[] = "{$key}={$value}";
+				$update_arr[] = "{$key}='{$value}'";
 			}
 			
+			$update = implode(', ', $update_arr);
 			
+			if(func_num_args() > 2) {
+				$argumenty = func_get_args();
+				array_shift($argumenty);
+				$where_cast = call_user_func_array(array($this,"_escapeQuery"), $argumenty);
+			}
 			
+			$dotaz = "UPDATE {$tabulka} SET {$update} {$where_cast}";
+			var_dump($dotaz);
+			return $this->_callQuery($dotaz);
 		} 
 	}
 	
@@ -155,16 +176,35 @@
 		);
 	
 	$arr = array(
+			"name"=>"John",
+			"age"=> 24,
+			"company"=>"www"
+		);
+	
+	$arr2 = array(
 			"name"=>"Mike",
 			"age"=> 21,
 			"company"=>"xxx"
-		);
+	);
 	
-	$databaze = Database::getInstance($config_array);
-	$databaze->store($arr);
-	var_dump($databaze->insertStored('zamestnanec'));
-	$databaze->updateStored("zamestnanec","");
+	$param_arr = array(
+			"SELECT ? ? FROM ?",
+			"id",
+			"name",
+			"zamestnanec"
+	);
 	
+	try {
+		$databaze = Database::getInstance($config_array);
+		$databaze->store($arr2);
+		var_dump($databaze->insertStored('zamestnanec'));
+		var_dump($databaze->updateStored("zamestnanec","WHERE id=2"));
+		
+		
+		//call_user_func_array(array($databaze,"query"), $param_arr);
+	} catch(Exception $e) {
+		echo $e->getMessage();
+	}
 	
 	
 	
