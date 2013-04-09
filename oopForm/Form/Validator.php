@@ -1,6 +1,6 @@
 <?php
 
-	abstract class FormValidator {
+	abstract class Form_Validator {
 		
 		/**
 		 * 
