@@ -2,12 +2,8 @@
 
 	class Form_Item_TextArea extends Form_Item {
 
-		public function __construct($options = array()) {
+		public function __construct($mandatory = false,$options = array()) {
 			parent::__construct($options);
-		}
-		
-		public function setError() {
-			;
 		}
 		
 		function draw() {

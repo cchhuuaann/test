@@ -1,13 +1,11 @@
 <?php
 
 	abstract class Form_Validator {
+		protected $errorMessage = 'Obsahuje chybu';
 		
-		/**
-		 * 
-		 * @param unknown $value
-		 * @return true/false
-		 */
 		abstract public function isValid($value);
 		
-		abstract public function getErrorMessage();
+		public function getErrorMessage() {
+			return $this->errorMessage;
+		}
 	}

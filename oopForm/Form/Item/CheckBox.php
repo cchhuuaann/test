@@ -2,7 +2,7 @@
 
 	class Form_Item_CheckBox extends Form_Item {
 
-		public function __construct($options = array()) {
+		public function __construct($mandatory = false,$options = array()) {
 			parent::__construct($options);
 			$this->atributes['type'] = 'checkbox';
 		}
@@ -11,10 +11,6 @@
 			parent::populate($value);
 			$this->atributes['checked'] = 'checked';
 			echo $this->value;
-		}
-		
-		public function setError() {
-			;
 		}
 		
 		function draw() {

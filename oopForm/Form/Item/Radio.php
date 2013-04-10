@@ -2,36 +2,37 @@
 	
 	class Form_Item_Radio extends Form_Item {
 	
-		public function __construct($options = array()) {
+		public function __construct($mandatory = false,$options = array()) {
 			parent::__construct($options);
 			$this->atributes['type'] = 'radio';
 		}
-				
-		public function setError() {
-			;
-		}
 		
+		/**
+		 * @TODO: chyba ve vykreslovani, predelat
+		 * (non-PHPdoc)
+		 * @see Form_Item::draw()
+		 */
 		function draw() {
-			$value = "";
+			$hodnota = "";
 			if(isset($this->value)) {
-				$value = $this->value;
+				$hodnota = $this->value;
 			}
 			
 			echo "<label name='" . htmlspecialchars($this->atributes['name']) . "'>";
 			echo htmlspecialchars($this->label) . "</label><br />";
 		
-			foreach($this->multioptions as $key_a => $val_a) {
-				$this->atributes['value'] = $key_a;
+			foreach($this->multioptions as $key => $value) {
+				$this->atributes['value'] = $key;
 				$input = "<input ";
-				foreach($this->atributes as $key_b => $val_b) {
-					$input .= htmlspecialchars($key_b) . "='" . htmlspecialchars($val_b) . "' ";
+				foreach($this->atributes as $key => $val) {
+					$input .= htmlspecialchars($key) . "='" . htmlspecialchars($val) . "' ";
 				}
 				
-				if($value == $this->atributes['value']) {
+				if($hodnota == $this->atributes['value']) {
 					$input .= "checked='checked' ";
 				}
 				
-				$input .= "/><label name=" . htmlspecialchars($this->atributes['name']) . ">" . htmlspecialchars($val_a) . "</label><br />";
+				$input .= "/><label name=" . htmlspecialchars($this->atributes['name']) . ">" . htmlspecialchars($value) . "</label><br />";
 				
 				echo $input;
 				

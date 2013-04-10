@@ -2,14 +2,15 @@
 	
 	class Form_Item_Select extends Form_Item {
 
-		public function __construct($options = array()) {
+		public function __construct($mandatory = false,$options = array()) {
 			parent::__construct($options);
 		}
 		
-		public function setError() {
-			;
-		}
-		
+		/**
+		 * @TODO: Chyba pri vykreslovani, predelat
+		 * (non-PHPdoc)
+		 * @see Form_Item::draw()
+		 */
 		function draw() {
 			$value = "";
 			if(isset($this->value)) {

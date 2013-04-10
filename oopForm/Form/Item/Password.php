@@ -2,15 +2,11 @@
 	
 	class Form_Item_Password extends Form_Item {
 	
-		public function __construct($options = array()) {
+		public function __construct($mandatory = false,$options = array()) {
 			parent::__construct($options);
 			$this->atributes['type'] = 'password';
 		}
-	
-		public function setError() {
-			;
-		}
-		
+
 		function draw() {
 	
 			$input = "<label name=". htmlspecialchars($this->atributes['name']) . ">". htmlspecialchars($this->label) . "</label>";

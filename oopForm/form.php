@@ -1,8 +1,8 @@
 <?php
 
 	class Form {
-		
 		private $items = array();
+		private $groups = array();
 		
 		
 		public function __construct() {
@@ -20,9 +20,25 @@
 		 * @return - true/false validni/nevalidni 
 		 */
 		public function isValid($post) {
-			foreach($post as $key => $value) {
-				$this->items[$key]->isValid($value);
+			$return = true;
+			
+			foreach($this->items as $key => $value) {
+				if(isset($post[$key])) {
+					
+					if(!$value->isValid($post[$key])) {
+						$return = false;
+					}
+					
+				} else {
+					
+					if(!$value->isValid($post[$key] = '')) {
+						$return = false;
+					}
+					
+				}
 			}
+			
+			return $return;
 		}
 		
 		/**
@@ -40,7 +56,7 @@
 		 * Funkce pro vytvoreni noveho formularoveho prvku a pridani do pole prvku v Form 
 		 * @param String $name - jmeno noveho formularoveho prvku
 		 * @param Object $item - objekt typu formularoveho prvku text/password/select/checkbox/textarea/radio
-		 * @return - true/false podle podarilo/nepodarilo
+		 * @return - object/false podle podarilo/nepodarilo
 		 */
 		public function registerItem($name, $item) {
 			
@@ -48,29 +64,46 @@
 				$this->items[$name] = $item;
 				$this->items[$name]->setAtributes(array('name'=>$name));
 				$this->items[$name]->setAtributes(array('label'=>$name));
-				return true;
+				return $item;
 			} else {
 				return false;
 			}
 			
 		}
 		
-		
-		
 		/**
-		 * Funkce pro vykresleni celeho formulare
-		 * @return
+		 * Funkce vraci objekt prvku formulare
+		 * @param String $name: nazev prvku
+		 * @return Object: prvek formulare
 		 */
-		public function draw() {
-			echo "<form method='post'>";
-			foreach($this->items as $value) {
-				echo "<div>";
-				$value->draw();
-				echo "</div>";
-			}
-			echo "</form>";
+		public function getItem($name) {
+			return $this->items[$name];
 		}
 		
+		/**
+		 * Funkce prida novou skupinu prvku formulare
+		 * @param String $name - nazev skupiny
+		 * @param Array $elements - nazvu prvku
+		 */
+		public function addGroup($name, $elements) {
+			if(isset($this->groups[$name])) {
+				$this->groups[$name] = array_merge($elements,$this->groups[$name]);
+			} else {
+				$this->groups[$name] = $elements;
+			}
+		}
 		
-		
+		/**
+		 * Funkce vraci pole objektu prvku ktere patri do skupiny
+		 * @param String $name - nazev skupiny
+		 * @return Array - pole objektu prvku formulare
+		 */
+		public function getGroup($name) {
+			$arr = array();
+			foreach($this->groups[$name] as $val) {
+				$arr[] = $this->items[$val];
+			}
+			
+			return $arr;
+		}
 	}

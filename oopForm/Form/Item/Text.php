@@ -2,15 +2,11 @@
 
 	class Form_Item_Text extends Form_Item {
 		
-		public function __construct($options = array()) {
+		public function __construct($mandatory = false,$options = array()) {
 			parent::__construct($options);
 			$this->atributes['type'] = 'text';
 		}
 
-		public function setError() {
-			;
-		}
-		
 		function draw() {
 			
 			$input = "<label name=" . htmlspecialchars($this->atributes['name']) . ">" . htmlspecialchars($this->label) . "</label>";

@@ -4,19 +4,38 @@
 		
 		private $hasError = false;		
 		private $errors = array();
-
-		protected $validators = NULL;
+		private $validators = array();
+		
 		protected $value = NULL;
 		protected $label = NULL;
-		protected $multioptions = NULL;
+		protected $multioptions = array();
 		protected $atributes = array();
 		
 		/**
-		 * 
+		 * Funkce testujici samotnou hodnotu na vsech vaidatorech
+		 * @param unknown $value
+		 */
+		protected function testing($value) {
+			
+			foreach($this->validators as $val) {
+				if( !($val->isValid($value)) ) {
+					$this->hasError = true;
+						
+					$this->errors[] = $val->getErrorMessage();
+				}
+			}
+		}
+		
+		/**
+		 * Funkce spoustena pri vytvoreni objeku
+		 * @param: bool - Jestli je vyplneni hodnoty prvku povinne
 		 * @param Array $options - pole atributu pro prvek, 'label'=>'nastaveni popisu', 'multioptions'=>array(...) pro nastaveni select a radio
 		 */
-		public function __construct($options = array()) {			
+		public function __construct($mandatory = false,$options = array()) {		
 			$this->setAtributes($options);
+			if($mandatory) {
+				$this->addValidator(new Form_Validator_Mandatory($this->atributes['name']));
+			}
 		}
 		
 		public function __toString() {
@@ -24,11 +43,24 @@
 		}
 		
 		/**
-		 * 
+		 * Funkce overujici $value na vsech zadanych validatorech
+		 * @param $value - hodnota nebo pole hodnot
 		 * @return - true/false validni/nevalidni
 		 */
-		public function isValid() {
-			; //TODO
+		public function isValid($value) {
+			if(is_array($value)) {
+				foreach($value as $val) {
+					$this->testing($val);
+				}
+			} else {
+				$this->testing($value);
+			}
+			
+			if($this->hasError) {
+				return false;
+			} else {
+				return true;
+			}
 		}
 		
 		/**
@@ -58,35 +90,58 @@
 			}
 		}
 		
+		/**
+		 * Funkce vraci pole errors, ktere vznikly pri validaci
+		 * @return: array
+		 */
 		public function getErrors() {
-			; //TODO
+			return $this->errors;
 		}
 		
+		/**
+		 * Funkce vracejici true/false, jestli validace byla v poradku nebo ne
+		 * @return: bool
+		 */
 		public function hasError() {
-			; //TODO
+			if(empty($this->errors)) {
+				return false;
+			} else {
+				return true;
+			}
 		}
 		
 		/**
 		 * Funkce prida pole objeku validatoru pro validaci daneho prvku
-		 * @param unknown $validators
+		 * @param Array $validators
 		 */
-		public function addValidators($validators)
-		{
-			$this->validators = $validators; //TODO
+		public function addValidators($validators) {
+			foreach($validators as $val) {
+				$this->validators[get_class($val)] = $val;
+			}
 		}
 		
 		/**
-		 * Funkce prida objek validatoru do pole pro validaci daneho prvku
-		 * @param unknown $validator
+		 * Funkce prida objekt validatoru do pole pro validaci daneho prvku
+		 * @param Object $validator - (objekt validatoru)
 		 */
-		public function addValidator($validator)
-		{
-			$this->validators[] = $validator; //TODO
+		public function addValidator($validator) {
+			$this->validators[get_class($validator)] = $validator;
 		}		
+		
+		/**
+		 * Funkce zjistujici jestli ma prvek dany validator nastveny
+		 * @param String $name - jmeno validatoru
+		 */
+		public function hasValidator($name) {
+			if(array_key_exists($name, $this->validators)) {
+				return true;
+			} else {
+				return false;
+			}
+		}
 		
 		/**
 		 * Funkce pro vykresleni formularoveho prvku
 		 */
-		abstract public function draw();
-		abstract public function setError();		
+		abstract public function draw();	
 	}
