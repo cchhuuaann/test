@@ -25,14 +25,14 @@
 	$form = new Form;
 	
 	$prvky = array(
-		$form->registerItem('jmeno', new Form_Item_Text(true,array('label'=>'Jméno: ') )),
-		$form->registerItem('email', new Form_Item_Text(true,array('label'=>'Email: ') )),
-		$form->registerItem('heslo', new Form_Item_Password(true,array('label'=>'Heslo: ') )),
-		$form->registerItem('pohlavi', new Form_Item_Select(true,array('label'=>'Pohlaví: ','multioptions'=>$pohlavi) )),
-		$form->registerItem('auto', new Form_Item_Select(false,array('label'=>'Auto: ','multioptions'=>$auto) )),
-		$form->registerItem('poznamky', new Form_Item_TextArea(false,array('label'=>'Poznámky: ') )),
-		$form->registerItem('souhlasim', new Form_Item_Radio(true,array('label'=>'Souhlasím: ','multioptions'=>$souhlasim) )),
-		$form->registerItem('miniverze', new Form_Item_CheckBox(false,array('label'=>'Miniverze: ') ))
+		$form->registerItem('jmeno', new Form_Item_Text(true, array('label'=>'Jméno: ') )),
+		$form->registerItem('email', new Form_Item_Text(true, array('label'=>'Email: ') )),
+		$form->registerItem('heslo', new Form_Item_Password(true, array('label'=>'Heslo: ') )),
+		$form->registerItem('pohlavi', new Form_Item_Select(true, array('label'=>'Pohlaví: ','multioptions'=>$pohlavi,'multiple'=>'multiple') )),
+		$form->registerItem('auto', new Form_Item_Select(false, array('label'=>'Auto: ','multioptions'=>$auto,'multiple'=>'multiple') )),
+		$form->registerItem('poznamky', new Form_Item_TextArea(false, array('label'=>'Poznámky: ') )),
+		$form->registerItem('souhlasim', new Form_Item_Radio(true, array('label'=>'Souhlasím: ','multioptions'=>$souhlasim) )),
+		$form->registerItem('miniverze', new Form_Item_CheckBox(false, array('label'=>'Miniverze: ') ))
 	);
 	
 	if(!empty($_GET)) {

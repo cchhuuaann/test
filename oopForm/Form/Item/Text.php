@@ -3,7 +3,7 @@
 	class Form_Item_Text extends Form_Item {
 		
 		public function __construct($mandatory = false,$options = array()) {
-			parent::__construct($options);
+			parent::__construct($mandatory,$options);
 			$this->atributes['type'] = 'text';
 		}
 

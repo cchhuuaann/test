@@ -3,7 +3,7 @@
 	class Form_Item_Radio extends Form_Item {
 	
 		public function __construct($mandatory = false,$options = array()) {
-			parent::__construct($options);
+			parent::__construct($mandatory,$options);
 			$this->atributes['type'] = 'radio';
 		}
 		
@@ -18,9 +18,6 @@
 				$hodnota = $this->value;
 			}
 			
-			echo "<label name='" . htmlspecialchars($this->atributes['name']) . "'>";
-			echo htmlspecialchars($this->label) . "</label><br />";
-		
 			foreach($this->multioptions as $key => $value) {
 				$this->atributes['value'] = $key;
 				$input = "<input ";

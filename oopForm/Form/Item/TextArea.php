@@ -3,7 +3,7 @@
 	class Form_Item_TextArea extends Form_Item {
 
 		public function __construct($mandatory = false,$options = array()) {
-			parent::__construct($options);
+			parent::__construct($mandatory,$options);
 		}
 		
 		function draw() {
