@@ -35,11 +35,11 @@
 		$form->registerItem('miniverze', new Form_Item_CheckBox(false, array('label'=>'Miniverze: ') ))
 	);
 	
-	if(!empty($_GET)) {
-		if($form->isValid($_GET)) {
+	if(!empty($_POST)) {
+		if($form->isValid($_POST)) {
 			$hotovo = true;
 		} else {
-			$form->populate($_GET);
+			$form->populate($_POST);
 			$hotovo = false;
 		}
 	}
@@ -55,7 +55,7 @@
 			echo "<h2>Formular je odeslan a validni</h2>";
 		}
 	?>
-		<form method="get">
+		<form method="post">
 			<fieldset>
 				<legend>Vyplnit</legend>
 	<?php
