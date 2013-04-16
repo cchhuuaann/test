@@ -14,7 +14,7 @@
 		"server"=>"localhost",
 		"encoding"=>"utf-8"
 	);
-	
+
 	$hotovo = NULL;
 	$delete = false;
 	$database = Database::getInstance($config);
@@ -88,8 +88,6 @@
 	}
 	
 	$result = $database->query("SELECT * FROM person");
-	
-	
 
 ?><!doctype html>
 <html>
@@ -169,7 +167,7 @@
 		</form>
 		
 		<p>
-			<a href="http://test/xml/xml.php">XML dokument</a>
+			<a href="http://test/xml/xmlconvert.php">XML dokument</a>
 		</p>
 		
 	</body>
