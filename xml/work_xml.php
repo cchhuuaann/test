@@ -42,6 +42,29 @@
 	$root = "PERSONS";
 	$part = "person";
 	
+	
+	function getArrTwo(&$tmp,&$arr) {
+		
+		while($tmp->read()) {
+			
+			if($tmp->nodeType == XMLReader::END_ELEMENT) {
+				return;
+			} elseif($tmp->nodeType == XMLReader::ELEMENT) {
+				$arr[] = $tmp->name;
+				getArrTwo($tmp,$arr[]);
+			} elseif($tmp->nodeType == XMLReader::TEXT || $tmp->nodeType == XMLReader::NONE) {
+				$arr[] = $tmp->value;
+			}
+			
+			
+		}
+		
+		
+	}
+	
+	
+	
+	
 	function getArr($tmp,&$arr,$key = NULL) {
 		global $root,$part;
 		$i = 0;
@@ -52,7 +75,8 @@
 				
 			} elseif($tmp->nodeType == XMLReader::ELEMENT) {
 				if($key == NULL) {
-					getArr($tmp, $arr[],$i);
+					var_dump($arr);
+					getArr($tmp, $arr,$i);
 				} elseif($tmp->name == $part || $tmp->name == $root ) {
 					getArr($tmp, $arr[$key],$i);
 				} else {
@@ -65,7 +89,8 @@
 		}
 	}
 	
-	getArr($tmp,$arr);
+	//getArr($tmp,$arr);
+	getArrTwo($tmp,$arr);
 	
 	echo "<pre>";
 	var_dump($arr);
