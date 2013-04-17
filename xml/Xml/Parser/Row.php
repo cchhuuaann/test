@@ -2,6 +2,10 @@
 	class Xml_Parser_Row {
 		private $items = NULL;
 		
+		/**
+		 * Funkce zkontroluje validitu vsech prvku v $items
+		 * @return boolean
+		 */
 		public function isValid() {
 			$valid = true;
 			
