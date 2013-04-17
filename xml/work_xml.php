@@ -30,73 +30,17 @@
 	$xml = new Xml_Writer($header);
 	
 	$xml->createXml($list, $nazev,'person');
+
 	
-// xml parser
-//TODO: vubec nefunguje, doma dodelat!
-	$tmp = new XMLReader();
-	if(!$tmp->open('xml.xml')) {
-		echo 'Error open!<br/>';
-	}
+	$valid_elements = array('PERSONS','person','id','jmeno','plat','telefon','email','www','platova_trida');
 	
-	$arr = array();
-	$root = "PERSONS";
-	$part = "person";
+	$parser = new Xml_Parser('xml.xml', 'PERSONS', array('person'),$valid_elements);
+	
+	//$parser->process();
+	
+	echo $parser;
 	
 	
-	function getArrTwo(&$tmp,&$arr) {
-		
-		while($tmp->read()) {
-			
-			if($tmp->nodeType == XMLReader::END_ELEMENT) {
-				return;
-			} elseif($tmp->nodeType == XMLReader::ELEMENT) {
-				$arr[] = $tmp->name;
-				getArrTwo($tmp,$arr[]);
-			} elseif($tmp->nodeType == XMLReader::TEXT || $tmp->nodeType == XMLReader::NONE) {
-				$arr[] = $tmp->value;
-			}
-			
-			
-		}
-		
-		
-	}
-	
-	
-	
-	
-	function getArr($tmp,&$arr,$key = NULL) {
-		global $root,$part;
-		$i = 0;
-		while($tmp->read()) {
-			
-			if($tmp->nodeType == XMLReader::END_ELEMENT) {
-				return;
-				
-			} elseif($tmp->nodeType == XMLReader::ELEMENT) {
-				if($key == NULL) {
-					var_dump($arr);
-					getArr($tmp, $arr,$i);
-				} elseif($tmp->name == $part || $tmp->name == $root ) {
-					getArr($tmp, $arr[$key],$i);
-				} else {
-					getArr($tmp, $arr[$key],$tmp->name);
-				}
-				$i++;
-			} elseif($tmp->nodeType == XMLReader::TEXT || $tmp->nodeType == XMLReader::NONE) {
-				$arr[$key] = $tmp->value;
-			}
-		}
-	}
-	
-	//getArr($tmp,$arr);
-	getArrTwo($tmp,$arr);
-	
-	echo "<pre>";
-	var_dump($arr);
-	echo "</pre>";
-	
-// konec	
 	
 ?><!doctype html>
 <html>
