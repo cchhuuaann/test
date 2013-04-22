@@ -16,13 +16,31 @@
 		 */
 		private function drawHeader() {
 			$header = '<tr>';
-			$header .= '<th></th>';
+			
+			if(!$this->hasError()) {
+				$header .= '<th></th>';
+			}
+			
 			foreach($this->elements as $val) {
 				$header .= '<th>' . $val . '</th>';
 			}
 			$header .= '</tr>';
 			
 			return $header;
+		}
+		
+		/**
+		 * funkce zjistuje existenci chyby
+		 * @return boolean
+		 */
+		public function hasError() {
+			foreach($this->rows as $val) {
+				if($val->hasError()) {
+					return true;
+				}
+			}
+			
+			return false;
 		}
 		
 		/**
@@ -75,7 +93,7 @@
 
 			$this->oneRow = new Xml_Parser_Row();
 			foreach($this->elements as $key => $val) {
-				$this->oneRow->registerItem($key,$val);
+				$this->oneRow->registerItem($val/* , ... */);
 			}
 				
 			$xml = new XMLReader();
@@ -87,8 +105,12 @@
 			$this->data = $this->xmlToAssoc($xml);
 		}
 		
+		/**
+		 * Pri zavolani objektu se vypisou data z xml
+		 * v nem ulozena
+		 * @return string
+		 */
 		public function __toString() {
-			
 			echo "<pre>";
 			var_dump($this->data);
 			echo "</pre>";
@@ -96,26 +118,56 @@
 			return '';
 		}
 		
+		/**
+		 * Funkce naplni radky datama z xml
+		 */
 		public function process() {
 			foreach($this->data as $arr) {
 				$tmp = clone $this->oneRow;
 				$tmp->populate($arr);
 				$tmp->isValid();
-				$rows[] = $tmp;
+				$this->rows[] = $tmp;
 				unset($tmp);
 			}
 		}
 		
+		/**
+		 * Funkce nastavujici validatory pro jednotlive sloupce tabulky
+		 * @param array $arr: Assoc klic = nazev sloupce; value = pole validatoru
+		 */
+		public function addValidators($arr) {
+			
+			if(empty($this->rows)) {
+				$this->oneRow->addValidators($arr);
+			} else {
+				foreach($this->rows as $row) {
+					$row->addValidators($arr);
+				}
+			}
+		}
+		
+		/**
+		 * Funkce vykresli tabulku s daty z xml
+		 * @return string
+		 */
 		public function getOutput() {
-			$table = '<table>\n';
+			$table = "<table>\n";
+			$table .= "\t" . $this->drawHeader() . "\n";
+			$table .= '<caption><strong>';
 			
-			$table .= "\t" . drawHeader() . "\n";
-			
-			foreach($this->rows as $row) {
-				$table .= "\t{$row->draw()}\n";
+			if($this->hasError()) {
+				$table .= 'Nelze nahrat, doslo k chybe.';
+			} else {
+				$table .= 'Data byla zpracovana.'; 
 			}
 			
-			$table .= '</table>\n';			
+			$table .= '</strong></caption>';
+			
+			foreach($this->rows as $row) {
+				$table .= "\t{$row->draw($this->hasError())}\n";
+			}
+			
+			$table .= "</table>\n";			
 			return $table;
 		}
 		
@@ -125,8 +177,16 @@
 		 * @param unknown $table
 		 */
 		public function processDb($config, $table) {
+			
+			if($this->hasError()) {
+				return false;
+			}
+			/* 
+			transformData()
+			 */
+
+			
 			$mysql = new Database($config);
 		}
-		
 		
 	}

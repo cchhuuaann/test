@@ -25,10 +25,20 @@
 		public function populate($data) {
 			
 			foreach($data as $key => $val) {
-				$item[$key]->populate($val);
+				if(array_key_exists($key, $this->items)) {
+					$this->items[$key]->populate($val);
+				}
 			}
 		}
 		
+		/**
+		 * nastaveni objektu pri klonovani
+		 */
+		public function __clone() {
+			foreach($this->items as $key => $val) {
+				$this->items[$key] = clone $val;
+			}
+		}
 		
 		/**
 		 * Funkce vytvori novy objekt Item a prida ho nakonec pole $items
@@ -47,27 +57,56 @@
 		}
 		
 		/**
-		 * TODO
+		 * Funkce nastavujici validatory jednotlivym prvkum
+		 * @param array $arr
+		 */
+		public function addValidators($arr) {
+			foreach($arr as $key => $val) {
+				$this->items[$key]->addValidators($val);
+			}
+		}
+		
+		/**
+		 * Funkce zjistujici existenci chyby na radku 
+		 * @return boolean
 		 */
 		public function hasError() {
+			foreach($this->items as $val) {
+				if($val->hasError()) {
+					return true;
+				}
+			}
 			
+			return false;
 		}
 		
 		/**
 		 * Funkce vykresli radek tabulky
+		 * @param boolean: pokud je false,
+		 * vykresli info pred radek
 		 * @return string
 		 */
-		public function draw() {
+		public function draw($error) {
 			$row = '<tr>';
+			
+			if(!$error) {
+				$tmp = $this->items['id']->getValue();
+				if(empty($tmp)) {
+					$info = 'vlozeno';
+				} else {
+					$info = 'upraveno';
+				}
+				
+				$row .= "<td>{$info}</td>";
+			}
 			
 			foreach($this->items as $val) {
 				$row .= $val->draw();
 			}
 			
-			$row .= '</tr>';
+			$row .= "</tr>\n";
 			
 			return $row;
 		}
-		
 		
 	}

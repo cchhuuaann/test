@@ -1,10 +1,18 @@
 <?php
 	class Xml_Parser_Row_Element {
-		private $value = NULL;
+		private $value = '';
 		private $validators = array();
 		
 		private $hasError = false;
 		private $errors = array();		
+		
+		/**
+		 * Funkce vracejici hodnotu objektu
+		 * @return String
+		 */
+		public function getValue() {
+			return $this->value;
+		}
 		
 		/**
 		 * Funkce ulozi promenou $data do prvku
@@ -48,21 +56,31 @@
 			}
 		}
 		
-		public function addValidator() {
-			;
+		/**
+		 * Funkce prida validator na konec pole $validators
+		 * @param object $validator
+		 */
+		public function addValidator($validator) {
+			$this->validators[] = $validator;
 		}
 		
-		public function addValidators() {
-			;
+		/**
+		 * Funkce prida pole validatoru pole $validators
+		 * @param array $arr: pole validatoru
+		 */
+		public function addValidators($arr) {
+			$this->validators = array_merge($this->validators, $arr);
 		}
 		
+		/**
+		 * Funkce vykresli element(bunku) tabulky
+		 * @return string
+		 */
 		public function draw() {
 			
 			$this->hasError()?$class = 'class="error"':$class = '';
 			
 			return "<td {$class}>{$this->value}</td>";
 		}
-		
-		
 		
 	}
