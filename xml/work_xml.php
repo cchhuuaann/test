@@ -14,6 +14,8 @@
 			"encoding"=>"utf-8"
 	);
 	
+	$table = '';
+	
 	$list = array();
 	$nazev = 'xml';
 
@@ -32,11 +34,13 @@
 	$xml->createXml($list, $nazev,'person');
 
 	
-	$valid_elements = array('PERSONS','person','id','jmeno','plat','telefon','email','www','platova_trida');
+	$valid_elements = array('id','jmeno','plat','telefon','email','www','platova_trida');
 	
 	$parser = new Xml_Parser('xml.xml', 'PERSONS', array('person'),$valid_elements);
 	
 	//$parser->process();
+	
+	//$parser->processDb($config,$table);
 	
 	echo $parser;
 	

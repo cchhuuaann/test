@@ -3,7 +3,8 @@
 		const ROWCLONE = true;
 		private $containerName = NULL;
 		private $itemName = NULL;
-
+		private $elements = NULL;
+		
 		private $data = array();
 		private $rows = array();
 		private $oneRow = NULL;
@@ -15,9 +16,10 @@
 		 */
 		private function drawHeader() {
 			$header = '<tr>';
-			
-			
-			
+			$header .= '<th></th>';
+			foreach($this->elements as $val) {
+				$header .= '<th>' . $val . '</th>';
+			}
 			$header .= '</tr>';
 			
 			return $header;
@@ -69,9 +71,10 @@
 		public function __construct($file_name,$container_name,$item_name,$elements) {
 			$this->containerName = $container_name;
 			$this->itemName = $item_name;
+			$this->elements = $elements;
 
 			$this->oneRow = new Xml_Parser_Row();
-			foreach($elements as $key => $val) {
+			foreach($this->elements as $key => $val) {
 				$this->oneRow->registerItem($key,$val);
 			}
 				
@@ -116,8 +119,13 @@
 			return $table;
 		}
 		
-		public function processDb() {
-			;
+		/**
+		 * TODO:
+		 * @param unknown $config
+		 * @param unknown $table
+		 */
+		public function processDb($config, $table) {
+			$mysql = new Database($config);
 		}
 		
 		
