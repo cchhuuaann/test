@@ -3,6 +3,11 @@
 <h1>Blog posts</h1>
 
 <?php
+	echo $this->html->link(
+		'Show users',
+		array('controller'=>'users')
+	);
+	echo '<br />';
 	echo $this->Html->link(
 		'Add Post',
 		array('controller'=>'posts','action'=>'add')

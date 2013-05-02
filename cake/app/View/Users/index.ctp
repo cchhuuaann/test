@@ -3,10 +3,18 @@
 <h1>Blog users</h1>
 
 <?php
-	echo $this->Html->link('Add User',array(
-										'controller'=>'posts',
-										'action'=>'add')
-		);
+	echo $this->html->link(
+		'Show posts',
+		array('controller'=>'posts')
+	);
+	echo '<br />';
+	echo $this->Html->link(
+		'Add User',
+		array(
+			'controller'=>'users',
+			'action'=>'add'
+		)
+	);
 ?>
 
 	<table>
@@ -20,18 +28,18 @@
 		<?php foreach($users as $user): ?>
 		<tr>
 			<td>
-				<?php ?>
+				<?php echo $user['User']['id']; ?>
 			</td>
 			<td>
-				<?php ?>
+				<?php echo $this->Html->link($user['User']['username'], array('action'=>'view',$user['User']['id'])); ?>
 			</td>
 			<td>
-				<?php ?>
+				<?php echo $user['User']['created']; ?>
 			</td>
 			<td>
-				<?php ?>
+				<?php echo $this->Html->link('Edit', array('action'=>'edit',$user['User']['id'])); ?>
 				<?php echo ', '; ?>
-				<?php ?>
+				<?php echo $this->Form->postLink('delete',array('action'=>'delete',$user['User']['id']),array('confirm'=>'Are you sure?')); ?>
 			</td>
 		</tr>
 		<?php endforeach; ?>

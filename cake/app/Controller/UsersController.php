@@ -6,6 +6,20 @@
 			$this->Auth->allow('add');
 		}
 		
+		public function login() {
+			if($this->request->is('post')) {
+				if($this->Auth->login()) {
+					$this->redirect($this->Auth->redirectUrl());
+				} else {
+					$this->Session->setFlash(__('Invalid username or password, try again'));
+				}
+			}
+		}
+		
+		public function logOut() {
+			$this->redirect($this->Auth->logout());
+		}
+		
 		public function index() {
 			$this->User->recursive = 0;
 			$this->set('users',$this->paginate());
