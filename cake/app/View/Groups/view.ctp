@@ -37,7 +37,7 @@
 <div class="related">
 	<h3><?php echo __('Related Users'); ?></h3>
 	<?php if (!empty($group['User'])): ?>
-	<table cellpadding = "0" cellspacing = "0">
+	<table>
 	<tr>
 		<th><?php echo __('Id'); ?></th>
 		<th><?php echo __('Username'); ?></th>

@@ -7,6 +7,7 @@ App::uses('AppModel', 'Model');
  * @property Post $Post
  */
 class User extends AppModel {
+	
 	public $actsAs = array('Acl'=>array('type'=>'requester'));
 	
 	public function parentNode() {
@@ -29,6 +30,10 @@ class User extends AppModel {
 		$this->data['User']['password'] = AuthComponent::password($this->data['User']['password']);
 		
 		return true;
+	}
+	
+	public function bindNode($user) {
+		return array('model'=>'Group','foreign_key'=>$user['User']['group_id']);
 	}
 	
 	
