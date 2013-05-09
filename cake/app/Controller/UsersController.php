@@ -40,8 +40,9 @@ class UsersController extends AppController {
 			$this->Session->setFlash(__('You are logged in!'), 'default', array('class' => 'success'));
 			$this->redirect('/', null, false);
 		} elseif($this->request->is('post')) {
-			if($this->Auth->login($user)) {
-				$this->redirect($this->Auth->redirect());
+			if($this->Auth->login()) {
+				
+				$this->redirect($this->Auth->redirectUrl());
 			} else {
 				$this->Session->setFlash('Your username or password was incorrect.');
 			}

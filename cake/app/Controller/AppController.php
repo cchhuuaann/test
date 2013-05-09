@@ -32,6 +32,8 @@ App::uses('Controller', 'Controller');
  * @link		http://book.cakephp.org/2.0/en/controllers.html#the-app-controller
  */
 class AppController extends Controller {
+
+	public $paginate = array('limit'=>5);
 	
 	public $components = array(
 			'DebugKit.Toolbar',
@@ -48,6 +50,8 @@ class AppController extends Controller {
 	
 	public function beforeFilter() {
 		$this->Auth->allow('display');
+		
+		$this->Session->renew();
 		
 		$this->Auth->loginAction = array('controller'=>'users','action'=>'login');
 		$this->Auth->logoutRedirect = array('controller'=>'users','action'=>'login');
