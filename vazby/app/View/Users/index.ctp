@@ -1,6 +1,6 @@
 <div class="users index">
 	<h2><?php echo __('Users'); ?></h2>
-	<table cellpadding="0" cellspacing="0">
+	<table>
 	<tr>
 			<th><?php echo $this->Paginator->sort('id'); ?></th>
 			<th><?php echo $this->Paginator->sort('name'); ?></th>
@@ -12,7 +12,9 @@
 		<td><?php echo h($user['User']['id']); ?>&nbsp;</td>
 		<td><?php echo h($user['User']['name']); ?>&nbsp;</td>
 		<td>
-			<?php echo $this->Html->link($user['Sword']['name'], array('controller'=>'swords','action'=>'view',$user['Sword']['id'])); ?>
+			<?php foreach ($user['Sword'] as $sword): ?>
+				<?php echo $this->Html->link($sword['name'], array('controller'=>'swords','action'=>'view',$sword['id'])); ?>,&nbsp;
+			<?php endforeach; ?>
 		</td>
 		<td class="actions">
 			<?php echo $this->Html->link(__('View'), array('action' => 'view', $user['User']['id'])); ?>

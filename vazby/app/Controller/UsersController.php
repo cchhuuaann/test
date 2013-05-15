@@ -13,9 +13,7 @@ class UsersController extends AppController {
  * @return void
  */
 	public function index() {
-		$this->User->recursive = 0;
-		var_dump($this->paginate());
-		//exit();
+		//$this->User->recursive = 0;
 		$this->set('users', $this->paginate());
 	}
 
@@ -31,6 +29,10 @@ class UsersController extends AppController {
 			throw new NotFoundException(__('Invalid user'));
 		}
 		$options = array('conditions' => array('User.' . $this->User->primaryKey => $id));
+		echo "<pre>";
+		var_dump($this->User->find('first', $options));
+		echo "</pre>";
+		exit();
 		$this->set('user', $this->User->find('first', $options));
 	}
 

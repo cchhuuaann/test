@@ -44,16 +44,16 @@ class SwordsUser extends AppModel {
  * @var array
  */
 	public $belongsTo = array(
-		'Swords' => array(
-			'className' => 'Swords',
-			'foreignKey' => 'swords_id',
+		'Sword' => array(
+			'className' => 'Sword',
+			'foreignKey' => 'sword_id',
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''
 		),
-		'Users' => array(
-			'className' => 'Users',
-			'foreignKey' => 'users_id',
+		'User' => array(
+			'className' => 'User',
+			'foreignKey' => 'user_id',
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''

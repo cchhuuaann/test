@@ -283,3 +283,17 @@ Stack Trace:
 #3 C:\xampp\htdocs\www\test\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2013-05-15 11:26:27 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'tomas' for key 'username'
+Request URL: /cake/users/edit/11
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\cake\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\www\test\cake\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('UPDATE `acl_tut...', Array)
+#2 C:\xampp\htdocs\www\test\cake\lib\Cake\Model\Datasource\Database\Mysql.php(379): DboSource->execute('UPDATE `acl_tut...')
+#3 C:\xampp\htdocs\www\test\cake\lib\Cake\Model\Model.php(1731): Mysql->update(Object(User), Array, Array)
+#4 C:\xampp\htdocs\www\test\cake\app\Controller\UsersController.php(114): Model->save(Array)
+#5 [internal function]: UsersController->edit('11')
+#6 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#7 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\xampp\htdocs\www\test\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
