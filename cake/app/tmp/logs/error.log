@@ -1,0 +1,285 @@
+2013-05-06 17:36:40 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [C:\xampp\htdocs\www\test\cake\app\Controller\GroupsController.php, line 50]
+2013-05-06 17:36:40 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
+Request URL: /cake/groups/add
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 50)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 50, Array)
+#2 C:\xampp\htdocs\www\test\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 50, Array)
+#3 C:\xampp\htdocs\www\test\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-06 17:37:07 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [C:\xampp\htdocs\www\test\cake\app\Controller\GroupsController.php, line 50]
+2013-05-06 17:37:07 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
+Request URL: /cake/groups/add
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 50)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 50, Array)
+#2 C:\xampp\htdocs\www\test\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 50, Array)
+#3 C:\xampp\htdocs\www\test\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-06 17:37:18 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [C:\xampp\htdocs\www\test\cake\app\Controller\GroupsController.php, line 50]
+2013-05-06 17:37:18 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
+Request URL: /cake/groups/add
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 50)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 50, Array)
+#2 C:\xampp\htdocs\www\test\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 50, Array)
+#3 C:\xampp\htdocs\www\test\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-06 17:39:33 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [C:\xampp\htdocs\www\test\cake\app\Controller\UsersController.php, line 66]
+2013-05-06 17:39:33 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
+Request URL: /cake/users/add
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 66)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 66, Array)
+#2 C:\xampp\htdocs\www\test\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 66, Array)
+#3 C:\xampp\htdocs\www\test\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-06 17:39:58 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [C:\xampp\htdocs\www\test\cake\app\Controller\UsersController.php, line 66]
+2013-05-06 17:39:58 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
+Request URL: /cake/users/add
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 66)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 66, Array)
+#2 C:\xampp\htdocs\www\test\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 66, Array)
+#3 C:\xampp\htdocs\www\test\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-06 17:40:21 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [C:\xampp\htdocs\www\test\cake\app\Controller\UsersController.php, line 66]
+2013-05-06 17:40:21 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
+Request URL: /cake/users/add
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 66)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 66, Array)
+#2 C:\xampp\htdocs\www\test\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 66, Array)
+#3 C:\xampp\htdocs\www\test\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-07 09:41:25 Error: [MissingActionException] Action AppController::users() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'users',
+)
+Request URL: /cake/app/users/initdb
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AppController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\www\test\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-05-07 09:48:55 Error: [MissingActionException] Action AppController::users() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'users',
+)
+Request URL: /cake/app/users/initdb
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AppController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\www\test\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-05-07 09:51:55 Error: [MissingActionException] Action AppController::users() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'users',
+)
+Request URL: /cake/app/users/initdb
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AppController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\www\test\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-05-07 09:58:54 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [C:\xampp\htdocs\www\test\cake\app\Controller\PostsController.php, line 44]
+2013-05-07 09:58:54 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
+Request URL: /cake/posts/add
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 44)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 44, Array)
+#2 C:\xampp\htdocs\www\test\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 44, Array)
+#3 C:\xampp\htdocs\www\test\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-07 09:59:29 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [C:\xampp\htdocs\www\test\cake\app\Controller\PostsController.php, line 44]
+2013-05-07 09:59:29 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
+Request URL: /cake/posts/add
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 44)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 44, Array)
+#2 C:\xampp\htdocs\www\test\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 44, Array)
+#3 C:\xampp\htdocs\www\test\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-07 10:04:17 Error: [MissingControllerException] Controller class WidgetController could not be found.
+Exception Attributes: array (
+  'class' => 'WidgetController',
+  'plugin' => NULL,
+)
+Request URL: /cake/widget
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-07 10:07:41 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [C:\xampp\htdocs\www\test\cake\app\Controller\GroupsController.php, line 71]
+2013-05-07 10:07:41 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
+Request URL: /cake/groups/edit/1
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 71)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 71, Array)
+#2 C:\xampp\htdocs\www\test\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 71, Array)
+#3 C:\xampp\htdocs\www\test\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-07 10:37:30 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [C:\xampp\htdocs\www\test\cake\app\Controller\UsersController.php, line 54]
+2013-05-07 10:37:30 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
+Request URL: /cake/users/logout
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 54)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 54, Array)
+#2 C:\xampp\htdocs\www\test\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 54, Array)
+#3 C:\xampp\htdocs\www\test\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-07 10:38:05 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [C:\xampp\htdocs\www\test\cake\app\Controller\UsersController.php, line 54]
+2013-05-07 10:38:05 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
+Request URL: /cake/users/logout
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 54)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 54, Array)
+#2 C:\xampp\htdocs\www\test\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 54, Array)
+#3 C:\xampp\htdocs\www\test\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-07 10:38:07 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [C:\xampp\htdocs\www\test\cake\app\Controller\UsersController.php, line 54]
+2013-05-07 10:38:07 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
+Request URL: /cake/users/logout
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 54)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 54, Array)
+#2 C:\xampp\htdocs\www\test\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 54, Array)
+#3 C:\xampp\htdocs\www\test\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-07 10:38:07 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [C:\xampp\htdocs\www\test\cake\app\Controller\UsersController.php, line 54]
+2013-05-07 10:38:07 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
+Request URL: /cake/users/logout
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 54)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 54, Array)
+#2 C:\xampp\htdocs\www\test\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 54, Array)
+#3 C:\xampp\htdocs\www\test\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-07 10:38:08 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [C:\xampp\htdocs\www\test\cake\app\Controller\UsersController.php, line 54]
+2013-05-07 10:38:08 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
+Request URL: /cake/users/logout
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 54)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 54, Array)
+#2 C:\xampp\htdocs\www\test\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 54, Array)
+#3 C:\xampp\htdocs\www\test\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-07 14:22:56 Error: Fatal Error (1): Call to undefined method SessionComponent::autoRegenerate() in [C:\xampp\htdocs\www\test\cake\app\Controller\AppController.php, line 52]
+2013-05-07 14:22:56 Error: [FatalErrorException] Call to undefined method SessionComponent::autoRegenerate()
+Request URL: /cake/
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\xampp\htdocs...', 52)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\xampp\htdocs...', 52, Array)
+#2 C:\xampp\htdocs\www\test\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\xampp\htdocs...', 52, Array)
+#3 C:\xampp\htdocs\www\test\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-07 14:40:10 Error: Fatal Error (64): Cannot redeclare User::$belongsTo in [C:\xampp\htdocs\www\test\cake\app\Model\User.php, line 96]
+2013-05-07 14:40:10 Error: [FatalErrorException] Cannot redeclare User::$belongsTo
+Request URL: /cake/users
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', 'C:\xampp\htdocs...', 96)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', 'C:\xampp\htdocs...', 96, Array)
+#2 C:\xampp\htdocs\www\test\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', 'C:\xampp\htdocs...', 96, Array)
+#3 C:\xampp\htdocs\www\test\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-07 14:40:23 Error: Fatal Error (64): Cannot redeclare User::$belongsTo in [C:\xampp\htdocs\www\test\cake\app\Model\User.php, line 96]
+2013-05-07 14:40:23 Error: [FatalErrorException] Cannot redeclare User::$belongsTo
+Request URL: /cake/users
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', 'C:\xampp\htdocs...', 96)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', 'C:\xampp\htdocs...', 96, Array)
+#2 C:\xampp\htdocs\www\test\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', 'C:\xampp\htdocs...', 96, Array)
+#3 C:\xampp\htdocs\www\test\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-07 14:41:29 Error: Fatal Error (64): Cannot redeclare User::$belongsTo in [C:\xampp\htdocs\www\test\cake\app\Model\User.php, line 97]
+2013-05-07 14:41:29 Error: [FatalErrorException] Cannot redeclare User::$belongsTo
+Request URL: /cake/users
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', 'C:\xampp\htdocs...', 97)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', 'C:\xampp\htdocs...', 97, Array)
+#2 C:\xampp\htdocs\www\test\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', 'C:\xampp\htdocs...', 97, Array)
+#3 C:\xampp\htdocs\www\test\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-07 15:16:26 Error: [MissingActionException] Action AppController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'index',
+)
+Request URL: /cake/app/
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AppController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\www\test\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-05-07 15:17:06 Error: [MissingActionException] Action AppController::index.php() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'index.php',
+)
+Request URL: /cake/app/index.php
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AppController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\www\test\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-05-07 15:17:27 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /cake/app/webroot/
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AppController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\www\test\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-05-07 15:19:11 Error: [MissingActionException] Action AppController::View() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'View',
+)
+Request URL: /cake/app/View/Users/add.ctp
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AppController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\www\test\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-05-07 15:23:55 Error: [MissingControllerException] Controller class AcController could not be found.
+Exception Attributes: array (
+  'class' => 'AcController',
+  'plugin' => NULL,
+)
+Request URL: /cake/ac
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-09 14:14:54 Error: Fatal Error (1): Call to undefined method AuthComponent::getUser() in [C:\xampp\htdocs\www\test\cake\app\Controller\UsersController.php, line 44]
+2013-05-09 14:14:54 Error: [FatalErrorException] Call to undefined method AuthComponent::getUser()
+Request URL: /cake/users/login
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\xampp\htdocs...', 44)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\xampp\htdocs...', 44, Array)
+#2 C:\xampp\htdocs\www\test\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\xampp\htdocs...', 44, Array)
+#3 C:\xampp\htdocs\www\test\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
