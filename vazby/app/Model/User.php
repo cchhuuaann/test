@@ -49,5 +49,5 @@ class User extends AppModel {
 			'insertQuery' => ''
 		)
 	);
-
+	
 }

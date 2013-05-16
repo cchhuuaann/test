@@ -41,7 +41,7 @@ class SwordsController extends AppController {
 		if ($this->request->is('post')) {
 			$this->Sword->create();
 			if ($this->Sword->save($this->request->data)) {
-				$this->Session->setFlash(__('The sword has been saved'));
+				$this->Session->setFlash(__('The sword has been saved'),'default',array('class'=>'success'));
 				$this->redirect(array('action' => 'index'));
 			} else {
 				$this->Session->setFlash(__('The sword could not be saved. Please, try again.'));
@@ -64,7 +64,7 @@ class SwordsController extends AppController {
 		}
 		if ($this->request->is('post') || $this->request->is('put')) {
 			if ($this->Sword->save($this->request->data)) {
-				$this->Session->setFlash(__('The sword has been saved'));
+				$this->Session->setFlash(__('The sword has been saved'),'default',array('class'=>'success'));
 				$this->redirect(array('action' => 'index'));
 			} else {
 				$this->Session->setFlash(__('The sword could not be saved. Please, try again.'));
@@ -91,7 +91,7 @@ class SwordsController extends AppController {
 		}
 		$this->request->onlyAllow('post', 'delete');
 		if ($this->Sword->delete()) {
-			$this->Session->setFlash(__('Sword deleted'));
+			$this->Session->setFlash(__('Sword deleted'),'default',array('class'=>'success'));
 			$this->redirect(array('action' => 'index'));
 		}
 		$this->Session->setFlash(__('Sword was not deleted'));

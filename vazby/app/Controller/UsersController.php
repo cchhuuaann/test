@@ -14,6 +14,33 @@ class UsersController extends AppController {
  */
 	public function index() {
 		//$this->User->recursive = 0;
+		
+		$this->paginate = array(
+				'fields' => array('User.id','User.name','group_concat(Sword.name)'),
+				'joins' => array(
+						array(
+								'table'=>'swords_users',
+								'alias'=>'SwordsUser',
+								'type'=>'inner',
+								'conditions'=>array(
+										'User.id = SwordsUser.user_id'
+									)
+							),
+						array(
+								'table'=>'swords',
+								'alias'=>'Sword',
+								'type'=>'inner',
+								'conditions'=>array(
+										'Sword.id = SwordsUser.sword_id'
+									)
+							)
+					)
+			); 
+		
+		echo "<pre>";
+		var_dump($this->paginate());
+		echo "</pre>";
+		exit();
 		$this->set('users', $this->paginate());
 	}
 
@@ -29,10 +56,10 @@ class UsersController extends AppController {
 			throw new NotFoundException(__('Invalid user'));
 		}
 		$options = array('conditions' => array('User.' . $this->User->primaryKey => $id));
-		echo "<pre>";
+		/* echo "<pre>";
 		var_dump($this->User->find('first', $options));
 		echo "</pre>";
-		exit();
+		exit(); */
 		$this->set('user', $this->User->find('first', $options));
 	}
 
@@ -45,7 +72,7 @@ class UsersController extends AppController {
 		if ($this->request->is('post')) {
 			$this->User->create();
 			if ($this->User->save($this->request->data)) {
-				$this->Session->setFlash(__('The user has been saved'));
+				$this->Session->setFlash(__('The user has been saved'),'default',array('class'=>'success'));
 				$this->redirect(array('action' => 'index'));
 			} else {
 				$this->Session->setFlash(__('The user could not be saved. Please, try again.'));
@@ -68,7 +95,7 @@ class UsersController extends AppController {
 		}
 		if ($this->request->is('post') || $this->request->is('put')) {
 			if ($this->User->save($this->request->data)) {
-				$this->Session->setFlash(__('The user has been saved'));
+				$this->Session->setFlash(__('The user has been saved'),'default',array('class'=>'success'));
 				$this->redirect(array('action' => 'index'));
 			} else {
 				$this->Session->setFlash(__('The user could not be saved. Please, try again.'));
@@ -95,7 +122,7 @@ class UsersController extends AppController {
 		}
 		$this->request->onlyAllow('post', 'delete');
 		if ($this->User->delete()) {
-			$this->Session->setFlash(__('User deleted'));
+			$this->Session->setFlash(__('User deleted'),'default',array('class'=>'success'));
 			$this->redirect(array('action' => 'index'));
 		}
 		$this->Session->setFlash(__('User was not deleted'));

@@ -49,5 +49,5 @@ class Sword extends AppModel {
 			'insertQuery' => ''
 		)
 	);
-
+	
 }
