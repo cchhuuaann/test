@@ -12,9 +12,7 @@
 		<td><?php echo h($user['User']['id']); ?>&nbsp;</td>
 		<td><?php echo h($user['User']['name']); ?>&nbsp;</td>
 		<td>
-			<?php foreach ($user['Sword'] as $sword): ?>
-				<?php echo $this->Html->link($sword['name'], array('controller'=>'swords','action'=>'view',$sword['id'])); ?>,&nbsp;
-			<?php endforeach; ?>
+			<?php echo h($user[0]['name']); ?>&nbsp;
 		</td>
 		<td class="actions">
 			<?php echo $this->Html->link(__('View'), array('action' => 'view', $user['User']['id'])); ?>

@@ -13,10 +13,10 @@ class UsersController extends AppController {
  * @return void
  */
 	public function index() {
-		//$this->User->recursive = 0;
+		$this->User->recursive = -1;
 		
 		$this->paginate = array(
-				'fields' => array('User.id','User.name','group_concat(Sword.name)'),
+				'fields' => array('User.id','User.name','group_concat(Sword.name separator ", ") as name', 'group_concat(Sword.id separator ", ") as id'),
 				'joins' => array(
 						array(
 								'table'=>'swords_users',
@@ -34,13 +34,14 @@ class UsersController extends AppController {
 										'Sword.id = SwordsUser.sword_id'
 									)
 							)
-					)
+					),
+				'group' => 'User.id'
 			); 
 		
-		echo "<pre>";
-		var_dump($this->paginate());
-		echo "</pre>";
-		exit();
+ 		/* echo "<pre>";
+ 		var_dump($this->paginate());
+ 		echo "</pre>";
+ 		exit(); */
 		$this->set('users', $this->paginate());
 	}
 
