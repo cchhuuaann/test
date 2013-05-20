@@ -36,4 +36,6 @@ class AppController extends Controller {
 			'DebugKit.Toolbar',
 			'Session'
 	);
+	
+	public $helpers = array('Js' => array('Jquery'));
 }
