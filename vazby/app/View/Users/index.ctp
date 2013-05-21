@@ -15,8 +15,8 @@
 			<?php echo h($user[0]['name']); ?>&nbsp;
 		</td>
 		<td class="actions">
-			<?php echo $this->Html->link(__('View'), array('action' => 'view', $user['User']['id'])); ?>
-			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $user['User']['id'])); ?>
+			<?php echo $this->Js->link(__('View'), array('action' => 'view', $user['User']['id']), array('update'=>'#content')); ?>
+			<?php echo $this->Js->link(__('Edit'), array('action' => 'edit', $user['User']['id']), array('update'=>'#content')); ?>
 			<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $user['User']['id']), null, __('Are you sure you want to delete # %s?', $user['User']['id'])); ?>
 		</td>
 	</tr>
@@ -39,8 +39,8 @@
 <div class="actions">
 	<h3><?php echo __('Actions'); ?></h3>
 	<ul>
-		<li><?php echo $this->Html->link(__('New User'), array('action' => 'add')); ?></li>
-		<li><?php echo $this->Html->link(__('List Swords'), array('controller' => 'swords', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Sword'), array('controller' => 'swords', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Js->link(__('New User'), array('action' => 'add'), array('update'=>'#content')); ?></li>
+		<li><?php echo $this->Js->link(__('List Swords'), array('controller' => 'swords', 'action' => 'index'), array('update'=>'#content')); ?> </li>
+		<li><?php echo $this->Js->link(__('New Sword'), array('controller' => 'swords', 'action' => 'add'), array('update'=>'#content')); ?> </li>
 	</ul>
 </div>

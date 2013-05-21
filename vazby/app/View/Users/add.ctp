@@ -13,8 +13,8 @@
 	<h3><?php echo __('Actions'); ?></h3>
 	<ul>
 
-		<li><?php echo $this->Html->link(__('List Users'), array('action' => 'index')); ?></li>
-		<li><?php echo $this->Html->link(__('List Swords'), array('controller' => 'swords', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Sword'), array('controller' => 'swords', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Js->link(__('List Users'), array('action' => 'index'), array('update'=>'#content')); ?></li>
+		<li><?php echo $this->Js->link(__('List Swords'), array('controller' => 'swords', 'action' => 'index'), array('update'=>'#content')); ?> </li>
+		<li><?php echo $this->Js->link(__('New Sword'), array('controller' => 'swords', 'action' => 'add'), array('update'=>'#content')); ?> </li>
 	</ul>
 </div>

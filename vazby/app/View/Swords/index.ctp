@@ -1,6 +1,6 @@
 <div class="swords index">
 	<h2><?php echo __('Swords'); ?></h2>
-	<table cellpadding="0" cellspacing="0">
+	<table>
 	<tr>
 			<th><?php echo $this->Paginator->sort('id'); ?></th>
 			<th><?php echo $this->Paginator->sort('name'); ?></th>
@@ -11,8 +11,8 @@
 		<td><?php echo h($sword['Sword']['id']); ?>&nbsp;</td>
 		<td><?php echo h($sword['Sword']['name']); ?>&nbsp;</td>
 		<td class="actions">
-			<?php echo $this->Html->link(__('View'), array('action' => 'view', $sword['Sword']['id'])); ?>
-			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $sword['Sword']['id'])); ?>
+			<?php echo $this->Js->link(__('View'), array('action' => 'view', $sword['Sword']['id']), array('update'=>'#content')); ?>
+			<?php echo $this->Js->link(__('Edit'), array('action' => 'edit', $sword['Sword']['id']), array('update'=>'#content')); ?>
 			<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $sword['Sword']['id']), null, __('Are you sure you want to delete # %s?', $sword['Sword']['id'])); ?>
 		</td>
 	</tr>
@@ -35,8 +35,8 @@
 <div class="actions">
 	<h3><?php echo __('Actions'); ?></h3>
 	<ul>
-		<li><?php echo $this->Html->link(__('New Sword'), array('action' => 'add')); ?></li>
-		<li><?php echo $this->Html->link(__('List Users'), array('controller' => 'users', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New User'), array('controller' => 'users', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Js->link(__('New Sword'), array('action' => 'add'), array('update'=>'#content')); ?></li>
+		<li><?php echo $this->Js->link(__('List Users'), array('controller' => 'users', 'action' => 'index'), array('update'=>'#content')); ?> </li>
+		<li><?php echo $this->Js->link(__('New User'), array('controller' => 'users', 'action' => 'add'), array('update'=>'#content')); ?> </li>
 	</ul>
 </div>
