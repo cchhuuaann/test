@@ -14,8 +14,7 @@ class GroupsControllerTest extends ControllerTestCase {
  */
 	public $fixtures = array(
 		'app.group',
-		'app.user',
-		'app.post'
+		'app.user'
 	);
 
 /**

@@ -7,6 +7,7 @@
 			<th><?php echo $this->Paginator->sort('body'); ?></th>
 			<th><?php echo $this->Paginator->sort('created'); ?></th>
 			<th><?php echo $this->Paginator->sort('modified'); ?></th>
+			<th><?php echo $this->Paginator->sort('user_id'); ?></th>
 			<th class="actions"><?php echo __('Actions'); ?></th>
 	</tr>
 	<?php foreach ($posts as $post): ?>
@@ -16,10 +17,13 @@
 		<td><?php echo h($post['Post']['body']); ?>&nbsp;</td>
 		<td><?php echo h($post['Post']['created']); ?>&nbsp;</td>
 		<td><?php echo h($post['Post']['modified']); ?>&nbsp;</td>
+		<td>
+			<?php echo $this->Js->link($post['User']['id'], array('controller' => 'users', 'action' => 'view', $post['User']['id']), array('update' => '#content')); ?>
+		</td>
 		<td class="actions">
-			<?php echo $this->Html->link(__('View'), array('action' => 'view', $post['Post']['id'])); ?>
-			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $post['Post']['id'])); ?>
-			<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $post['Post']['id']), null, __('Are you sure you want to delete # %s?', $post['Post']['id'])); ?>
+			<?php echo $this->Js->link(__('View'), array('controller' => 'posts','action' => 'view', $post['Post']['id']), array('update' => '#content')); ?>
+			<?php echo $this->Js->link(__('Edit'), array('controller' => 'posts','action' => 'edit', $post['Post']['id']), array('update' => '#content')); ?>
+			<?php echo $this->Form->postLink(__('Delete'), array('controller' => 'posts','action' => 'delete', $post['Post']['id']), null, __('Are you sure you want to delete # %s?', $post['Post']['id'])); ?>
 		</td>
 	</tr>
 <?php endforeach; ?>
@@ -41,7 +45,10 @@
 <div class="actions">
 	<h3><?php echo __('Actions'); ?></h3>
 	<ul>
-		<li><?php echo $this->Html->link(__('New Post'), array('action' => 'add')); ?></li>
-		<li><?php echo $this->Html->link(__('LogOut'), array('controller'=>'users','action'=>'logout')); ?></li>
+		<li><?php echo $this->Js->link(__('New Post'), array('controller' => 'posts','action' => 'add'), array('update' => '#content')); ?></li>
+		<li><?php echo $this->Js->link(__('List Users'), array('controller' => 'users', 'action' => 'index'), array('update' => '#content')); ?> </li>
+		<li><?php echo $this->Js->link(__('New User'), array('controller' => 'users', 'action' => 'add'), array('update' => '#content')); ?> </li>
+		<li><?php echo $this->Js->link(__('Login'), array('controller' => 'users', 'action' => 'login'), array('update' => '#content')); ?> </li>
+		<li><?php echo $this->Js->link(__('Logout'), array('controller' => 'users', 'action' => 'logout'), array('update' => '#content')); ?> </li>
 	</ul>
 </div>

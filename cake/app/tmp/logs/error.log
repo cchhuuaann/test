@@ -1,299 +1,854 @@
-2013-05-06 17:36:40 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [C:\xampp\htdocs\www\test\cake\app\Controller\GroupsController.php, line 50]
-2013-05-06 17:36:40 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
-Request URL: /cake/groups/add
-Stack Trace:
-#0 C:\xampp\htdocs\www\test\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 50)
-#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 50, Array)
-#2 C:\xampp\htdocs\www\test\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 50, Array)
-#3 C:\xampp\htdocs\www\test\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
-#4 [internal function]: App::shutdown()
-#5 {main}
-2013-05-06 17:37:07 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [C:\xampp\htdocs\www\test\cake\app\Controller\GroupsController.php, line 50]
-2013-05-06 17:37:07 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
-Request URL: /cake/groups/add
-Stack Trace:
-#0 C:\xampp\htdocs\www\test\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 50)
-#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 50, Array)
-#2 C:\xampp\htdocs\www\test\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 50, Array)
-#3 C:\xampp\htdocs\www\test\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
-#4 [internal function]: App::shutdown()
-#5 {main}
-2013-05-06 17:37:18 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [C:\xampp\htdocs\www\test\cake\app\Controller\GroupsController.php, line 50]
-2013-05-06 17:37:18 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
-Request URL: /cake/groups/add
-Stack Trace:
-#0 C:\xampp\htdocs\www\test\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 50)
-#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 50, Array)
-#2 C:\xampp\htdocs\www\test\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 50, Array)
-#3 C:\xampp\htdocs\www\test\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
-#4 [internal function]: App::shutdown()
-#5 {main}
-2013-05-06 17:39:33 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [C:\xampp\htdocs\www\test\cake\app\Controller\UsersController.php, line 66]
-2013-05-06 17:39:33 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
-Request URL: /cake/users/add
-Stack Trace:
-#0 C:\xampp\htdocs\www\test\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 66)
-#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 66, Array)
-#2 C:\xampp\htdocs\www\test\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 66, Array)
-#3 C:\xampp\htdocs\www\test\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
-#4 [internal function]: App::shutdown()
-#5 {main}
-2013-05-06 17:39:58 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [C:\xampp\htdocs\www\test\cake\app\Controller\UsersController.php, line 66]
-2013-05-06 17:39:58 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
-Request URL: /cake/users/add
-Stack Trace:
-#0 C:\xampp\htdocs\www\test\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 66)
-#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 66, Array)
-#2 C:\xampp\htdocs\www\test\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 66, Array)
-#3 C:\xampp\htdocs\www\test\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
-#4 [internal function]: App::shutdown()
-#5 {main}
-2013-05-06 17:40:21 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [C:\xampp\htdocs\www\test\cake\app\Controller\UsersController.php, line 66]
-2013-05-06 17:40:21 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
-Request URL: /cake/users/add
-Stack Trace:
-#0 C:\xampp\htdocs\www\test\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 66)
-#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 66, Array)
-#2 C:\xampp\htdocs\www\test\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 66, Array)
-#3 C:\xampp\htdocs\www\test\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
-#4 [internal function]: App::shutdown()
-#5 {main}
-2013-05-07 09:41:25 Error: [MissingActionException] Action AppController::users() could not be found.
+2013-05-22 10:59:11 Error: [MissingControllerException] Controller class PagesController could not be found.
 Exception Attributes: array (
-  'controller' => 'AppController',
-  'action' => 'users',
-)
-Request URL: /cake/app/users/initdb
-Stack Trace:
-#0 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
-#1 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AppController), Object(CakeRequest), Object(CakeResponse))
-#2 C:\xampp\htdocs\www\test\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#3 {main}
-2013-05-07 09:48:55 Error: [MissingActionException] Action AppController::users() could not be found.
-Exception Attributes: array (
-  'controller' => 'AppController',
-  'action' => 'users',
-)
-Request URL: /cake/app/users/initdb
-Stack Trace:
-#0 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
-#1 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AppController), Object(CakeRequest), Object(CakeResponse))
-#2 C:\xampp\htdocs\www\test\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#3 {main}
-2013-05-07 09:51:55 Error: [MissingActionException] Action AppController::users() could not be found.
-Exception Attributes: array (
-  'controller' => 'AppController',
-  'action' => 'users',
-)
-Request URL: /cake/app/users/initdb
-Stack Trace:
-#0 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
-#1 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AppController), Object(CakeRequest), Object(CakeResponse))
-#2 C:\xampp\htdocs\www\test\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#3 {main}
-2013-05-07 09:58:54 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [C:\xampp\htdocs\www\test\cake\app\Controller\PostsController.php, line 44]
-2013-05-07 09:58:54 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
-Request URL: /cake/posts/add
-Stack Trace:
-#0 C:\xampp\htdocs\www\test\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 44)
-#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 44, Array)
-#2 C:\xampp\htdocs\www\test\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 44, Array)
-#3 C:\xampp\htdocs\www\test\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
-#4 [internal function]: App::shutdown()
-#5 {main}
-2013-05-07 09:59:29 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [C:\xampp\htdocs\www\test\cake\app\Controller\PostsController.php, line 44]
-2013-05-07 09:59:29 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
-Request URL: /cake/posts/add
-Stack Trace:
-#0 C:\xampp\htdocs\www\test\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 44)
-#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 44, Array)
-#2 C:\xampp\htdocs\www\test\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 44, Array)
-#3 C:\xampp\htdocs\www\test\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
-#4 [internal function]: App::shutdown()
-#5 {main}
-2013-05-07 10:04:17 Error: [MissingControllerException] Controller class WidgetController could not be found.
-Exception Attributes: array (
-  'class' => 'WidgetController',
+  'class' => 'PagesController',
   'plugin' => NULL,
 )
-Request URL: /cake/widget
-Stack Trace:
-#0 C:\xampp\htdocs\www\test\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#1 {main}
-2013-05-07 10:07:41 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [C:\xampp\htdocs\www\test\cake\app\Controller\GroupsController.php, line 71]
-2013-05-07 10:07:41 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
-Request URL: /cake/groups/edit/1
-Stack Trace:
-#0 C:\xampp\htdocs\www\test\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 71)
-#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 71, Array)
-#2 C:\xampp\htdocs\www\test\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 71, Array)
-#3 C:\xampp\htdocs\www\test\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
-#4 [internal function]: App::shutdown()
-#5 {main}
-2013-05-07 10:37:30 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [C:\xampp\htdocs\www\test\cake\app\Controller\UsersController.php, line 54]
-2013-05-07 10:37:30 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
-Request URL: /cake/users/logout
-Stack Trace:
-#0 C:\xampp\htdocs\www\test\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 54)
-#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 54, Array)
-#2 C:\xampp\htdocs\www\test\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 54, Array)
-#3 C:\xampp\htdocs\www\test\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
-#4 [internal function]: App::shutdown()
-#5 {main}
-2013-05-07 10:38:05 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [C:\xampp\htdocs\www\test\cake\app\Controller\UsersController.php, line 54]
-2013-05-07 10:38:05 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
-Request URL: /cake/users/logout
-Stack Trace:
-#0 C:\xampp\htdocs\www\test\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 54)
-#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 54, Array)
-#2 C:\xampp\htdocs\www\test\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 54, Array)
-#3 C:\xampp\htdocs\www\test\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
-#4 [internal function]: App::shutdown()
-#5 {main}
-2013-05-07 10:38:07 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [C:\xampp\htdocs\www\test\cake\app\Controller\UsersController.php, line 54]
-2013-05-07 10:38:07 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
-Request URL: /cake/users/logout
-Stack Trace:
-#0 C:\xampp\htdocs\www\test\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 54)
-#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 54, Array)
-#2 C:\xampp\htdocs\www\test\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 54, Array)
-#3 C:\xampp\htdocs\www\test\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
-#4 [internal function]: App::shutdown()
-#5 {main}
-2013-05-07 10:38:07 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [C:\xampp\htdocs\www\test\cake\app\Controller\UsersController.php, line 54]
-2013-05-07 10:38:07 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
-Request URL: /cake/users/logout
-Stack Trace:
-#0 C:\xampp\htdocs\www\test\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 54)
-#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 54, Array)
-#2 C:\xampp\htdocs\www\test\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 54, Array)
-#3 C:\xampp\htdocs\www\test\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
-#4 [internal function]: App::shutdown()
-#5 {main}
-2013-05-07 10:38:08 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [C:\xampp\htdocs\www\test\cake\app\Controller\UsersController.php, line 54]
-2013-05-07 10:38:08 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
-Request URL: /cake/users/logout
-Stack Trace:
-#0 C:\xampp\htdocs\www\test\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 54)
-#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 54, Array)
-#2 C:\xampp\htdocs\www\test\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 54, Array)
-#3 C:\xampp\htdocs\www\test\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
-#4 [internal function]: App::shutdown()
-#5 {main}
-2013-05-07 14:22:56 Error: Fatal Error (1): Call to undefined method SessionComponent::autoRegenerate() in [C:\xampp\htdocs\www\test\cake\app\Controller\AppController.php, line 52]
-2013-05-07 14:22:56 Error: [FatalErrorException] Call to undefined method SessionComponent::autoRegenerate()
 Request URL: /cake/
 Stack Trace:
-#0 C:\xampp\htdocs\www\test\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\xampp\htdocs...', 52)
-#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\xampp\htdocs...', 52, Array)
-#2 C:\xampp\htdocs\www\test\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\xampp\htdocs...', 52, Array)
-#3 C:\xampp\htdocs\www\test\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
-#4 [internal function]: App::shutdown()
-#5 {main}
-2013-05-07 14:40:10 Error: Fatal Error (64): Cannot redeclare User::$belongsTo in [C:\xampp\htdocs\www\test\cake\app\Model\User.php, line 96]
-2013-05-07 14:40:10 Error: [FatalErrorException] Cannot redeclare User::$belongsTo
-Request URL: /cake/users
-Stack Trace:
-#0 C:\xampp\htdocs\www\test\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', 'C:\xampp\htdocs...', 96)
-#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', 'C:\xampp\htdocs...', 96, Array)
-#2 C:\xampp\htdocs\www\test\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', 'C:\xampp\htdocs...', 96, Array)
-#3 C:\xampp\htdocs\www\test\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
-#4 [internal function]: App::shutdown()
-#5 {main}
-2013-05-07 14:40:23 Error: Fatal Error (64): Cannot redeclare User::$belongsTo in [C:\xampp\htdocs\www\test\cake\app\Model\User.php, line 96]
-2013-05-07 14:40:23 Error: [FatalErrorException] Cannot redeclare User::$belongsTo
-Request URL: /cake/users
-Stack Trace:
-#0 C:\xampp\htdocs\www\test\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', 'C:\xampp\htdocs...', 96)
-#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', 'C:\xampp\htdocs...', 96, Array)
-#2 C:\xampp\htdocs\www\test\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', 'C:\xampp\htdocs...', 96, Array)
-#3 C:\xampp\htdocs\www\test\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
-#4 [internal function]: App::shutdown()
-#5 {main}
-2013-05-07 14:41:29 Error: Fatal Error (64): Cannot redeclare User::$belongsTo in [C:\xampp\htdocs\www\test\cake\app\Model\User.php, line 97]
-2013-05-07 14:41:29 Error: [FatalErrorException] Cannot redeclare User::$belongsTo
-Request URL: /cake/users
-Stack Trace:
-#0 C:\xampp\htdocs\www\test\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', 'C:\xampp\htdocs...', 97)
-#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', 'C:\xampp\htdocs...', 97, Array)
-#2 C:\xampp\htdocs\www\test\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', 'C:\xampp\htdocs...', 97, Array)
-#3 C:\xampp\htdocs\www\test\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
-#4 [internal function]: App::shutdown()
-#5 {main}
-2013-05-07 15:16:26 Error: [MissingActionException] Action AppController::index() could not be found.
+#0 C:\xampp\htdocs\www\test\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-22 10:59:41 Error: [MissingControllerException] Controller class PagesController could not be found.
 Exception Attributes: array (
-  'controller' => 'AppController',
-  'action' => 'index',
-)
-Request URL: /cake/app/
-Stack Trace:
-#0 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
-#1 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AppController), Object(CakeRequest), Object(CakeResponse))
-#2 C:\xampp\htdocs\www\test\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#3 {main}
-2013-05-07 15:17:06 Error: [MissingActionException] Action AppController::index.php() could not be found.
-Exception Attributes: array (
-  'controller' => 'AppController',
-  'action' => 'index.php',
-)
-Request URL: /cake/app/index.php
-Stack Trace:
-#0 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
-#1 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AppController), Object(CakeRequest), Object(CakeResponse))
-#2 C:\xampp\htdocs\www\test\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#3 {main}
-2013-05-07 15:17:27 Error: [MissingActionException] Action AppController::webroot() could not be found.
-Exception Attributes: array (
-  'controller' => 'AppController',
-  'action' => 'webroot',
-)
-Request URL: /cake/app/webroot/
-Stack Trace:
-#0 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
-#1 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AppController), Object(CakeRequest), Object(CakeResponse))
-#2 C:\xampp\htdocs\www\test\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#3 {main}
-2013-05-07 15:19:11 Error: [MissingActionException] Action AppController::View() could not be found.
-Exception Attributes: array (
-  'controller' => 'AppController',
-  'action' => 'View',
-)
-Request URL: /cake/app/View/Users/add.ctp
-Stack Trace:
-#0 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
-#1 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AppController), Object(CakeRequest), Object(CakeResponse))
-#2 C:\xampp\htdocs\www\test\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#3 {main}
-2013-05-07 15:23:55 Error: [MissingControllerException] Controller class AcController could not be found.
-Exception Attributes: array (
-  'class' => 'AcController',
+  'class' => 'PagesController',
   'plugin' => NULL,
 )
-Request URL: /cake/ac
+Request URL: /cake/
 Stack Trace:
 #0 C:\xampp\htdocs\www\test\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
-2013-05-09 14:14:54 Error: Fatal Error (1): Call to undefined method AuthComponent::getUser() in [C:\xampp\htdocs\www\test\cake\app\Controller\UsersController.php, line 44]
-2013-05-09 14:14:54 Error: [FatalErrorException] Call to undefined method AuthComponent::getUser()
-Request URL: /cake/users/login
+2013-05-22 11:28:18 Error: Fatal Error (1): Call to a member function allow() on a non-object in [C:\xampp\htdocs\www\test\cake\app\Controller\UsersController.php, line 13]
+2013-05-22 11:28:18 Error: [FatalErrorException] Call to a member function allow() on a non-object
+Request URL: /cake/users
 Stack Trace:
-#0 C:\xampp\htdocs\www\test\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\xampp\htdocs...', 44)
-#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\xampp\htdocs...', 44, Array)
-#2 C:\xampp\htdocs\www\test\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\xampp\htdocs...', 44, Array)
+#0 C:\xampp\htdocs\www\test\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 13)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 13, Array)
+#2 C:\xampp\htdocs\www\test\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 13, Array)
 #3 C:\xampp\htdocs\www\test\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
-2013-05-15 11:26:27 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'tomas' for key 'username'
-Request URL: /cake/users/edit/11
+2013-05-22 11:28:25 Error: Fatal Error (1): Call to a member function allow() on a non-object in [C:\xampp\htdocs\www\test\cake\app\Controller\UsersController.php, line 13]
+2013-05-22 11:28:25 Error: [FatalErrorException] Call to a member function allow() on a non-object
+Request URL: /cake/users/
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 13)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 13, Array)
+#2 C:\xampp\htdocs\www\test\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 13, Array)
+#3 C:\xampp\htdocs\www\test\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-22 11:28:25 Error: Fatal Error (1): Call to a member function allow() on a non-object in [C:\xampp\htdocs\www\test\cake\app\Controller\UsersController.php, line 13]
+2013-05-22 11:28:25 Error: [FatalErrorException] Call to a member function allow() on a non-object
+Request URL: /cake/users/add
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 13)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 13, Array)
+#2 C:\xampp\htdocs\www\test\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 13, Array)
+#3 C:\xampp\htdocs\www\test\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-22 11:29:37 Error: Fatal Error (1): Call to a member function allow() on a non-object in [C:\xampp\htdocs\www\test\cake\app\Controller\UsersController.php, line 13]
+2013-05-22 11:29:37 Error: [FatalErrorException] Call to a member function allow() on a non-object
+Request URL: /cake/users/add
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 13)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 13, Array)
+#2 C:\xampp\htdocs\www\test\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 13, Array)
+#3 C:\xampp\htdocs\www\test\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-22 11:32:48 Error: Fatal Error (1): Call to a member function allow() on a non-object in [C:\xampp\htdocs\www\test\cake\app\Controller\UsersController.php, line 13]
+2013-05-22 11:32:48 Error: [FatalErrorException] Call to a member function allow() on a non-object
+Request URL: /cake/users/add
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 13)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 13, Array)
+#2 C:\xampp\htdocs\www\test\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 13, Array)
+#3 C:\xampp\htdocs\www\test\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-22 11:44:38 Error: Fatal Error (1): Call to a member function allow() on a non-object in [C:\xampp\htdocs\www\test\cake\app\Controller\GroupsController.php, line 13]
+2013-05-22 11:44:38 Error: [FatalErrorException] Call to a member function allow() on a non-object
+Request URL: /cake/groups/add
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 13)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 13, Array)
+#2 C:\xampp\htdocs\www\test\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 13, Array)
+#3 C:\xampp\htdocs\www\test\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-22 11:52:42 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'martin' for key 'username'
+Request URL: /cake/users/add
 Stack Trace:
 #0 C:\xampp\htdocs\www\test\cake\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
-#1 C:\xampp\htdocs\www\test\cake\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('UPDATE `acl_tut...', Array)
-#2 C:\xampp\htdocs\www\test\cake\lib\Cake\Model\Datasource\Database\Mysql.php(379): DboSource->execute('UPDATE `acl_tut...')
-#3 C:\xampp\htdocs\www\test\cake\lib\Cake\Model\Model.php(1731): Mysql->update(Object(User), Array, Array)
-#4 C:\xampp\htdocs\www\test\cake\app\Controller\UsersController.php(114): Model->save(Array)
-#5 [internal function]: UsersController->edit('11')
+#1 C:\xampp\htdocs\www\test\cake\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO `ac...', Array)
+#2 C:\xampp\htdocs\www\test\cake\lib\Cake\Model\Datasource\DboSource.php(1008): DboSource->execute('INSERT INTO `ac...')
+#3 C:\xampp\htdocs\www\test\cake\lib\Cake\Model\Model.php(1742): DboSource->create(Object(User), Array, Array)
+#4 C:\xampp\htdocs\www\test\cake\app\Controller\UsersController.php(63): Model->save(Array)
+#5 [internal function]: UsersController->add()
 #6 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UsersController), Array)
 #7 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
 #8 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
 #9 C:\xampp\htdocs\www\test\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #10 {main}
+2013-05-22 13:38:00 Error: [CakeException] AclNode::node() - Couldn't find Aro node identified by "Array
+(
+    [Aro0.model] => User
+    [Aro0.foreign_key] => 1
+)
+"
+Request URL: /cake/users/delete/1
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\cake\lib\Cake\Model\Behavior\AclBehavior.php(91): AclNode->node(Array)
+#1 C:\xampp\htdocs\www\test\cake\lib\Cake\Model\Behavior\AclBehavior.php(137): AclBehavior->node(Object(User), NULL, 'Aro')
+#2 [internal function]: AclBehavior->afterDelete(Object(User))
+#3 C:\xampp\htdocs\www\test\cake\lib\Cake\Utility\ObjectCollection.php(132): call_user_func_array(Array, Array)
+#4 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#5 C:\xampp\htdocs\www\test\cake\lib\Cake\Event\CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#6 C:\xampp\htdocs\www\test\cake\lib\Cake\Model\Model.php(2432): CakeEventManager->dispatch(Object(CakeEvent))
+#7 C:\xampp\htdocs\www\test\cake\app\Controller\UsersController.php(113): Model->delete()
+#8 [internal function]: UsersController->delete('1')
+#9 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#10 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#11 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\xampp\htdocs\www\test\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2013-05-22 13:38:08 Error: [NotFoundException] Invalid user
+Request URL: /cake/users/delete/1
+Stack Trace:
+#0 [internal function]: UsersController->delete('1')
+#1 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\xampp\htdocs\www\test\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-05-22 13:38:11 Error: [NotFoundException] Invalid user
+Request URL: /cake/users/delete/1
+Stack Trace:
+#0 [internal function]: UsersController->delete('1')
+#1 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\xampp\htdocs\www\test\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-05-22 13:38:18 Error: [CakeException] AclNode::node() - Couldn't find Aro node identified by "Array
+(
+    [Aro0.model] => User
+    [Aro0.foreign_key] => 2
+)
+"
+Request URL: /cake/users/delete/2
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\cake\lib\Cake\Model\Behavior\AclBehavior.php(91): AclNode->node(Array)
+#1 C:\xampp\htdocs\www\test\cake\lib\Cake\Model\Behavior\AclBehavior.php(137): AclBehavior->node(Object(User), NULL, 'Aro')
+#2 [internal function]: AclBehavior->afterDelete(Object(User))
+#3 C:\xampp\htdocs\www\test\cake\lib\Cake\Utility\ObjectCollection.php(132): call_user_func_array(Array, Array)
+#4 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#5 C:\xampp\htdocs\www\test\cake\lib\Cake\Event\CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#6 C:\xampp\htdocs\www\test\cake\lib\Cake\Model\Model.php(2432): CakeEventManager->dispatch(Object(CakeEvent))
+#7 C:\xampp\htdocs\www\test\cake\app\Controller\UsersController.php(113): Model->delete()
+#8 [internal function]: UsersController->delete('2')
+#9 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#10 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#11 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\xampp\htdocs\www\test\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2013-05-22 13:38:27 Error: [CakeException] AclNode::node() - Couldn't find Aro node identified by "Array
+(
+    [Aro0.model] => User
+    [Aro0.foreign_key] => 4
+)
+"
+Request URL: /cake/users/delete/4
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\cake\lib\Cake\Model\Behavior\AclBehavior.php(91): AclNode->node(Array)
+#1 C:\xampp\htdocs\www\test\cake\lib\Cake\Model\Behavior\AclBehavior.php(137): AclBehavior->node(Object(User), NULL, 'Aro')
+#2 [internal function]: AclBehavior->afterDelete(Object(User))
+#3 C:\xampp\htdocs\www\test\cake\lib\Cake\Utility\ObjectCollection.php(132): call_user_func_array(Array, Array)
+#4 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#5 C:\xampp\htdocs\www\test\cake\lib\Cake\Event\CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#6 C:\xampp\htdocs\www\test\cake\lib\Cake\Model\Model.php(2432): CakeEventManager->dispatch(Object(CakeEvent))
+#7 C:\xampp\htdocs\www\test\cake\app\Controller\UsersController.php(113): Model->delete()
+#8 [internal function]: UsersController->delete('4')
+#9 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#10 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#11 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\xampp\htdocs\www\test\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2013-05-22 13:38:52 Error: [CakeException] AclNode::node() - Couldn't find Aro node identified by "Array
+(
+    [Aro0.model] => Group
+    [Aro0.foreign_key] => 2
+)
+"
+Request URL: /cake/users/add
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\cake\lib\Cake\Model\Behavior\AclBehavior.php(91): AclNode->node(Array)
+#1 C:\xampp\htdocs\www\test\cake\lib\Cake\Model\Behavior\AclBehavior.php(109): AclBehavior->node(Object(User), Array, 'Aro')
+#2 [internal function]: AclBehavior->afterSave(Object(User), true, Array)
+#3 C:\xampp\htdocs\www\test\cake\lib\Cake\Utility\ObjectCollection.php(132): call_user_func_array(Array, Array)
+#4 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#5 C:\xampp\htdocs\www\test\cake\lib\Cake\Event\CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#6 C:\xampp\htdocs\www\test\cake\lib\Cake\Model\Model.php(1770): CakeEventManager->dispatch(Object(CakeEvent))
+#7 C:\xampp\htdocs\www\test\cake\app\Controller\UsersController.php(63): Model->save(Array)
+#8 [internal function]: UsersController->add()
+#9 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#10 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#11 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\xampp\htdocs\www\test\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2013-05-22 13:40:40 Error: [CakeException] AclNode::node() - Couldn't find Aro node identified by "Array
+(
+    [Aro0.model] => Group
+    [Aro0.foreign_key] => 1
+)
+"
+Request URL: /cake/groups/delete/1
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\cake\lib\Cake\Model\Behavior\AclBehavior.php(91): AclNode->node(Array)
+#1 C:\xampp\htdocs\www\test\cake\lib\Cake\Model\Behavior\AclBehavior.php(137): AclBehavior->node(Object(Group), NULL, 'Aro')
+#2 [internal function]: AclBehavior->afterDelete(Object(Group))
+#3 C:\xampp\htdocs\www\test\cake\lib\Cake\Utility\ObjectCollection.php(132): call_user_func_array(Array, Array)
+#4 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#5 C:\xampp\htdocs\www\test\cake\lib\Cake\Event\CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#6 C:\xampp\htdocs\www\test\cake\lib\Cake\Model\Model.php(2432): CakeEventManager->dispatch(Object(CakeEvent))
+#7 C:\xampp\htdocs\www\test\cake\app\Controller\GroupsController.php(95): Model->delete()
+#8 [internal function]: GroupsController->delete('1')
+#9 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(GroupsController), Array)
+#10 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#11 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(GroupsController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\xampp\htdocs\www\test\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2013-05-22 13:40:46 Error: [CakeException] AclNode::node() - Couldn't find Aro node identified by "Array
+(
+    [Aro0.model] => Group
+    [Aro0.foreign_key] => 2
+)
+"
+Request URL: /cake/groups/delete/2
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\cake\lib\Cake\Model\Behavior\AclBehavior.php(91): AclNode->node(Array)
+#1 C:\xampp\htdocs\www\test\cake\lib\Cake\Model\Behavior\AclBehavior.php(137): AclBehavior->node(Object(Group), NULL, 'Aro')
+#2 [internal function]: AclBehavior->afterDelete(Object(Group))
+#3 C:\xampp\htdocs\www\test\cake\lib\Cake\Utility\ObjectCollection.php(132): call_user_func_array(Array, Array)
+#4 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#5 C:\xampp\htdocs\www\test\cake\lib\Cake\Event\CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#6 C:\xampp\htdocs\www\test\cake\lib\Cake\Model\Model.php(2432): CakeEventManager->dispatch(Object(CakeEvent))
+#7 C:\xampp\htdocs\www\test\cake\app\Controller\GroupsController.php(95): Model->delete()
+#8 [internal function]: GroupsController->delete('2')
+#9 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(GroupsController), Array)
+#10 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#11 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(GroupsController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\xampp\htdocs\www\test\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2013-05-22 13:40:50 Error: [CakeException] AclNode::node() - Couldn't find Aro node identified by "Array
+(
+    [Aro0.model] => Group
+    [Aro0.foreign_key] => 3
+)
+"
+Request URL: /cake/groups/delete/3
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\cake\lib\Cake\Model\Behavior\AclBehavior.php(91): AclNode->node(Array)
+#1 C:\xampp\htdocs\www\test\cake\lib\Cake\Model\Behavior\AclBehavior.php(137): AclBehavior->node(Object(Group), NULL, 'Aro')
+#2 [internal function]: AclBehavior->afterDelete(Object(Group))
+#3 C:\xampp\htdocs\www\test\cake\lib\Cake\Utility\ObjectCollection.php(132): call_user_func_array(Array, Array)
+#4 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#5 C:\xampp\htdocs\www\test\cake\lib\Cake\Event\CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#6 C:\xampp\htdocs\www\test\cake\lib\Cake\Model\Model.php(2432): CakeEventManager->dispatch(Object(CakeEvent))
+#7 C:\xampp\htdocs\www\test\cake\app\Controller\GroupsController.php(95): Model->delete()
+#8 [internal function]: GroupsController->delete('3')
+#9 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(GroupsController), Array)
+#10 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#11 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(GroupsController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\xampp\htdocs\www\test\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2013-05-22 13:41:34 Error: [CakeException] AclNode::node() - Couldn't find Aro node identified by "Array
+(
+    [Aro0.model] => User
+    [Aro0.foreign_key] => 5
+)
+"
+Request URL: /cake/users/delete/5
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\cake\lib\Cake\Model\Behavior\AclBehavior.php(91): AclNode->node(Array)
+#1 C:\xampp\htdocs\www\test\cake\lib\Cake\Model\Behavior\AclBehavior.php(137): AclBehavior->node(Object(User), NULL, 'Aro')
+#2 [internal function]: AclBehavior->afterDelete(Object(User))
+#3 C:\xampp\htdocs\www\test\cake\lib\Cake\Utility\ObjectCollection.php(132): call_user_func_array(Array, Array)
+#4 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#5 C:\xampp\htdocs\www\test\cake\lib\Cake\Event\CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#6 C:\xampp\htdocs\www\test\cake\lib\Cake\Model\Model.php(2432): CakeEventManager->dispatch(Object(CakeEvent))
+#7 C:\xampp\htdocs\www\test\cake\app\Controller\UsersController.php(113): Model->delete()
+#8 [internal function]: UsersController->delete('5')
+#9 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#10 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#11 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\xampp\htdocs\www\test\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2013-05-22 14:10:21 Error: [CakeException] AclNode::node() - Couldn't find Aro node identified by "Array
+(
+    [Aro0.model] => Group
+    [Aro0.foreign_key] => 1
+)
+"
+Request URL: /cake/users/initDb
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\cake\lib\Cake\Model\Permission.php(219): AclNode->node(Object(Group))
+#1 C:\xampp\htdocs\www\test\cake\lib\Cake\Model\Permission.php(170): Permission->getAclLink(Object(Group), 'controllers')
+#2 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(87): Permission->allow(Object(Group), 'controllers', '*', 1)
+#3 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\AclComponent.php(122): DbAcl->allow(Object(Group), 'controllers', '*')
+#4 C:\xampp\htdocs\www\test\cake\app\Controller\UsersController.php(20): AclComponent->allow(Object(Group), 'controllers')
+#5 [internal function]: UsersController->initDb()
+#6 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#7 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\xampp\htdocs\www\test\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-05-22 14:18:24 Error: [CakeException] AclNode::node() - Couldn't find Aro node identified by "Array
+(
+    [Aro0.model] => Group
+    [Aro0.foreign_key] => 1
+)
+"
+Request URL: /cake/users/initDb
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\cake\lib\Cake\Model\Permission.php(219): AclNode->node(Object(Group))
+#1 C:\xampp\htdocs\www\test\cake\lib\Cake\Model\Permission.php(170): Permission->getAclLink(Object(Group), 'controllers')
+#2 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(87): Permission->allow(Object(Group), 'controllers', '*', 1)
+#3 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\AclComponent.php(122): DbAcl->allow(Object(Group), 'controllers', '*')
+#4 C:\xampp\htdocs\www\test\cake\app\Controller\UsersController.php(20): AclComponent->allow(Object(Group), 'controllers')
+#5 [internal function]: UsersController->initDb()
+#6 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#7 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\xampp\htdocs\www\test\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-05-22 14:23:59 Error: [NotFoundException] Invalid post
+Request URL: /cake/posts/view
+Stack Trace:
+#0 [internal function]: PostsController->view()
+#1 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#2 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\xampp\htdocs\www\test\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-05-22 14:29:13 Error: [NotFoundException] Invalid post
+Request URL: /cake/posts/view
+Stack Trace:
+#0 [internal function]: PostsController->view()
+#1 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#2 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\xampp\htdocs\www\test\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-05-22 14:29:59 Error: [NotFoundException] Invalid post
+Request URL: /cake/posts/view
+Stack Trace:
+#0 [internal function]: PostsController->view()
+#1 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#2 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\xampp\htdocs\www\test\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-05-22 14:30:05 Error: [NotFoundException] Invalid post
+Request URL: /cake/posts/view
+Stack Trace:
+#0 [internal function]: PostsController->view()
+#1 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#2 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\xampp\htdocs\www\test\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-05-22 14:30:26 Error: [NotFoundException] Invalid post
+Request URL: /cake/posts/view/1
+Stack Trace:
+#0 [internal function]: PostsController->view('1')
+#1 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#2 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\xampp\htdocs\www\test\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-05-22 14:30:56 Error: [NotFoundException] Invalid post
+Request URL: /cake/posts/view
+Stack Trace:
+#0 [internal function]: PostsController->view()
+#1 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#2 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\xampp\htdocs\www\test\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-05-22 14:31:02 Error: [NotFoundException] Invalid post
+Request URL: /cake/posts/view
+Stack Trace:
+#0 [internal function]: PostsController->view()
+#1 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#2 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\xampp\htdocs\www\test\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-05-22 14:34:26 Error: [CakeException] AclNode::node() - Couldn't find Aro node identified by "Array
+(
+    [Aro0.model] => Group
+    [Aro0.foreign_key] => 1
+)
+"
+Request URL: /cake/users/initDb
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\cake\lib\Cake\Model\Permission.php(219): AclNode->node(Object(Group))
+#1 C:\xampp\htdocs\www\test\cake\lib\Cake\Model\Permission.php(170): Permission->getAclLink(Object(Group), 'controllers')
+#2 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(87): Permission->allow(Object(Group), 'controllers', '*', 1)
+#3 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\AclComponent.php(122): DbAcl->allow(Object(Group), 'controllers', '*')
+#4 C:\xampp\htdocs\www\test\cake\app\Controller\UsersController.php(20): AclComponent->allow(Object(Group), 'controllers')
+#5 [internal function]: UsersController->initDb()
+#6 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#7 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\xampp\htdocs\www\test\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-05-22 14:59:12 Error: [MissingTableException] Table aros_acos for model Permission was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'aros_acos',
+  'class' => 'Permission',
+  'ds' => 'default',
+)
+Request URL: /cake/users
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\cake\lib\Cake\Model\Model.php(3237): Model->setSource('aros_acos')
+#1 C:\xampp\htdocs\www\test\cake\lib\Cake\Model\Model.php(1319): Model->getDataSource()
+#2 C:\xampp\htdocs\www\test\cake\lib\Cake\Model\Permission.php(89): Model->schema()
+#3 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(73): Permission->check(Array, 'controllers/Use...', '*')
+#4 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\AclComponent.php(109): DbAcl->check(Array, 'controllers/Use...', '*')
+#5 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\Auth\ActionsAuthorize.php(40): AclComponent->check(Array, 'controllers/Use...')
+#6 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\AuthComponent.php(412): ActionsAuthorize->authorize(Array, Object(CakeRequest))
+#7 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\AuthComponent.php(336): AuthComponent->isAuthorized(Array)
+#8 [internal function]: AuthComponent->startup(Object(UsersController))
+#9 C:\xampp\htdocs\www\test\cake\lib\Cake\Utility\ObjectCollection.php(132): call_user_func_array(Array, Array)
+#10 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#11 C:\xampp\htdocs\www\test\cake\lib\Cake\Event\CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#12 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#13 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(184): Controller->startupProcess()
+#14 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\xampp\htdocs\www\test\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2013-05-22 15:16:21 Error: [MissingControllerException] Controller class GoupsController could not be found.
+Exception Attributes: array (
+  'class' => 'GoupsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/goups
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-22 15:17:08 Error: [CakeException] AclNode::node() - Couldn't find Aro node identified by "Array
+(
+    [Aro0.model] => group
+    [Aro0.foreign_key] => 4
+)
+"
+Request URL: /cake/users
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\cake\lib\Cake\Model\Permission.php(90): AclNode->node(Array)
+#1 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(73): Permission->check(Array, 'controllers/Use...', '*')
+#2 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\AclComponent.php(109): DbAcl->check(Array, 'controllers/Use...', '*')
+#3 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\Auth\ActionsAuthorize.php(40): AclComponent->check(Array, 'controllers/Use...')
+#4 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\AuthComponent.php(412): ActionsAuthorize->authorize(Array, Object(CakeRequest))
+#5 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\AuthComponent.php(336): AuthComponent->isAuthorized(Array)
+#6 [internal function]: AuthComponent->startup(Object(UsersController))
+#7 C:\xampp\htdocs\www\test\cake\lib\Cake\Utility\ObjectCollection.php(132): call_user_func_array(Array, Array)
+#8 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#9 C:\xampp\htdocs\www\test\cake\lib\Cake\Event\CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#10 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#11 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(184): Controller->startupProcess()
+#12 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#13 C:\xampp\htdocs\www\test\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2013-05-22 15:17:32 Error: [CakeException] AclNode::node() - Couldn't find Aro node identified by "Array
+(
+    [Aro0.model] => group
+    [Aro0.foreign_key] => 4
+)
+"
+Request URL: /cake/users/add
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\cake\lib\Cake\Model\Permission.php(90): AclNode->node(Array)
+#1 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(73): Permission->check(Array, 'controllers/Use...', '*')
+#2 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\AclComponent.php(109): DbAcl->check(Array, 'controllers/Use...', '*')
+#3 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\Auth\ActionsAuthorize.php(40): AclComponent->check(Array, 'controllers/Use...')
+#4 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\AuthComponent.php(412): ActionsAuthorize->authorize(Array, Object(CakeRequest))
+#5 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\AuthComponent.php(336): AuthComponent->isAuthorized(Array)
+#6 [internal function]: AuthComponent->startup(Object(UsersController))
+#7 C:\xampp\htdocs\www\test\cake\lib\Cake\Utility\ObjectCollection.php(132): call_user_func_array(Array, Array)
+#8 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#9 C:\xampp\htdocs\www\test\cake\lib\Cake\Event\CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#10 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#11 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(184): Controller->startupProcess()
+#12 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#13 C:\xampp\htdocs\www\test\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2013-05-22 15:17:40 Error: [CakeException] AclNode::node() - Couldn't find Aro node identified by "Array
+(
+    [Aro0.model] => group
+    [Aro0.foreign_key] => 4
+)
+"
+Request URL: /cake/users/
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\cake\lib\Cake\Model\Permission.php(90): AclNode->node(Array)
+#1 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(73): Permission->check(Array, 'controllers/Use...', '*')
+#2 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\AclComponent.php(109): DbAcl->check(Array, 'controllers/Use...', '*')
+#3 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\Auth\ActionsAuthorize.php(40): AclComponent->check(Array, 'controllers/Use...')
+#4 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\AuthComponent.php(412): ActionsAuthorize->authorize(Array, Object(CakeRequest))
+#5 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\AuthComponent.php(336): AuthComponent->isAuthorized(Array)
+#6 [internal function]: AuthComponent->startup(Object(UsersController))
+#7 C:\xampp\htdocs\www\test\cake\lib\Cake\Utility\ObjectCollection.php(132): call_user_func_array(Array, Array)
+#8 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#9 C:\xampp\htdocs\www\test\cake\lib\Cake\Event\CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#10 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#11 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(184): Controller->startupProcess()
+#12 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#13 C:\xampp\htdocs\www\test\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2013-05-22 15:19:31 Error: [CakeException] AclNode::node() - Couldn't find Aro node identified by "Array
+(
+    [Aro0.model] => User
+    [Aro0.foreign_key] => 8
+)
+"
+Request URL: /cake/users/
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\cake\lib\Cake\Model\Permission.php(90): AclNode->node(Array)
+#1 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(73): Permission->check(Array, 'controllers/Use...', '*')
+#2 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\AclComponent.php(109): DbAcl->check(Array, 'controllers/Use...', '*')
+#3 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\Auth\ActionsAuthorize.php(40): AclComponent->check(Array, 'controllers/Use...')
+#4 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\AuthComponent.php(412): ActionsAuthorize->authorize(Array, Object(CakeRequest))
+#5 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\AuthComponent.php(336): AuthComponent->isAuthorized(Array)
+#6 [internal function]: AuthComponent->startup(Object(UsersController))
+#7 C:\xampp\htdocs\www\test\cake\lib\Cake\Utility\ObjectCollection.php(132): call_user_func_array(Array, Array)
+#8 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#9 C:\xampp\htdocs\www\test\cake\lib\Cake\Event\CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#10 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#11 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(184): Controller->startupProcess()
+#12 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#13 C:\xampp\htdocs\www\test\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2013-05-22 15:20:15 Error: [CakeException] AclNode::node() - Couldn't find Aro node identified by "Array
+(
+    [Aro0.model] => User
+    [Aro0.foreign_key] => 8
+)
+"
+Request URL: /cake/users/add
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\cake\lib\Cake\Model\Permission.php(90): AclNode->node(Array)
+#1 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(73): Permission->check(Array, 'controllers/Use...', '*')
+#2 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\AclComponent.php(109): DbAcl->check(Array, 'controllers/Use...', '*')
+#3 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\Auth\ActionsAuthorize.php(40): AclComponent->check(Array, 'controllers/Use...')
+#4 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\AuthComponent.php(412): ActionsAuthorize->authorize(Array, Object(CakeRequest))
+#5 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\AuthComponent.php(336): AuthComponent->isAuthorized(Array)
+#6 [internal function]: AuthComponent->startup(Object(UsersController))
+#7 C:\xampp\htdocs\www\test\cake\lib\Cake\Utility\ObjectCollection.php(132): call_user_func_array(Array, Array)
+#8 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#9 C:\xampp\htdocs\www\test\cake\lib\Cake\Event\CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#10 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#11 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(184): Controller->startupProcess()
+#12 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#13 C:\xampp\htdocs\www\test\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2013-05-22 15:20:48 Error: [CakeException] AclNode::node() - Couldn't find Aro node identified by "Array
+(
+    [Aro0.model] => User
+    [Aro0.foreign_key] => 8
+)
+"
+Request URL: /cake/users/add
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\cake\lib\Cake\Model\Permission.php(90): AclNode->node(Array)
+#1 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(73): Permission->check(Array, 'controllers/Use...', '*')
+#2 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\AclComponent.php(109): DbAcl->check(Array, 'controllers/Use...', '*')
+#3 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\Auth\ActionsAuthorize.php(40): AclComponent->check(Array, 'controllers/Use...')
+#4 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\AuthComponent.php(412): ActionsAuthorize->authorize(Array, Object(CakeRequest))
+#5 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\AuthComponent.php(336): AuthComponent->isAuthorized(Array)
+#6 [internal function]: AuthComponent->startup(Object(UsersController))
+#7 C:\xampp\htdocs\www\test\cake\lib\Cake\Utility\ObjectCollection.php(132): call_user_func_array(Array, Array)
+#8 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#9 C:\xampp\htdocs\www\test\cake\lib\Cake\Event\CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#10 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#11 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(184): Controller->startupProcess()
+#12 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#13 C:\xampp\htdocs\www\test\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2013-05-22 15:21:26 Error: [CakeException] AclNode::node() - Couldn't find Aro node identified by "Array
+(
+    [Aro0.model] => User
+    [Aro0.foreign_key] => 8
+)
+"
+Request URL: /cake/users/add
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\cake\lib\Cake\Model\Permission.php(90): AclNode->node(Array)
+#1 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(73): Permission->check(Array, 'controllers/Use...', '*')
+#2 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\AclComponent.php(109): DbAcl->check(Array, 'controllers/Use...', '*')
+#3 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\Auth\ActionsAuthorize.php(40): AclComponent->check(Array, 'controllers/Use...')
+#4 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\AuthComponent.php(412): ActionsAuthorize->authorize(Array, Object(CakeRequest))
+#5 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\AuthComponent.php(336): AuthComponent->isAuthorized(Array)
+#6 [internal function]: AuthComponent->startup(Object(UsersController))
+#7 C:\xampp\htdocs\www\test\cake\lib\Cake\Utility\ObjectCollection.php(132): call_user_func_array(Array, Array)
+#8 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#9 C:\xampp\htdocs\www\test\cake\lib\Cake\Event\CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#10 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#11 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(184): Controller->startupProcess()
+#12 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#13 C:\xampp\htdocs\www\test\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2013-05-22 15:21:28 Error: [CakeException] AclNode::node() - Couldn't find Aro node identified by "Array
+(
+    [Aro0.model] => User
+    [Aro0.foreign_key] => 8
+)
+"
+Request URL: /cake/users/add
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\cake\lib\Cake\Model\Permission.php(90): AclNode->node(Array)
+#1 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(73): Permission->check(Array, 'controllers/Use...', '*')
+#2 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\AclComponent.php(109): DbAcl->check(Array, 'controllers/Use...', '*')
+#3 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\Auth\ActionsAuthorize.php(40): AclComponent->check(Array, 'controllers/Use...')
+#4 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\AuthComponent.php(412): ActionsAuthorize->authorize(Array, Object(CakeRequest))
+#5 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\AuthComponent.php(336): AuthComponent->isAuthorized(Array)
+#6 [internal function]: AuthComponent->startup(Object(UsersController))
+#7 C:\xampp\htdocs\www\test\cake\lib\Cake\Utility\ObjectCollection.php(132): call_user_func_array(Array, Array)
+#8 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#9 C:\xampp\htdocs\www\test\cake\lib\Cake\Event\CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#10 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#11 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(184): Controller->startupProcess()
+#12 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#13 C:\xampp\htdocs\www\test\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2013-05-22 15:21:29 Error: [CakeException] AclNode::node() - Couldn't find Aro node identified by "Array
+(
+    [Aro0.model] => User
+    [Aro0.foreign_key] => 8
+)
+"
+Request URL: /cake/users/add
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\cake\lib\Cake\Model\Permission.php(90): AclNode->node(Array)
+#1 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(73): Permission->check(Array, 'controllers/Use...', '*')
+#2 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\AclComponent.php(109): DbAcl->check(Array, 'controllers/Use...', '*')
+#3 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\Auth\ActionsAuthorize.php(40): AclComponent->check(Array, 'controllers/Use...')
+#4 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\AuthComponent.php(412): ActionsAuthorize->authorize(Array, Object(CakeRequest))
+#5 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\AuthComponent.php(336): AuthComponent->isAuthorized(Array)
+#6 [internal function]: AuthComponent->startup(Object(UsersController))
+#7 C:\xampp\htdocs\www\test\cake\lib\Cake\Utility\ObjectCollection.php(132): call_user_func_array(Array, Array)
+#8 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#9 C:\xampp\htdocs\www\test\cake\lib\Cake\Event\CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#10 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#11 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(184): Controller->startupProcess()
+#12 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#13 C:\xampp\htdocs\www\test\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2013-05-22 15:21:30 Error: [CakeException] AclNode::node() - Couldn't find Aro node identified by "Array
+(
+    [Aro0.model] => User
+    [Aro0.foreign_key] => 8
+)
+"
+Request URL: /cake/users/add
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\cake\lib\Cake\Model\Permission.php(90): AclNode->node(Array)
+#1 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(73): Permission->check(Array, 'controllers/Use...', '*')
+#2 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\AclComponent.php(109): DbAcl->check(Array, 'controllers/Use...', '*')
+#3 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\Auth\ActionsAuthorize.php(40): AclComponent->check(Array, 'controllers/Use...')
+#4 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\AuthComponent.php(412): ActionsAuthorize->authorize(Array, Object(CakeRequest))
+#5 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\AuthComponent.php(336): AuthComponent->isAuthorized(Array)
+#6 [internal function]: AuthComponent->startup(Object(UsersController))
+#7 C:\xampp\htdocs\www\test\cake\lib\Cake\Utility\ObjectCollection.php(132): call_user_func_array(Array, Array)
+#8 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#9 C:\xampp\htdocs\www\test\cake\lib\Cake\Event\CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#10 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#11 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(184): Controller->startupProcess()
+#12 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#13 C:\xampp\htdocs\www\test\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2013-05-22 15:21:31 Error: [CakeException] AclNode::node() - Couldn't find Aro node identified by "Array
+(
+    [Aro0.model] => User
+    [Aro0.foreign_key] => 8
+)
+"
+Request URL: /cake/users/add
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\cake\lib\Cake\Model\Permission.php(90): AclNode->node(Array)
+#1 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(73): Permission->check(Array, 'controllers/Use...', '*')
+#2 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\AclComponent.php(109): DbAcl->check(Array, 'controllers/Use...', '*')
+#3 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\Auth\ActionsAuthorize.php(40): AclComponent->check(Array, 'controllers/Use...')
+#4 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\AuthComponent.php(412): ActionsAuthorize->authorize(Array, Object(CakeRequest))
+#5 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\AuthComponent.php(336): AuthComponent->isAuthorized(Array)
+#6 [internal function]: AuthComponent->startup(Object(UsersController))
+#7 C:\xampp\htdocs\www\test\cake\lib\Cake\Utility\ObjectCollection.php(132): call_user_func_array(Array, Array)
+#8 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#9 C:\xampp\htdocs\www\test\cake\lib\Cake\Event\CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#10 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#11 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(184): Controller->startupProcess()
+#12 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#13 C:\xampp\htdocs\www\test\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2013-05-22 15:21:32 Error: [CakeException] AclNode::node() - Couldn't find Aro node identified by "Array
+(
+    [Aro0.model] => User
+    [Aro0.foreign_key] => 8
+)
+"
+Request URL: /cake/users/add
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\cake\lib\Cake\Model\Permission.php(90): AclNode->node(Array)
+#1 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(73): Permission->check(Array, 'controllers/Use...', '*')
+#2 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\AclComponent.php(109): DbAcl->check(Array, 'controllers/Use...', '*')
+#3 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\Auth\ActionsAuthorize.php(40): AclComponent->check(Array, 'controllers/Use...')
+#4 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\AuthComponent.php(412): ActionsAuthorize->authorize(Array, Object(CakeRequest))
+#5 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\AuthComponent.php(336): AuthComponent->isAuthorized(Array)
+#6 [internal function]: AuthComponent->startup(Object(UsersController))
+#7 C:\xampp\htdocs\www\test\cake\lib\Cake\Utility\ObjectCollection.php(132): call_user_func_array(Array, Array)
+#8 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#9 C:\xampp\htdocs\www\test\cake\lib\Cake\Event\CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#10 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#11 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(184): Controller->startupProcess()
+#12 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#13 C:\xampp\htdocs\www\test\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2013-05-22 15:21:33 Error: [CakeException] AclNode::node() - Couldn't find Aro node identified by "Array
+(
+    [Aro0.model] => User
+    [Aro0.foreign_key] => 8
+)
+"
+Request URL: /cake/users/add
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\cake\lib\Cake\Model\Permission.php(90): AclNode->node(Array)
+#1 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(73): Permission->check(Array, 'controllers/Use...', '*')
+#2 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\AclComponent.php(109): DbAcl->check(Array, 'controllers/Use...', '*')
+#3 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\Auth\ActionsAuthorize.php(40): AclComponent->check(Array, 'controllers/Use...')
+#4 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\AuthComponent.php(412): ActionsAuthorize->authorize(Array, Object(CakeRequest))
+#5 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\AuthComponent.php(336): AuthComponent->isAuthorized(Array)
+#6 [internal function]: AuthComponent->startup(Object(UsersController))
+#7 C:\xampp\htdocs\www\test\cake\lib\Cake\Utility\ObjectCollection.php(132): call_user_func_array(Array, Array)
+#8 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#9 C:\xampp\htdocs\www\test\cake\lib\Cake\Event\CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#10 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#11 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(184): Controller->startupProcess()
+#12 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#13 C:\xampp\htdocs\www\test\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2013-05-22 15:22:01 Error: [CakeException] AclNode::node() - Couldn't find Aro node identified by "Array
+(
+    [Aro0.model] => User
+    [Aro0.foreign_key] => 8
+)
+"
+Request URL: /cake/users/add
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\cake\lib\Cake\Model\Permission.php(90): AclNode->node(Array)
+#1 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(73): Permission->check(Array, 'controllers/Use...', '*')
+#2 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\AclComponent.php(109): DbAcl->check(Array, 'controllers/Use...', '*')
+#3 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\Auth\ActionsAuthorize.php(40): AclComponent->check(Array, 'controllers/Use...')
+#4 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\AuthComponent.php(412): ActionsAuthorize->authorize(Array, Object(CakeRequest))
+#5 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\AuthComponent.php(336): AuthComponent->isAuthorized(Array)
+#6 [internal function]: AuthComponent->startup(Object(UsersController))
+#7 C:\xampp\htdocs\www\test\cake\lib\Cake\Utility\ObjectCollection.php(132): call_user_func_array(Array, Array)
+#8 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#9 C:\xampp\htdocs\www\test\cake\lib\Cake\Event\CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#10 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#11 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(184): Controller->startupProcess()
+#12 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#13 C:\xampp\htdocs\www\test\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2013-05-22 15:22:03 Error: [CakeException] AclNode::node() - Couldn't find Aro node identified by "Array
+(
+    [Aro0.model] => User
+    [Aro0.foreign_key] => 8
+)
+"
+Request URL: /cake/users/add
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\cake\lib\Cake\Model\Permission.php(90): AclNode->node(Array)
+#1 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(73): Permission->check(Array, 'controllers/Use...', '*')
+#2 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\AclComponent.php(109): DbAcl->check(Array, 'controllers/Use...', '*')
+#3 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\Auth\ActionsAuthorize.php(40): AclComponent->check(Array, 'controllers/Use...')
+#4 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\AuthComponent.php(412): ActionsAuthorize->authorize(Array, Object(CakeRequest))
+#5 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\AuthComponent.php(336): AuthComponent->isAuthorized(Array)
+#6 [internal function]: AuthComponent->startup(Object(UsersController))
+#7 C:\xampp\htdocs\www\test\cake\lib\Cake\Utility\ObjectCollection.php(132): call_user_func_array(Array, Array)
+#8 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#9 C:\xampp\htdocs\www\test\cake\lib\Cake\Event\CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#10 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#11 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(184): Controller->startupProcess()
+#12 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#13 C:\xampp\htdocs\www\test\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2013-05-22 15:22:04 Error: [CakeException] AclNode::node() - Couldn't find Aro node identified by "Array
+(
+    [Aro0.model] => User
+    [Aro0.foreign_key] => 8
+)
+"
+Request URL: /cake/users/add
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\cake\lib\Cake\Model\Permission.php(90): AclNode->node(Array)
+#1 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(73): Permission->check(Array, 'controllers/Use...', '*')
+#2 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\AclComponent.php(109): DbAcl->check(Array, 'controllers/Use...', '*')
+#3 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\Auth\ActionsAuthorize.php(40): AclComponent->check(Array, 'controllers/Use...')
+#4 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\AuthComponent.php(412): ActionsAuthorize->authorize(Array, Object(CakeRequest))
+#5 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\AuthComponent.php(336): AuthComponent->isAuthorized(Array)
+#6 [internal function]: AuthComponent->startup(Object(UsersController))
+#7 C:\xampp\htdocs\www\test\cake\lib\Cake\Utility\ObjectCollection.php(132): call_user_func_array(Array, Array)
+#8 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#9 C:\xampp\htdocs\www\test\cake\lib\Cake\Event\CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#10 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#11 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(184): Controller->startupProcess()
+#12 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#13 C:\xampp\htdocs\www\test\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2013-05-22 15:22:05 Error: [CakeException] AclNode::node() - Couldn't find Aro node identified by "Array
+(
+    [Aro0.model] => User
+    [Aro0.foreign_key] => 8
+)
+"
+Request URL: /cake/users/add
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\cake\lib\Cake\Model\Permission.php(90): AclNode->node(Array)
+#1 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(73): Permission->check(Array, 'controllers/Use...', '*')
+#2 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\AclComponent.php(109): DbAcl->check(Array, 'controllers/Use...', '*')
+#3 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\Auth\ActionsAuthorize.php(40): AclComponent->check(Array, 'controllers/Use...')
+#4 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\AuthComponent.php(412): ActionsAuthorize->authorize(Array, Object(CakeRequest))
+#5 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\AuthComponent.php(336): AuthComponent->isAuthorized(Array)
+#6 [internal function]: AuthComponent->startup(Object(UsersController))
+#7 C:\xampp\htdocs\www\test\cake\lib\Cake\Utility\ObjectCollection.php(132): call_user_func_array(Array, Array)
+#8 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#9 C:\xampp\htdocs\www\test\cake\lib\Cake\Event\CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#10 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#11 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(184): Controller->startupProcess()
+#12 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#13 C:\xampp\htdocs\www\test\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2013-05-22 15:22:06 Error: [CakeException] AclNode::node() - Couldn't find Aro node identified by "Array
+(
+    [Aro0.model] => User
+    [Aro0.foreign_key] => 8
+)
+"
+Request URL: /cake/users/add
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\cake\lib\Cake\Model\Permission.php(90): AclNode->node(Array)
+#1 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(73): Permission->check(Array, 'controllers/Use...', '*')
+#2 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\AclComponent.php(109): DbAcl->check(Array, 'controllers/Use...', '*')
+#3 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\Auth\ActionsAuthorize.php(40): AclComponent->check(Array, 'controllers/Use...')
+#4 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\AuthComponent.php(412): ActionsAuthorize->authorize(Array, Object(CakeRequest))
+#5 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Component\AuthComponent.php(336): AuthComponent->isAuthorized(Array)
+#6 [internal function]: AuthComponent->startup(Object(UsersController))
+#7 C:\xampp\htdocs\www\test\cake\lib\Cake\Utility\ObjectCollection.php(132): call_user_func_array(Array, Array)
+#8 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#9 C:\xampp\htdocs\www\test\cake\lib\Cake\Event\CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#10 C:\xampp\htdocs\www\test\cake\lib\Cake\Controller\Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#11 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(184): Controller->startupProcess()
+#12 C:\xampp\htdocs\www\test\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#13 C:\xampp\htdocs\www\test\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}

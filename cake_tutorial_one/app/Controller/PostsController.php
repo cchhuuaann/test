@@ -54,10 +54,10 @@ class PostsController extends AppController {
  */
 	public function add() {
 		if ($this->request->is('post')) {
-			$this->Post->create();
 			$this->request->data['Post']['user_id'] = $this->Auth->user('id');
+			$this->Post->create();
 			if ($this->Post->save($this->request->data)) {
-				$this->Session->setFlash(__('The post has been saved'));
+				$this->Session->setFlash(__('The post has been saved'),'default',array('claa'=>'success'));
 				$this->redirect(array('action' => 'index'));
 			} else {
 				$this->Session->setFlash(__('The post could not be saved. Please, try again.'));
@@ -87,6 +87,8 @@ class PostsController extends AppController {
 			$options = array('conditions' => array('Post.' . $this->Post->primaryKey => $id));
 			$this->request->data = $this->Post->find('first', $options);
 		}
+		$users = $this->Post->User->find('list');
+		$this->set(compact('users'));
 	}
 
 /**

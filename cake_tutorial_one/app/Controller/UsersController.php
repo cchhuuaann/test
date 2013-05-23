@@ -9,13 +9,20 @@ class UsersController extends AppController {
 
 	public function beforeFilter() {
 		parent::beforeFilter();
-		$this->Auth->allow('add');
+		$this->Auth->allow('add','logout');
 	}
 	
 	public function login() {
+		if($this->Auth->user()) {
+			$this->Session->setFlash(__('You are logged'),'default',array('class'=>'success'));
+			$this->redirect($this->Auth->redirectUrl());
+		}
 		if($this->request->is('post')) {
-			if($this->Auth->login($user)) {
-				$this->redirect($this->Auth->redirect());
+			if($this->Auth->login()) {
+				$this->User->id = $this->Auth->user('id');
+				$this->User->saveField('ip_address',$this->request->clientIp());
+				$this->Session->setFlash(__('Exellent!'),'default',array('class'=>'success'));
+				$this->redirect($this->Auth->redirectUrl());
 			} else {
 				$this->Session->setFlash(__('Invalid username or password, try again'));
 			}
@@ -23,6 +30,7 @@ class UsersController extends AppController {
 	}
 	
 	public function logout() {
+		$this->Session->setFlash(__('You are Logout!'),'default',array('class'=>'success'));
 		$this->redirect($this->Auth->logout());
 	}
 	

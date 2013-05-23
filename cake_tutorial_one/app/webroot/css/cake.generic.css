@@ -738,3 +738,6 @@ pre {
 #url-rewriting-warning {
 	display:none;
 }
+#busy-indicator {
+	display: none;
+}

@@ -24,8 +24,6 @@ $this->Paginator->options(array(
 		'evalScripts' => 'true',
 ));
 
-$this->Js->get('div#header')->effect('show');
-
 ?>
 <!DOCTYPE html>
 <html>

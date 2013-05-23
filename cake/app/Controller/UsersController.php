@@ -24,24 +24,24 @@ class UsersController extends AppController {
 		$this->Acl->allow($group, 'controllers/Posts');
 		$this->Acl->allow($group, 'controllers/Widgets');
 		
-		$group->id = 3;
+		$geoup->id = 3;
 		$this->Acl->deny($group, 'controllers');
 		$this->Acl->allow($group, 'controllers/Posts/add');
 		$this->Acl->allow($group, 'controllers/Posts/edit');
 		$this->Acl->allow($group, 'controllers/Widgets/add');
 		$this->Acl->allow($group, 'controllers/Widgets/edit');
 		
-		echo "all done";
-		exit;
+		echo 'All done!';
+		exit();
 	}
 	
 	public function login() {
-		if ($this->Session->read('Auth.User')) {
-			$this->Session->setFlash(__('You are logged in!'), 'default', array('class' => 'success'));
-			$this->redirect('/', null, false);
-		} elseif($this->request->is('post')) {
+		if($this->Session->read('Auth.User')) {
+			$this->Session->setFlash(__('You are logged in!'));
+			$this->redirect('/',null,false);
+		}
+		if($this->request->is('post')) {
 			if($this->Auth->login()) {
-				$this->User->save();
 				$this->redirect($this->Auth->redirectUrl());
 			} else {
 				$this->Session->setFlash('Your username or password was incorrect.');
@@ -50,10 +50,9 @@ class UsersController extends AppController {
 	}
 	
 	public function logout() {
-		$this->Session->setFlash(__('Good-bye'), 'default', array('class' => 'success'));
+		$this->Session->setFlash(__('Good bye'));
 		$this->redirect($this->Auth->logout());
 	}
-	
 	
 /**
  * index method
@@ -89,7 +88,7 @@ class UsersController extends AppController {
 		if ($this->request->is('post')) {
 			$this->User->create();
 			if ($this->User->save($this->request->data)) {
-				$this->Session->setFlash(__('The user has been saved'), 'default', array('class' => 'success'));
+				$this->Session->setFlash(__('The user has been saved'));
 				$this->redirect(array('action' => 'index'));
 			} else {
 				$this->Session->setFlash(__('The user could not be saved. Please, try again.'));
@@ -112,7 +111,7 @@ class UsersController extends AppController {
 		}
 		if ($this->request->is('post') || $this->request->is('put')) {
 			if ($this->User->save($this->request->data)) {
-				$this->Session->setFlash(__('The user has been saved'), 'default', array('class' => 'success'));
+				$this->Session->setFlash(__('The user has been saved'));
 				$this->redirect(array('action' => 'index'));
 			} else {
 				$this->Session->setFlash(__('The user could not be saved. Please, try again.'));
@@ -139,7 +138,7 @@ class UsersController extends AppController {
 		}
 		$this->request->onlyAllow('post', 'delete');
 		if ($this->User->delete()) {
-			$this->Session->setFlash(__('User deleted'), 'default', array('class' => 'success'));
+			$this->Session->setFlash(__('User deleted'));
 			$this->redirect(array('action' => 'index'));
 		}
 		$this->Session->setFlash(__('User was not deleted'));

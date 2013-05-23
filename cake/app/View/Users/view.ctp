@@ -49,7 +49,7 @@
 <div class="related">
 	<h3><?php echo __('Related Posts'); ?></h3>
 	<?php if (!empty($user['Post'])): ?>
-	<table>
+	<table cellpadding = "0" cellspacing = "0">
 	<tr>
 		<th><?php echo __('Id'); ?></th>
 		<th><?php echo __('User Id'); ?></th>

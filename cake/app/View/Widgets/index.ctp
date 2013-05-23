@@ -1,6 +1,6 @@
 <div class="widgets index">
 	<h2><?php echo __('Widgets'); ?></h2>
-	<table>
+	<table cellpadding="0" cellspacing="0">
 	<tr>
 			<th><?php echo $this->Paginator->sort('id'); ?></th>
 			<th><?php echo $this->Paginator->sort('name'); ?></th>

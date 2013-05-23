@@ -6,9 +6,10 @@ App::uses('AppController', 'Controller');
  * @property Widget $Widget
  */
 class WidgetsController extends AppController {
-
+	
 	public function beforeFilter() {
 		parent::beforeFilter();
+		
 		$this->Auth->allow('index','view');
 	}
 	
@@ -46,7 +47,7 @@ class WidgetsController extends AppController {
 		if ($this->request->is('post')) {
 			$this->Widget->create();
 			if ($this->Widget->save($this->request->data)) {
-				$this->Session->setFlash(__('The widget has been saved'), 'default', array('class' => 'success'));
+				$this->Session->setFlash(__('The widget has been saved'));
 				$this->redirect(array('action' => 'index'));
 			} else {
 				$this->Session->setFlash(__('The widget could not be saved. Please, try again.'));
@@ -67,7 +68,7 @@ class WidgetsController extends AppController {
 		}
 		if ($this->request->is('post') || $this->request->is('put')) {
 			if ($this->Widget->save($this->request->data)) {
-				$this->Session->setFlash(__('The widget has been saved'), 'default', array('class' => 'success'));
+				$this->Session->setFlash(__('The widget has been saved'));
 				$this->redirect(array('action' => 'index'));
 			} else {
 				$this->Session->setFlash(__('The widget could not be saved. Please, try again.'));
@@ -92,7 +93,7 @@ class WidgetsController extends AppController {
 		}
 		$this->request->onlyAllow('post', 'delete');
 		if ($this->Widget->delete()) {
-			$this->Session->setFlash(__('Widget deleted'), 'default', array('class' => 'success'));
+			$this->Session->setFlash(__('Widget deleted'));
 			$this->redirect(array('action' => 'index'));
 		}
 		$this->Session->setFlash(__('Widget was not deleted'));

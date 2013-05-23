@@ -33,18 +33,49 @@ App::uses('Controller', 'Controller');
  */
 class AppController extends Controller {
 	
+	public $uses = array('User');
+	
+	public $theme = 'security';
+	
+	public $helpers = array(
+			'Html',
+			'Form',
+			'Js' => array('Jquery')
+		);
+	
 	public $components = array(
 			'DebugKit.Toolbar',
 			'Session',
-			'Auth'=>array(
-					'loginRedirect'=>array('controller'=>'posts','action'=>'index'),
-					'logoutRedirect'=>array('controller'=>'users','action'=>'index'),
-					'authorize'=>array('Controller')
-				)
+			'Auth' => array(
+					'loginRedirect' => array(
+							'controller' => 'posts',
+							'action' => 'index'
+						),
+					'logoutRedirect' => array(
+							'controller' => 'users',
+							'action' => 'index'
+						),
+					'authorize' =>array(
+							'Controller'
+						)
+					
+				),
+			'RequestHandler'
 		);
 	
-	public function beforeFilter() {
-		$this->Auth->allow('index','view','login');
+	public $paginate = array(
+			'limit' => 5
+		);
+
+	public function __ipAddress() {
+		$this->User->id = $this->Auth->user('id');
+		$ip = $this->User->field('ip_address');
+	
+		if($ip === $this->request->clientIp()) {
+			return true;
+		}
+	
+		return false;
 	}
 	
 	public function isAuthorized($user) {
@@ -54,4 +85,16 @@ class AppController extends Controller {
 		
 		return false;
 	}
+	
+	public function beforeFilter() {
+		$this->Session->renew();
+		
+		if($this->Auth->user() && !$this->__ipAddress()) {
+			$this->Session->setFlash(__('Your ip address is wrong. You are Logout!'));
+			$this->redirect($this->Auth->logout());
+		}
+		
+		$this->Auth->allow('index','view');
+	}
+	
 }
