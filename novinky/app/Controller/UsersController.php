@@ -13,14 +13,14 @@ class UsersController extends AppController {
 		$this->Auth->allow('login');
 	}
 	
-	public function admin_login() {
+	public function login() {
 		if($this->Session->read('Auth.User')) {
 			$this->redirect(array('admin' => true, 'controller' => 'zpravy', 'action' => 'index'), null, false);
 		}
 		
 		if($this->request->is('post')) {
 			if($this->Auth->login()) {
-				$this->redirect($this->Auth->redirectUrl());
+				$this->redirect($this->Auth->redirectUrl(array('admin' => true, 'controller' => 'zpravy', 'action' => 'index')));
 			} else {
 				$this->Session->setFlash(__('Invalid username or password'));
 			}

@@ -39,11 +39,11 @@ class AppController extends Controller {
 	
 	public $components = array(
 			'Auth' => array(
-					'loginRedirect' => array(
+					/* 'loginRedirect' => array(
 							'admin' => true,
 							'controller' => 'zpravy',
 							'action' => 'index'
-						),
+						), */
 					'logoutRedirect' => array(
 							'admin' => false,
 							'controller' => 'zpravy',
