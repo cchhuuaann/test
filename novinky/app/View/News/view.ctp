@@ -31,7 +31,7 @@
 <div class="actions">
 	<h3><?php echo __('Actions'); ?></h3>
 	<ul>
-		<li><?php echo $this->Html->link(__('Administrace'), array('admin' => true, 'controller' => 'users', 'action' => 'login')); ?></li>
+		<li><?php echo $this->Html->link(__('Administrace'), array('controller' => 'users', 'action' => 'login')); ?></li>
 		<li><?php echo $this->Html->link(__('Zpravy'), array('controller' => 'zpravy')); ?></li>
 	</ul>
 </div>

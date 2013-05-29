@@ -42,7 +42,6 @@
 	<h3><?php echo __('Actions'); ?></h3>
 	<ul>
 		<li><?php echo $this->Html->link(__('New News'), array('action' => 'add')); ?></li>
-		<li><?php echo $this->Html->link(__('List Users'), array('controller' => 'users')); ?></li>
-		<li><?php echo $this->Html->link(__('Logout'), array('admin' => false, 'controller' => 'users', 'action' => 'logout')); ?></li>
+		<li><?php echo $this->Html->link(__('Logout'), array('plugin' => null, 'controller' => 'users' , 'action' => 'logout')); ?></li>
 	</ul>
 </div>

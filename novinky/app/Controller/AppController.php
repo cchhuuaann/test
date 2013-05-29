@@ -45,8 +45,8 @@ class AppController extends Controller {
 							'action' => 'index'
 						), */
 					'logoutRedirect' => array(
-							'admin' => false,
-							'controller' => 'zpravy',
+							'plugin' => null,
+							'controller' => 'news',
 							'action' => 'index'
 						)
 				),

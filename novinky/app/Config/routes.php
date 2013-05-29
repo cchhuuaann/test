@@ -33,8 +33,8 @@
 	Router::connect('/zpravy', array('controller' => 'news', 'action' => 'index'));
 	Router::connect('/zpravy/:id-:title', array('controller' => 'news','action' => 'view'), array('pass' => array('id','title'), 'id' => '[0-9]+'));
 
-	Router::connect('/admin/zpravy', array('admin' => true, 'controller' => 'news'));
-	Router::connect('/admin/zpravy/:action/*', array('admin' => true, 'controller' => 'news'));
+	Router::connect('/admin/zpravy', array('plugin' => 'admin', 'controller' => 'news', 'action' => 'index'));
+	Router::connect('/admin/zpravy/:action/*', array('plugin' => 'admin', 'controller' => 'news'));
 	
 /**
  * Load all plugin routes. See the CakePlugin documentation on
