@@ -6,7 +6,7 @@
 			<li>
 				<h3>
 					<?php
-						echo $this->Html->link(h($news['News']['title']), array('controller' => 'news', 'action' => 'view', 'id' => $news['News']['id'], 'title' => h($news['News']['title'])));
+						echo $this->Html->link(h($news['News']['title']), array('controller' => 'news', 'action' => 'view', 'id' => $news['News']['id'], 'title' => h($news['News']['title']), '?' => array('id' => '1')));
 					?>
 				</h3>
 			</li>
