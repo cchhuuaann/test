@@ -1,4 +1,5 @@
 <div class="news index">
+
 	<h2><?php echo __('News'); ?></h2>
 	<?php foreach ($news as $news): ?>
 	<div style="margin: 10px">
