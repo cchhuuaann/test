@@ -1,0 +1,208 @@
+2013-06-10 15:28:48 Error: [MissingControllerException] Controller class GalleryController could not be found.
+Exception Attributes: array (
+  'class' => 'GalleryController',
+  'plugin' => 'Gallery',
+)
+Request URL: /gallery/gallery
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\gallery\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-06-10 16:07:10 Error: [MissingHelperException] Helper class TexyHelper could not be found.
+Exception Attributes: array (
+  'class' => 'TexyHelper',
+  'plugin' => 'Texy',
+)
+Request URL: /gallery/posts/add
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\gallery\lib\Cake\View\View.php(884): HelperCollection->load('Texy.Texy', Array)
+#1 C:\xampp\htdocs\www\test\gallery\lib\Cake\View\View.php(464): View->loadHelpers()
+#2 C:\xampp\htdocs\www\test\gallery\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#3 C:\xampp\htdocs\www\test\gallery\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#4 C:\xampp\htdocs\www\test\gallery\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\www\test\gallery\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2013-06-10 16:08:49 Error: [MissingHelperException] Helper class TexyHelper could not be found.
+Exception Attributes: array (
+  'class' => 'TexyHelper',
+  'plugin' => false,
+)
+Request URL: /gallery/posts/add
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\gallery\lib\Cake\View\View.php(884): HelperCollection->load('Texy', Array)
+#1 C:\xampp\htdocs\www\test\gallery\lib\Cake\View\View.php(464): View->loadHelpers()
+#2 C:\xampp\htdocs\www\test\gallery\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#3 C:\xampp\htdocs\www\test\gallery\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#4 C:\xampp\htdocs\www\test\gallery\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\www\test\gallery\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2013-06-10 16:08:51 Error: [MissingHelperException] Helper class TexyHelper could not be found.
+Exception Attributes: array (
+  'class' => 'TexyHelper',
+  'plugin' => false,
+)
+Request URL: /gallery/posts/add
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\gallery\lib\Cake\View\View.php(884): HelperCollection->load('Texy', Array)
+#1 C:\xampp\htdocs\www\test\gallery\lib\Cake\View\View.php(464): View->loadHelpers()
+#2 C:\xampp\htdocs\www\test\gallery\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#3 C:\xampp\htdocs\www\test\gallery\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#4 C:\xampp\htdocs\www\test\gallery\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\www\test\gallery\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2013-06-10 16:08:52 Error: [MissingHelperException] Helper class TexyHelper could not be found.
+Exception Attributes: array (
+  'class' => 'TexyHelper',
+  'plugin' => false,
+)
+Request URL: /gallery/posts/add
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\gallery\lib\Cake\View\View.php(884): HelperCollection->load('Texy', Array)
+#1 C:\xampp\htdocs\www\test\gallery\lib\Cake\View\View.php(464): View->loadHelpers()
+#2 C:\xampp\htdocs\www\test\gallery\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#3 C:\xampp\htdocs\www\test\gallery\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#4 C:\xampp\htdocs\www\test\gallery\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\www\test\gallery\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2013-06-10 16:08:52 Error: [MissingHelperException] Helper class TexyHelper could not be found.
+Exception Attributes: array (
+  'class' => 'TexyHelper',
+  'plugin' => false,
+)
+Request URL: /gallery/posts/add
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\gallery\lib\Cake\View\View.php(884): HelperCollection->load('Texy', Array)
+#1 C:\xampp\htdocs\www\test\gallery\lib\Cake\View\View.php(464): View->loadHelpers()
+#2 C:\xampp\htdocs\www\test\gallery\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#3 C:\xampp\htdocs\www\test\gallery\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#4 C:\xampp\htdocs\www\test\gallery\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\www\test\gallery\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2013-06-10 16:09:37 Error: [MissingHelperException] Helper class TexyHelper could not be found.
+Exception Attributes: array (
+  'class' => 'TexyHelper',
+  'plugin' => false,
+)
+Request URL: /gallery/posts/add
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\gallery\lib\Cake\View\View.php(884): HelperCollection->load('Texy', Array)
+#1 C:\xampp\htdocs\www\test\gallery\lib\Cake\View\View.php(464): View->loadHelpers()
+#2 C:\xampp\htdocs\www\test\gallery\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#3 C:\xampp\htdocs\www\test\gallery\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#4 C:\xampp\htdocs\www\test\gallery\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\www\test\gallery\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2013-06-11 10:15:24 Error: [MissingControllerException] Controller class TinyMCEController could not be found.
+Exception Attributes: array (
+  'class' => 'TinyMCEController',
+  'plugin' => NULL,
+)
+Request URL: /gallery/TinyMCE/js/tiny_mce/themes/modern/editor_template.js
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\gallery\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-06-11 10:15:29 Error: [MissingControllerException] Controller class TinyMCEController could not be found.
+Exception Attributes: array (
+  'class' => 'TinyMCEController',
+  'plugin' => NULL,
+)
+Request URL: /gallery/TinyMCE/js/tiny_mce/themes/modern/editor_template.js
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\gallery\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-06-11 10:15:32 Error: [MissingControllerException] Controller class TinyMCEController could not be found.
+Exception Attributes: array (
+  'class' => 'TinyMCEController',
+  'plugin' => NULL,
+)
+Request URL: /gallery/TinyMCE/js/tiny_mce/themes/modern/editor_template.js
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\gallery\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-06-11 11:52:12 Error: [MissingComponentException] Component class ImagineComponent could not be found.
+Exception Attributes: array (
+  'class' => 'ImagineComponent',
+  'plugin' => false,
+)
+Request URL: /gallery/
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\gallery\lib\Cake\Controller\ComponentCollection.php(53): ComponentCollection->load('Imagine', Array)
+#1 C:\xampp\htdocs\www\test\gallery\lib\Cake\Controller\Controller.php(635): ComponentCollection->init(Object(PostsController))
+#2 C:\xampp\htdocs\www\test\gallery\app\tmp\cache\views\gallery.php(14): Controller->constructClasses()
+#3 C:\xampp\htdocs\www\test\gallery\lib\Cake\View\View.php(551): include('C:\xampp\htdocs...')
+#4 C:\xampp\htdocs\www\test\gallery\lib\Cake\Routing\Filter\CacheDispatcher.php(63): View->renderCache('C:\xampp\htdocs...', 1370944331.9851)
+#5 [internal function]: CacheDispatcher->beforeDispatch(Object(CakeEvent))
+#6 C:\xampp\htdocs\www\test\gallery\lib\Cake\Event\CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#7 C:\xampp\htdocs\www\test\gallery\lib\Cake\Routing\Dispatcher.php(142): CakeEventManager->dispatch(Object(CakeEvent))
+#8 C:\xampp\htdocs\www\test\gallery\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-06-11 11:52:25 Error: [MissingComponentException] Component class ImagineComponent could not be found.
+Exception Attributes: array (
+  'class' => 'ImagineComponent',
+  'plugin' => false,
+)
+Request URL: /gallery/
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\gallery\lib\Cake\Controller\ComponentCollection.php(53): ComponentCollection->load('Imagine', Array)
+#1 C:\xampp\htdocs\www\test\gallery\lib\Cake\Controller\Controller.php(635): ComponentCollection->init(Object(PostsController))
+#2 C:\xampp\htdocs\www\test\gallery\app\tmp\cache\views\gallery.php(14): Controller->constructClasses()
+#3 C:\xampp\htdocs\www\test\gallery\lib\Cake\View\View.php(551): include('C:\xampp\htdocs...')
+#4 C:\xampp\htdocs\www\test\gallery\lib\Cake\Routing\Filter\CacheDispatcher.php(63): View->renderCache('C:\xampp\htdocs...', 1370944345.1845)
+#5 [internal function]: CacheDispatcher->beforeDispatch(Object(CakeEvent))
+#6 C:\xampp\htdocs\www\test\gallery\lib\Cake\Event\CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#7 C:\xampp\htdocs\www\test\gallery\lib\Cake\Routing\Dispatcher.php(142): CakeEventManager->dispatch(Object(CakeEvent))
+#8 C:\xampp\htdocs\www\test\gallery\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-06-11 11:52:41 Error: Fatal Error (1): Class 'Component' not found in [C:\xampp\htdocs\www\test\gallery\app\Plugin\Imagine\Controller\Component\ImagineComponent.php, line 20]
+2013-06-11 11:52:41 Error: [FatalErrorException] Class 'Component' not found
+Request URL: /gallery/
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\gallery\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Class 'Componen...', 'C:\xampp\htdocs...', 20)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Componen...', 'C:\xampp\htdocs...', 20, Array)
+#2 C:\xampp\htdocs\www\test\gallery\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class 'Componen...', 'C:\xampp\htdocs...', 20, Array)
+#3 C:\xampp\htdocs\www\test\gallery\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-11 12:03:31 Error: [MissingComponentException] Component class PaginateComponent could not be found.
+Exception Attributes: array (
+  'class' => 'PaginateComponent',
+  'plugin' => false,
+)
+Request URL: /gallery/
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\gallery\lib\Cake\Controller\ComponentCollection.php(53): ComponentCollection->load('Paginate', Array)
+#1 C:\xampp\htdocs\www\test\gallery\lib\Cake\Controller\Controller.php(635): ComponentCollection->init(Object(PostsController))
+#2 C:\xampp\htdocs\www\test\gallery\app\tmp\cache\views\gallery.php(14): Controller->constructClasses()
+#3 C:\xampp\htdocs\www\test\gallery\lib\Cake\View\View.php(551): include('C:\xampp\htdocs...')
+#4 C:\xampp\htdocs\www\test\gallery\lib\Cake\Routing\Filter\CacheDispatcher.php(63): View->renderCache('C:\xampp\htdocs...', 1370945011.2135)
+#5 [internal function]: CacheDispatcher->beforeDispatch(Object(CakeEvent))
+#6 C:\xampp\htdocs\www\test\gallery\lib\Cake\Event\CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#7 C:\xampp\htdocs\www\test\gallery\lib\Cake\Routing\Dispatcher.php(142): CakeEventManager->dispatch(Object(CakeEvent))
+#8 C:\xampp\htdocs\www\test\gallery\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-06-11 12:03:40 Error: [MissingComponentException] Component class PaginationComponent could not be found.
+Exception Attributes: array (
+  'class' => 'PaginationComponent',
+  'plugin' => false,
+)
+Request URL: /gallery/
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\gallery\lib\Cake\Controller\ComponentCollection.php(53): ComponentCollection->load('Pagination', Array)
+#1 C:\xampp\htdocs\www\test\gallery\lib\Cake\Controller\Controller.php(635): ComponentCollection->init(Object(PostsController))
+#2 C:\xampp\htdocs\www\test\gallery\app\tmp\cache\views\gallery.php(14): Controller->constructClasses()
+#3 C:\xampp\htdocs\www\test\gallery\lib\Cake\View\View.php(551): include('C:\xampp\htdocs...')
+#4 C:\xampp\htdocs\www\test\gallery\lib\Cake\Routing\Filter\CacheDispatcher.php(63): View->renderCache('C:\xampp\htdocs...', 1370945020.7723)
+#5 [internal function]: CacheDispatcher->beforeDispatch(Object(CakeEvent))
+#6 C:\xampp\htdocs\www\test\gallery\lib\Cake\Event\CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#7 C:\xampp\htdocs\www\test\gallery\lib\Cake\Routing\Dispatcher.php(142): CakeEventManager->dispatch(Object(CakeEvent))
+#8 C:\xampp\htdocs\www\test\gallery\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-06-11 15:14:20 Error: Fatal Error (1): Class 'Debugger' not found in [C:\xampp\htdocs\www\test\gallery\app\Plugin\Fancybox\View\Helper\FancyboxHelper.php, line 152]
+2013-06-11 15:14:20 Error: [InternalErrorException] Internal Server Error
+Request URL: /gallery/fancybox
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\gallery\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Class 'Debugger...', 'C:\xampp\htdocs...', 152)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Debugger...', 'C:\xampp\htdocs...', 152, Array)
+#2 C:\xampp\htdocs\www\test\gallery\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class 'Debugger...', 'C:\xampp\htdocs...', 152, Array)
+#3 C:\xampp\htdocs\www\test\gallery\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
