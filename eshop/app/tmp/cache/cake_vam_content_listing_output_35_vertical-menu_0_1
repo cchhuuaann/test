@@ -1,0 +1,11 @@
+1371135404
+s:283:"<!-- Categories box -->
+<div class="box">
+<h5><img src="/eshop/img/icons/menu/categories.png" alt="" />&nbsp;Categories</h5>
+<div class="boxContent">
+<ul id="CatNavi">
+<li><a href="/eshop/category/obleceni.html">Obleceni</a></li>
+</ul>
+</div>
+</div>
+<!-- /Categories box -->";

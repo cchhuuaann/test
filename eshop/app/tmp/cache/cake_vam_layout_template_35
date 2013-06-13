@@ -1,0 +1,178 @@
+1371135404
+a:3:{s:8:"Template";a:8:{s:2:"id";s:1:"2";s:9:"parent_id";s:1:"1";s:16:"template_type_id";s:1:"1";s:7:"default";s:1:"0";s:4:"name";s:11:"Main Layout";s:8:"template";s:2069:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta name="robots" content="index,follow" />
+{stylesheet}
+{metadata}
+{headdata}
+{meta_description}
+{meta_keywords}
+<title>
+{site_name} - {page_name}
+</title>
+</head>
+<body>
+{google_analytics}
+{yandex_metrika}
+<!-- Container -->
+<div id="container">
+
+	<!-- Header -->
+	<div id="header">
+		<div class="header-left">
+			<a href="{base_path}/"><img src="{base_path}/img/logo.png" alt="{site_name}" /><br /></a>
+		</div>
+		<div class="header-right">
+		</div>
+		<div class="clear"></div>
+	</div>
+	<!-- /Header -->
+
+	<!--Menu -->
+	<div id="menu">
+		<ul>
+			{content_listing template='information-links' parent='44'}
+			{admin_area_link}
+		</ul>
+	</div>
+	<!--/Menu -->
+
+	<!-- Navigation -->
+	<div id="navigation">
+		&nbsp;
+	</div>
+	<!-- /Navigation -->
+
+	<!-- Main Content -->
+	<div id="wrapper">
+		<div id="content">
+			<div class="page">
+				<h2>{page_name}</h2>
+			<div class="pageContent">
+				{admin_edit_link}
+				{content}
+			</div>
+			</div>
+		</div>
+	</div>
+	<!-- /Main Content -->
+
+	<!-- Left Column -->
+	<div id="left">
+		{content_listing template='search-box'}
+		{content_listing template='vertical-menu' parent='0' type='category'}
+		{content_listing template='news-box' parent='69' type='news'}
+		{content_listing template='articles-box' parent='70' type='article'}
+	</div>
+	<!-- /Left Column -->
+
+	<!-- Right Column -->
+	<div id="right">
+		{login_box template='login-box'}
+		{shopping_cart template='cart-content-box'}
+		{language_box template='language-box'}
+		{currency_box template='currency-box'}
+	</div>
+	<!-- /Right Column -->
+
+	<!-- Footer -->
+	<div id="footer">
+		<p>{global_content alias='footer'}</p>
+	</div>
+	<!-- /Footer -->
+
+</div>
+<!-- /Container -->
+
+</body>
+</html>";s:7:"created";s:19:"2009-07-26 16:02:41";s:8:"modified";s:19:"2010-02-04 18:16:16";}s:12:"TemplateType";a:3:{s:2:"id";s:1:"1";s:4:"name";s:11:"Main Layout";s:16:"default_template";s:1990:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta name="robots" content="index,follow" />
+{stylesheet}
+{metadata}
+{headdata}
+{meta_description}
+{meta_keywords}
+<title>
+{site_name} - {page_name}
+</title>
+</head>
+<body>
+{google_analytics}
+{yandex_metrika}
+<!-- Container -->
+<div id="container">
+
+	<!-- Header -->
+	<div id="header">
+		<div class="header-left">
+			<a href="{base_path}/"><img src="{base_path}/img/logo.png" alt="{site_name}" /><br /></a>
+		</div>
+		<div class="header-right">
+		</div>
+		<div class="clear"></div>
+	</div>
+	<!-- /Header -->
+
+	<!--Menu -->
+	<div id="menu">
+		<ul>
+			{content_listing template='information-links' parent='44'}
+			{admin_area_link}
+		</ul>
+	</div>
+	<!--/Menu -->
+
+	<!-- Navigation -->
+	<div id="navigation">
+		&nbsp;
+	</div>
+	<!-- /Navigation -->
+
+	<!-- Main Content -->
+	<div id="wrapper">
+		<div id="content">
+			<div class="page">
+				<h2>{page_name}</h2>
+			<div class="pageContent">
+				{admin_edit_link}
+				{content}
+			</div>
+			</div>
+		</div>
+	</div>
+	<!-- /Main Content -->
+
+	<!-- Left Column -->
+	<div id="left">
+		{content_listing template='vertical-menu' parent='0' type='category'}
+		{content_listing template='news-box' parent='69' type='news'}
+		{content_listing template='articles-box' parent='70' type='article'}
+	</div>
+	<!-- /Left Column -->
+
+	<!-- Right Column -->
+	<div id="right">
+		{shopping_cart template='cart-content-box'}
+		{language_box template='language-box'}
+		{currency_box template='currency-box'}
+	</div>
+	<!-- /Right Column -->
+
+	<!-- Footer -->
+	<div id="footer">
+		<p>{global_content alias='footer'}</p>
+	</div>
+	<!-- /Footer -->
+
+</div>
+<!-- /Container -->
+
+</body>
+</html>";}s:10:"Stylesheet";a:0:{}}

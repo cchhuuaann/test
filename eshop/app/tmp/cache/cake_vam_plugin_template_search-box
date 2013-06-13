@@ -1,0 +1,15 @@
+1371135404
+s:519:"<!-- Search box -->
+<div class="box">
+<h5><img src="{base_path}/img/icons/menu/categories.png" alt="" />&nbsp;{lang}Search{/lang}</h5>
+<div class="boxContent">
+
+<form action="{base_path}/page/search-result.html" method="get">
+<input type="text" name="keyword" />
+<br />
+<span class="button"><button type="submit" value="{lang}Go{/lang}"><img src="{base_path}/img/icons/buttons/submit.png" width="12" height="12" alt="" />&nbsp;{lang}Search{/lang}</button></span>
+</form>
+
+</div>
+</div>
+<!-- /Search box -->";

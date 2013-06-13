@@ -1,0 +1,13 @@
+1371135404
+s:370:"<!-- Articles box -->
+<div class="box">
+<h5><img src="{base_path}/img/icons/menu/blocks.png" alt="" />&nbsp;{lang}Articles{/lang}</h5>
+<div class="boxContent">
+<ul>
+{foreach from=$content_list item=node}
+<li{if $node.alias == $content_alias} class="active"{/if}><a href="{$node.url}">{$node.name}</a></li>
+{/foreach}
+</ul>
+</div>
+</div>
+<!-- /Articles box -->";

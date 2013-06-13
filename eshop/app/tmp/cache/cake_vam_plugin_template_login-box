@@ -1,0 +1,25 @@
+1371135404
+s:1033:"<!-- Login box -->
+<div class="box">
+<h5>&nbsp;{lang}Login{/lang}</h5>
+<div class="boxContent">
+{if not $is_logged_in }
+<form action="{base_path}/site/login?return_url={$return_url}" method="post">
+<label>{lang}E-mail{/lang}</label>
+<input type="text" name="data[Customer][email]" />
+<br />
+<label>{lang}Password{/lang}</label>
+<input type="password" name="data[Customer][password]" />
+<br />
+<span class="button"><button type="submit" value="{lang}Login{/lang}"><img src="{base_path}/img/icons/buttons/submit.png" width="12" height="12" alt="" />&nbsp;{lang}Login{/lang}</button></span>
+</form>
+<br />
+  <a href="{base_path}/customer/register.html">{lang}Registration{/lang}</a>
+{else}
+<form action="{base_path}/site/logout?return_url={$return_url}" method="post">
+<span class="button"><button type="submit" value="{lang}Logout{/lang}"><img src="{base_path}/img/icons/buttons/submit.png" width="12" height="12" alt="" />&nbsp;{lang}Logout{/lang}</button></span>
+</form>
+{/if}
+</div>
+</div>
+<!-- /Login box -->";

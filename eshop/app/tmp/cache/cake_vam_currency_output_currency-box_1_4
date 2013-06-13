@@ -1,0 +1,20 @@
+1371135404
+s:631:"<!-- Box -->
+<div class="box">
+<h5><img src="/eshop/img/icons/menu/payment-methods.png" alt="" />&nbsp;Currency</h5>
+<div class="boxContent">
+
+<form action="/eshop/currencies/pick_currency/" method="post">
+<select name="currency_picker">
+<option value="1" >US Dollar</option>
+<option value="2" >Рубль</option>
+<option value="3" >Euro</option>
+<option value="4" selected="selected">Koruna</option>
+</select>
+<span class="button"><button type="submit" value="Go"><img src="/eshop/img/icons/buttons/submit.png" width="12" height="12" alt="" />&nbsp;Go</button></span>
+</form>
+		
+</p>
+</div>
+</div>
+<!-- /Box -->";

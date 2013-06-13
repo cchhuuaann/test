@@ -1,0 +1,12 @@
+1371135404
+s:414:"<!-- Box -->
+<div class="box">
+<h5><img src="/eshop/img/icons/menu/locale.png" alt="" />&nbsp;Language</h5>
+<div class="boxContent">
+
+<a href="/eshop/languages/pick_language/1"><img src="/eshop/img/flags/en.png" alt="English" title="English"/></a>
+<a href="/eshop/languages/pick_language/2"><img src="/eshop/img/flags/ru.png" alt="Русский" title="Русский"/></a>
+
+</div>
+</div>
+<!-- /Box -->";

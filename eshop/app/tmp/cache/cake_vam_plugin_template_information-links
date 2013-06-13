@@ -1,0 +1,6 @@
+1371135404
+s:435:"<li{if $content_alias == 'home-page'} class="current"{/if}><a href="{base_path}/">&nbsp;<img src="{base_path}/img/icons/page/home.png" border="0" alt="" /><span>{lang}Home{/lang}</span></a></li>
+{foreach from=$content_list item=node}
+<li{if $node.alias == $content_alias} class="current"{/if}><a href="{$node.url}">{if $node.icon}&nbsp;<img src="{$node.icon}" border="0" alt="" />{/if}<span>{$node.name}</span></a></li>
+{/foreach}
+";

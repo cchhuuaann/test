@@ -1,0 +1,1255 @@
+2013-06-13 13:59:30 Error: Fatal Error (64): Call-time pass-by-reference has been removed in [C:\xampp\htdocs\www\test\eshop\app\Controller\ContentsController.php, line 701]
+2013-06-13 13:59:30 Error: [FatalErrorException] Call-time pass-by-reference has been removed
+Request URL: /eshop/contents/admin_edit/35/0
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\eshop\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701)
+#1 [internal function]: ErrorHandler::handleError(64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701, Array)
+#2 C:\xampp\htdocs\www\test\eshop\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701, Array)
+#3 C:\xampp\htdocs\www\test\eshop\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-13 13:59:37 Error: Fatal Error (64): Call-time pass-by-reference has been removed in [C:\xampp\htdocs\www\test\eshop\app\Controller\ContentsController.php, line 701]
+2013-06-13 13:59:37 Error: [FatalErrorException] Call-time pass-by-reference has been removed
+Request URL: /eshop/contents/admin_edit/35/0
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\eshop\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701)
+#1 [internal function]: ErrorHandler::handleError(64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701, Array)
+#2 C:\xampp\htdocs\www\test\eshop\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701, Array)
+#3 C:\xampp\htdocs\www\test\eshop\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-13 14:04:13 Error: Fatal Error (64): Call-time pass-by-reference has been removed in [C:\xampp\htdocs\www\test\eshop\app\Controller\ContentsController.php, line 701]
+2013-06-13 14:04:13 Error: [FatalErrorException] Call-time pass-by-reference has been removed
+Request URL: /eshop/contents/admin_edit/35/0
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\eshop\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701)
+#1 [internal function]: ErrorHandler::handleError(64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701, Array)
+#2 C:\xampp\htdocs\www\test\eshop\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701, Array)
+#3 C:\xampp\htdocs\www\test\eshop\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-13 14:04:18 Error: Fatal Error (64): Call-time pass-by-reference has been removed in [C:\xampp\htdocs\www\test\eshop\app\Controller\ContentsController.php, line 701]
+2013-06-13 14:04:18 Error: [FatalErrorException] Call-time pass-by-reference has been removed
+Request URL: /eshop/contents/admin_edit/35/0
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\eshop\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701)
+#1 [internal function]: ErrorHandler::handleError(64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701, Array)
+#2 C:\xampp\htdocs\www\test\eshop\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701, Array)
+#3 C:\xampp\htdocs\www\test\eshop\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-13 14:04:28 Error: Fatal Error (64): Call-time pass-by-reference has been removed in [C:\xampp\htdocs\www\test\eshop\app\Controller\ContentsController.php, line 701]
+2013-06-13 14:04:28 Error: [FatalErrorException] Call-time pass-by-reference has been removed
+Request URL: /eshop/contents/admin_edit/35/0
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\eshop\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701)
+#1 [internal function]: ErrorHandler::handleError(64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701, Array)
+#2 C:\xampp\htdocs\www\test\eshop\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701, Array)
+#3 C:\xampp\htdocs\www\test\eshop\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-13 14:04:33 Error: Fatal Error (64): Call-time pass-by-reference has been removed in [C:\xampp\htdocs\www\test\eshop\app\Controller\ContentsController.php, line 701]
+2013-06-13 14:04:33 Error: [FatalErrorException] Call-time pass-by-reference has been removed
+Request URL: /eshop/contents/admin_edit/35/0
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\eshop\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701)
+#1 [internal function]: ErrorHandler::handleError(64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701, Array)
+#2 C:\xampp\htdocs\www\test\eshop\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701, Array)
+#3 C:\xampp\htdocs\www\test\eshop\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-13 14:05:24 Error: Fatal Error (64): Call-time pass-by-reference has been removed in [C:\xampp\htdocs\www\test\eshop\app\Controller\ContentsController.php, line 701]
+2013-06-13 14:05:24 Error: [FatalErrorException] Call-time pass-by-reference has been removed
+Request URL: /eshop/contents/admin_edit/35/0
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\eshop\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701)
+#1 [internal function]: ErrorHandler::handleError(64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701, Array)
+#2 C:\xampp\htdocs\www\test\eshop\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701, Array)
+#3 C:\xampp\htdocs\www\test\eshop\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-13 14:05:29 Error: Fatal Error (64): Call-time pass-by-reference has been removed in [C:\xampp\htdocs\www\test\eshop\app\Controller\ContentsController.php, line 701]
+2013-06-13 14:05:29 Error: [FatalErrorException] Call-time pass-by-reference has been removed
+Request URL: /eshop/contents/admin_edit/35/0
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\eshop\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701)
+#1 [internal function]: ErrorHandler::handleError(64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701, Array)
+#2 C:\xampp\htdocs\www\test\eshop\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701, Array)
+#3 C:\xampp\htdocs\www\test\eshop\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-13 14:14:23 Error: Fatal Error (64): Call-time pass-by-reference has been removed in [C:\xampp\htdocs\www\test\eshop\app\Controller\ContentsController.php, line 701]
+2013-06-13 14:14:23 Error: [FatalErrorException] Call-time pass-by-reference has been removed
+Request URL: /eshop/contents/admin_edit/35/0
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\eshop\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701)
+#1 [internal function]: ErrorHandler::handleError(64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701, Array)
+#2 C:\xampp\htdocs\www\test\eshop\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701, Array)
+#3 C:\xampp\htdocs\www\test\eshop\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-13 14:14:35 Error: Fatal Error (64): Call-time pass-by-reference has been removed in [C:\xampp\htdocs\www\test\eshop\app\Controller\ContentsController.php, line 701]
+2013-06-13 14:14:35 Error: [FatalErrorException] Call-time pass-by-reference has been removed
+Request URL: /eshop/contents/admin_edit/35/0
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\eshop\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701)
+#1 [internal function]: ErrorHandler::handleError(64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701, Array)
+#2 C:\xampp\htdocs\www\test\eshop\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701, Array)
+#3 C:\xampp\htdocs\www\test\eshop\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-13 14:14:40 Error: Fatal Error (64): Call-time pass-by-reference has been removed in [C:\xampp\htdocs\www\test\eshop\app\Controller\ContentsController.php, line 701]
+2013-06-13 14:14:40 Error: [FatalErrorException] Call-time pass-by-reference has been removed
+Request URL: /eshop/contents/admin_edit/35/0
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\eshop\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701)
+#1 [internal function]: ErrorHandler::handleError(64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701, Array)
+#2 C:\xampp\htdocs\www\test\eshop\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701, Array)
+#3 C:\xampp\htdocs\www\test\eshop\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-13 14:21:20 Error: Fatal Error (64): Call-time pass-by-reference has been removed in [C:\xampp\htdocs\www\test\eshop\app\Controller\ContentsController.php, line 701]
+2013-06-13 14:21:20 Error: [FatalErrorException] Call-time pass-by-reference has been removed
+Request URL: /eshop/contents/admin/
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\eshop\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701)
+#1 [internal function]: ErrorHandler::handleError(64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701, Array)
+#2 C:\xampp\htdocs\www\test\eshop\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701, Array)
+#3 C:\xampp\htdocs\www\test\eshop\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-13 14:21:33 Error: Fatal Error (64): Call-time pass-by-reference has been removed in [C:\xampp\htdocs\www\test\eshop\app\Controller\ContentsController.php, line 701]
+2013-06-13 14:21:33 Error: [FatalErrorException] Call-time pass-by-reference has been removed
+Request URL: /eshop/contents/admin/
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\eshop\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701)
+#1 [internal function]: ErrorHandler::handleError(64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701, Array)
+#2 C:\xampp\htdocs\www\test\eshop\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701, Array)
+#3 C:\xampp\htdocs\www\test\eshop\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-13 14:21:40 Error: Fatal Error (64): Call-time pass-by-reference has been removed in [C:\xampp\htdocs\www\test\eshop\app\Controller\ContentsController.php, line 701]
+2013-06-13 14:21:40 Error: [FatalErrorException] Call-time pass-by-reference has been removed
+Request URL: /eshop/contents/admin/
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\eshop\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701)
+#1 [internal function]: ErrorHandler::handleError(64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701, Array)
+#2 C:\xampp\htdocs\www\test\eshop\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701, Array)
+#3 C:\xampp\htdocs\www\test\eshop\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-13 14:35:05 Error: Fatal Error (64): Call-time pass-by-reference has been removed in [C:\xampp\htdocs\www\test\eshop\app\Controller\ContentsController.php, line 701]
+2013-06-13 14:35:05 Error: [FatalErrorException] Call-time pass-by-reference has been removed
+Request URL: /eshop/contents/admin/
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\eshop\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701)
+#1 [internal function]: ErrorHandler::handleError(64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701, Array)
+#2 C:\xampp\htdocs\www\test\eshop\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701, Array)
+#3 C:\xampp\htdocs\www\test\eshop\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-13 14:35:15 Error: Fatal Error (64): Call-time pass-by-reference has been removed in [C:\xampp\htdocs\www\test\eshop\app\Controller\ContentsController.php, line 701]
+2013-06-13 14:35:15 Error: [FatalErrorException] Call-time pass-by-reference has been removed
+Request URL: /eshop/contents/admin/
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\eshop\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701)
+#1 [internal function]: ErrorHandler::handleError(64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701, Array)
+#2 C:\xampp\htdocs\www\test\eshop\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701, Array)
+#3 C:\xampp\htdocs\www\test\eshop\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-13 14:38:14 Error: Fatal Error (64): Call-time pass-by-reference has been removed in [C:\xampp\htdocs\www\test\eshop\app\Controller\ContentsController.php, line 701]
+2013-06-13 14:38:14 Error: [FatalErrorException] Call-time pass-by-reference has been removed
+Request URL: /eshop/contents/admin/
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\eshop\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701)
+#1 [internal function]: ErrorHandler::handleError(64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701, Array)
+#2 C:\xampp\htdocs\www\test\eshop\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701, Array)
+#3 C:\xampp\htdocs\www\test\eshop\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-13 14:41:46 Error: Fatal Error (64): Call-time pass-by-reference has been removed in [C:\xampp\htdocs\www\test\eshop\app\Controller\ContentsController.php, line 701]
+2013-06-13 14:41:46 Error: [FatalErrorException] Call-time pass-by-reference has been removed
+Request URL: /eshop/contents/admin/
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\eshop\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701)
+#1 [internal function]: ErrorHandler::handleError(64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701, Array)
+#2 C:\xampp\htdocs\www\test\eshop\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701, Array)
+#3 C:\xampp\htdocs\www\test\eshop\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-13 14:42:06 Error: Fatal Error (64): Call-time pass-by-reference has been removed in [C:\xampp\htdocs\www\test\eshop\app\Controller\ContentsController.php, line 701]
+2013-06-13 14:42:06 Error: [FatalErrorException] Call-time pass-by-reference has been removed
+Request URL: /eshop/contents/admin_edit/35/0
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\eshop\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701)
+#1 [internal function]: ErrorHandler::handleError(64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701, Array)
+#2 C:\xampp\htdocs\www\test\eshop\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701, Array)
+#3 C:\xampp\htdocs\www\test\eshop\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-13 14:42:11 Error: Fatal Error (64): Call-time pass-by-reference has been removed in [C:\xampp\htdocs\www\test\eshop\app\Controller\ContentsController.php, line 701]
+2013-06-13 14:42:11 Error: [FatalErrorException] Call-time pass-by-reference has been removed
+Request URL: /eshop/contents/admin_edit/35/0
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\eshop\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701)
+#1 [internal function]: ErrorHandler::handleError(64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701, Array)
+#2 C:\xampp\htdocs\www\test\eshop\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701, Array)
+#3 C:\xampp\htdocs\www\test\eshop\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-13 14:45:13 Error: Fatal Error (64): Call-time pass-by-reference has been removed in [C:\xampp\htdocs\www\test\eshop\app\Controller\ContentsController.php, line 701]
+2013-06-13 14:45:13 Error: [FatalErrorException] Call-time pass-by-reference has been removed
+Request URL: /eshop/contents/admin_edit/35/0
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\eshop\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701)
+#1 [internal function]: ErrorHandler::handleError(64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701, Array)
+#2 C:\xampp\htdocs\www\test\eshop\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701, Array)
+#3 C:\xampp\htdocs\www\test\eshop\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-13 14:49:07 Error: Fatal Error (64): Call-time pass-by-reference has been removed in [C:\xampp\htdocs\www\test\eshop\app\Controller\ContentsController.php, line 701]
+2013-06-13 14:49:07 Error: [FatalErrorException] Call-time pass-by-reference has been removed
+Request URL: /eshop/contents/admin_edit/35/0
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\eshop\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701)
+#1 [internal function]: ErrorHandler::handleError(64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701, Array)
+#2 C:\xampp\htdocs\www\test\eshop\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701, Array)
+#3 C:\xampp\htdocs\www\test\eshop\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-13 14:49:11 Error: Fatal Error (64): Call-time pass-by-reference has been removed in [C:\xampp\htdocs\www\test\eshop\app\Controller\ContentsController.php, line 701]
+2013-06-13 14:49:11 Error: [FatalErrorException] Call-time pass-by-reference has been removed
+Request URL: /eshop/contents/admin_edit/35/0
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\eshop\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701)
+#1 [internal function]: ErrorHandler::handleError(64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701, Array)
+#2 C:\xampp\htdocs\www\test\eshop\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701, Array)
+#3 C:\xampp\htdocs\www\test\eshop\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-13 15:08:18 Error: Fatal Error (64): Call-time pass-by-reference has been removed in [C:\xampp\htdocs\www\test\eshop\app\Controller\ContentsController.php, line 701]
+2013-06-13 15:08:18 Error: [FatalErrorException] Call-time pass-by-reference has been removed
+Request URL: /eshop/contents/admin_edit/35/0
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\eshop\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701)
+#1 [internal function]: ErrorHandler::handleError(64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701, Array)
+#2 C:\xampp\htdocs\www\test\eshop\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701, Array)
+#3 C:\xampp\htdocs\www\test\eshop\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-13 15:10:15 Error: Fatal Error (64): Call-time pass-by-reference has been removed in [C:\xampp\htdocs\www\test\eshop\app\Controller\ContentsController.php, line 701]
+2013-06-13 15:10:15 Error: [FatalErrorException] Call-time pass-by-reference has been removed
+Request URL: /eshop/contents/admin_edit/35/0
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\eshop\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701)
+#1 [internal function]: ErrorHandler::handleError(64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701, Array)
+#2 C:\xampp\htdocs\www\test\eshop\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701, Array)
+#3 C:\xampp\htdocs\www\test\eshop\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-13 15:10:20 Error: Fatal Error (64): Call-time pass-by-reference has been removed in [C:\xampp\htdocs\www\test\eshop\app\Controller\ContentsController.php, line 701]
+2013-06-13 15:10:20 Error: [FatalErrorException] Call-time pass-by-reference has been removed
+Request URL: /eshop/contents/admin_edit/35/0
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\eshop\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701)
+#1 [internal function]: ErrorHandler::handleError(64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701, Array)
+#2 C:\xampp\htdocs\www\test\eshop\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701, Array)
+#3 C:\xampp\htdocs\www\test\eshop\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-13 15:10:29 Error: Fatal Error (64): Call-time pass-by-reference has been removed in [C:\xampp\htdocs\www\test\eshop\app\Controller\ContentsController.php, line 701]
+2013-06-13 15:10:29 Error: [FatalErrorException] Call-time pass-by-reference has been removed
+Request URL: /eshop/contents/admin_edit/35/1
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\eshop\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701)
+#1 [internal function]: ErrorHandler::handleError(64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701, Array)
+#2 C:\xampp\htdocs\www\test\eshop\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701, Array)
+#3 C:\xampp\htdocs\www\test\eshop\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-13 15:10:33 Error: Fatal Error (64): Call-time pass-by-reference has been removed in [C:\xampp\htdocs\www\test\eshop\app\Controller\ContentsController.php, line 701]
+2013-06-13 15:10:33 Error: [FatalErrorException] Call-time pass-by-reference has been removed
+Request URL: /eshop/contents/admin_edit/35/1
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\eshop\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701)
+#1 [internal function]: ErrorHandler::handleError(64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701, Array)
+#2 C:\xampp\htdocs\www\test\eshop\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701, Array)
+#3 C:\xampp\htdocs\www\test\eshop\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-13 15:13:18 Error: Fatal Error (64): Call-time pass-by-reference has been removed in [C:\xampp\htdocs\www\test\eshop\app\Controller\ContentsController.php, line 701]
+2013-06-13 15:13:18 Error: [FatalErrorException] Call-time pass-by-reference has been removed
+Request URL: /eshop/contents/admin_edit/35/1
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\eshop\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701)
+#1 [internal function]: ErrorHandler::handleError(64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701, Array)
+#2 C:\xampp\htdocs\www\test\eshop\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701, Array)
+#3 C:\xampp\htdocs\www\test\eshop\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-13 15:14:44 Error: Fatal Error (64): Call-time pass-by-reference has been removed in [C:\xampp\htdocs\www\test\eshop\app\Controller\ContentsController.php, line 714]
+2013-06-13 15:14:44 Error: [FatalErrorException] Call-time pass-by-reference has been removed
+Request URL: /eshop/contents/admin_edit/35/1
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\eshop\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(64, 'Call-time pass-...', 'C:\xampp\htdocs...', 714)
+#1 [internal function]: ErrorHandler::handleError(64, 'Call-time pass-...', 'C:\xampp\htdocs...', 714, Array)
+#2 C:\xampp\htdocs\www\test\eshop\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 64, 'Call-time pass-...', 'C:\xampp\htdocs...', 714, Array)
+#3 C:\xampp\htdocs\www\test\eshop\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-13 15:16:38 Error: Fatal Error (64): Call-time pass-by-reference has been removed in [C:\xampp\htdocs\www\test\eshop\app\Controller\ContentsController.php, line 701]
+2013-06-13 15:16:38 Error: [FatalErrorException] Call-time pass-by-reference has been removed
+Request URL: /eshop/contents/admin_edit/35/1
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\eshop\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701)
+#1 [internal function]: ErrorHandler::handleError(64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701, Array)
+#2 C:\xampp\htdocs\www\test\eshop\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701, Array)
+#3 C:\xampp\htdocs\www\test\eshop\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-13 15:16:43 Error: Fatal Error (64): Call-time pass-by-reference has been removed in [C:\xampp\htdocs\www\test\eshop\app\Controller\ContentsController.php, line 701]
+2013-06-13 15:16:43 Error: [FatalErrorException] Call-time pass-by-reference has been removed
+Request URL: /eshop/contents/admin_edit/35/1
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\eshop\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701)
+#1 [internal function]: ErrorHandler::handleError(64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701, Array)
+#2 C:\xampp\htdocs\www\test\eshop\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701, Array)
+#3 C:\xampp\htdocs\www\test\eshop\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-13 15:16:55 Error: Fatal Error (64): Call-time pass-by-reference has been removed in [C:\xampp\htdocs\www\test\eshop\app\Controller\ContentsController.php, line 701]
+2013-06-13 15:16:55 Error: [FatalErrorException] Call-time pass-by-reference has been removed
+Request URL: /eshop/contents/admin_edit/35/0
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\eshop\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701)
+#1 [internal function]: ErrorHandler::handleError(64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701, Array)
+#2 C:\xampp\htdocs\www\test\eshop\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701, Array)
+#3 C:\xampp\htdocs\www\test\eshop\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-13 15:17:11 Error: Fatal Error (64): Call-time pass-by-reference has been removed in [C:\xampp\htdocs\www\test\eshop\app\Controller\ContentsController.php, line 701]
+2013-06-13 15:17:11 Error: [FatalErrorException] Call-time pass-by-reference has been removed
+Request URL: /eshop/contents/admin_edit/35/0
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\eshop\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701)
+#1 [internal function]: ErrorHandler::handleError(64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701, Array)
+#2 C:\xampp\htdocs\www\test\eshop\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 64, 'Call-time pass-...', 'C:\xampp\htdocs...', 701, Array)
+#3 C:\xampp\htdocs\www\test\eshop\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-06-13 15:35:33 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\www\test\eshop\app\View\Helper\AdminHelper.php, line 238]
+Trace:
+AdminHelper::DrawMenu() - APP\View\Helper\AdminHelper.php, line 238
+include - APP\View\Layouts\admin.ctp, line 42
+View::_evaluate() - CORE\Cake\View\View.php, line 947
+View::_render() - CORE\Cake\View\View.php, line 909
+View::renderLayout() - CORE\Cake\View\View.php, line 534
+View::render() - CORE\Cake\View\View.php, line 478
+Controller::render() - CORE\Cake\Controller\Controller.php, line 947
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 161
+[main] - APP\webroot\index.php, line 92
+
+2013-06-13 15:36:06 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\www\test\eshop\app\View\Helper\AdminHelper.php, line 238]
+Trace:
+AdminHelper::DrawMenu() - APP\View\Helper\AdminHelper.php, line 238
+include - APP\View\Layouts\admin.ctp, line 42
+View::_evaluate() - CORE\Cake\View\View.php, line 947
+View::_render() - CORE\Cake\View\View.php, line 909
+View::renderLayout() - CORE\Cake\View\View.php, line 534
+View::render() - CORE\Cake\View\View.php, line 478
+Controller::render() - CORE\Cake\Controller\Controller.php, line 947
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 161
+[main] - APP\webroot\index.php, line 92
+
+2013-06-13 15:36:44 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\www\test\eshop\app\View\Helper\AdminHelper.php, line 238]
+Trace:
+AdminHelper::DrawMenu() - APP\View\Helper\AdminHelper.php, line 238
+include - APP\View\Layouts\admin.ctp, line 42
+View::_evaluate() - CORE\Cake\View\View.php, line 947
+View::_render() - CORE\Cake\View\View.php, line 909
+View::renderLayout() - CORE\Cake\View\View.php, line 534
+View::render() - CORE\Cake\View\View.php, line 478
+Controller::render() - CORE\Cake\Controller\Controller.php, line 947
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 161
+[main] - APP\webroot\index.php, line 92
+
+2013-06-13 15:36:48 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\www\test\eshop\app\View\Helper\AdminHelper.php, line 238]
+Trace:
+AdminHelper::DrawMenu() - APP\View\Helper\AdminHelper.php, line 238
+include - APP\View\Layouts\admin.ctp, line 42
+View::_evaluate() - CORE\Cake\View\View.php, line 947
+View::_render() - CORE\Cake\View\View.php, line 909
+View::renderLayout() - CORE\Cake\View\View.php, line 534
+View::render() - CORE\Cake\View\View.php, line 478
+Controller::render() - CORE\Cake\Controller\Controller.php, line 947
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 161
+[main] - APP\webroot\index.php, line 92
+
+2013-06-13 15:37:29 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\www\test\eshop\app\View\Helper\AdminHelper.php, line 238]
+Trace:
+AdminHelper::DrawMenu() - APP\View\Helper\AdminHelper.php, line 238
+include - APP\View\Layouts\admin.ctp, line 42
+View::_evaluate() - CORE\Cake\View\View.php, line 947
+View::_render() - CORE\Cake\View\View.php, line 909
+View::renderLayout() - CORE\Cake\View\View.php, line 534
+View::render() - CORE\Cake\View\View.php, line 478
+Controller::render() - CORE\Cake\Controller\Controller.php, line 947
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 161
+[main] - APP\webroot\index.php, line 92
+
+2013-06-13 15:40:13 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\www\test\eshop\app\View\Helper\AdminHelper.php, line 238]
+Trace:
+AdminHelper::DrawMenu() - APP\View\Helper\AdminHelper.php, line 238
+include - APP\View\Layouts\admin.ctp, line 42
+View::_evaluate() - CORE\Cake\View\View.php, line 947
+View::_render() - CORE\Cake\View\View.php, line 909
+View::renderLayout() - CORE\Cake\View\View.php, line 534
+View::render() - CORE\Cake\View\View.php, line 478
+Controller::render() - CORE\Cake\Controller\Controller.php, line 947
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 161
+[main] - APP\webroot\index.php, line 92
+
+2013-06-13 15:41:58 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\www\test\eshop\app\View\Helper\AdminHelper.php, line 238]
+Trace:
+AdminHelper::DrawMenu() - APP\View\Helper\AdminHelper.php, line 238
+include - APP\View\Layouts\admin.ctp, line 42
+View::_evaluate() - CORE\Cake\View\View.php, line 947
+View::_render() - CORE\Cake\View\View.php, line 909
+View::renderLayout() - CORE\Cake\View\View.php, line 534
+View::render() - CORE\Cake\View\View.php, line 478
+Controller::render() - CORE\Cake\Controller\Controller.php, line 947
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 161
+[main] - APP\webroot\index.php, line 92
+
+2013-06-13 15:42:05 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\www\test\eshop\app\View\Helper\AdminHelper.php, line 238]
+Trace:
+AdminHelper::DrawMenu() - APP\View\Helper\AdminHelper.php, line 238
+include - APP\View\Layouts\admin.ctp, line 42
+View::_evaluate() - CORE\Cake\View\View.php, line 947
+View::_render() - CORE\Cake\View\View.php, line 909
+View::renderLayout() - CORE\Cake\View\View.php, line 534
+View::render() - CORE\Cake\View\View.php, line 478
+Controller::render() - CORE\Cake\Controller\Controller.php, line 947
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 161
+[main] - APP\webroot\index.php, line 92
+
+2013-06-13 15:42:49 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\www\test\eshop\app\View\Helper\AdminHelper.php, line 238]
+Trace:
+AdminHelper::DrawMenu() - APP\View\Helper\AdminHelper.php, line 238
+include - APP\View\Layouts\admin.ctp, line 42
+View::_evaluate() - CORE\Cake\View\View.php, line 947
+View::_render() - CORE\Cake\View\View.php, line 909
+View::renderLayout() - CORE\Cake\View\View.php, line 534
+View::render() - CORE\Cake\View\View.php, line 478
+Controller::render() - CORE\Cake\Controller\Controller.php, line 947
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 161
+[main] - APP\webroot\index.php, line 92
+
+2013-06-13 15:44:10 Warning: Warning (2): Creating default object from empty value in [C:\xampp\htdocs\www\test\eshop\app\Controller\UpdateController.php, line 94]
+Trace:
+UpdateController::admin() - APP\Controller\UpdateController.php, line 94
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 485
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 186
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 161
+[main] - APP\webroot\index.php, line 92
+
+2013-06-13 15:47:01 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\www\test\eshop\app\View\Helper\AdminHelper.php, line 238]
+Trace:
+AdminHelper::DrawMenu() - APP\View\Helper\AdminHelper.php, line 238
+include - APP\View\Layouts\admin.ctp, line 42
+View::_evaluate() - CORE\Cake\View\View.php, line 947
+View::_render() - CORE\Cake\View\View.php, line 909
+View::renderLayout() - CORE\Cake\View\View.php, line 534
+View::render() - CORE\Cake\View\View.php, line 478
+Controller::render() - CORE\Cake\Controller\Controller.php, line 947
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 161
+[main] - APP\webroot\index.php, line 92
+
+2013-06-13 15:47:12 Warning: Warning (2): number_format() expects parameter 2 to be long, string given in [C:\xampp\htdocs\www\test\eshop\app\Controller\Component\CurrencyBaseComponent.php, line 47]
+Trace:
+number_format - [internal], line ??
+CurrencyBaseComponent::display_price() - APP\Controller\Component\CurrencyBaseComponent.php, line 47
+smarty_function_product_prices - APP\Vendor\smarty\vam_plugins\function.product_prices.php, line 49
+eval - APP\Vendor\smarty\sysplugins\smarty_internal_templatebase.php(147) : eval()'d code, line 48
+Smarty_Internal_TemplateBase::fetch() - APP\Vendor\smarty\sysplugins\smarty_internal_templatebase.php, line 147
+SmartyComponent::fetch() - APP\Controller\Component\SmartyComponent.php, line 82
+SmartyComponent::display() - APP\Controller\Component\SmartyComponent.php, line 87
+smarty_function_content - APP\Vendor\smarty\vam_plugins\function.content.php, line 29
+eval - APP\Vendor\smarty\sysplugins\smarty_internal_templatebase.php(147) : eval()'d code, line 92
+Smarty_Internal_TemplateBase::fetch() - APP\Vendor\smarty\sysplugins\smarty_internal_templatebase.php, line 147
+SmartyComponent::fetch() - APP\Controller\Component\SmartyComponent.php, line 82
+SmartyComponent::display() - APP\Controller\Component\SmartyComponent.php, line 87
+PagesController::index() - APP\Controller\PagesController.php, line 159
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 485
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 186
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 161
+[main] - APP\webroot\index.php, line 92
+
+2013-06-13 15:47:12 Warning: Warning (2): number_format() expects parameter 2 to be long, string given in [C:\xampp\htdocs\www\test\eshop\app\Controller\Component\CurrencyBaseComponent.php, line 47]
+Trace:
+number_format - [internal], line ??
+CurrencyBaseComponent::display_price() - APP\Controller\Component\CurrencyBaseComponent.php, line 47
+smarty_function_shopping_cart - APP\Vendor\smarty\vam_plugins\function.shopping_cart.php, line 95
+eval - APP\Vendor\smarty\sysplugins\smarty_internal_templatebase.php(147) : eval()'d code, line 117
+Smarty_Internal_TemplateBase::fetch() - APP\Vendor\smarty\sysplugins\smarty_internal_templatebase.php, line 147
+SmartyComponent::fetch() - APP\Controller\Component\SmartyComponent.php, line 82
+SmartyComponent::display() - APP\Controller\Component\SmartyComponent.php, line 87
+PagesController::index() - APP\Controller\PagesController.php, line 159
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 485
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 186
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 161
+[main] - APP\webroot\index.php, line 92
+
+2013-06-13 15:47:12 Warning: Warning (2): number_format() expects parameter 2 to be long, string given in [C:\xampp\htdocs\www\test\eshop\app\Controller\Component\CurrencyBaseComponent.php, line 47]
+Trace:
+number_format - [internal], line ??
+CurrencyBaseComponent::display_price() - APP\Controller\Component\CurrencyBaseComponent.php, line 47
+smarty_function_shopping_cart - APP\Vendor\smarty\vam_plugins\function.shopping_cart.php, line 98
+eval - APP\Vendor\smarty\sysplugins\smarty_internal_templatebase.php(147) : eval()'d code, line 117
+Smarty_Internal_TemplateBase::fetch() - APP\Vendor\smarty\sysplugins\smarty_internal_templatebase.php, line 147
+SmartyComponent::fetch() - APP\Controller\Component\SmartyComponent.php, line 82
+SmartyComponent::display() - APP\Controller\Component\SmartyComponent.php, line 87
+PagesController::index() - APP\Controller\PagesController.php, line 159
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 485
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 186
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 161
+[main] - APP\webroot\index.php, line 92
+
+2013-06-13 15:47:12 Warning: Warning (2): number_format() expects parameter 2 to be long, string given in [C:\xampp\htdocs\www\test\eshop\app\Controller\Component\CurrencyBaseComponent.php, line 47]
+Trace:
+number_format - [internal], line ??
+CurrencyBaseComponent::display_price() - APP\Controller\Component\CurrencyBaseComponent.php, line 47
+smarty_function_shopping_cart - APP\Vendor\smarty\vam_plugins\function.shopping_cart.php, line 104
+eval - APP\Vendor\smarty\sysplugins\smarty_internal_templatebase.php(147) : eval()'d code, line 117
+Smarty_Internal_TemplateBase::fetch() - APP\Vendor\smarty\sysplugins\smarty_internal_templatebase.php, line 147
+SmartyComponent::fetch() - APP\Controller\Component\SmartyComponent.php, line 82
+SmartyComponent::display() - APP\Controller\Component\SmartyComponent.php, line 87
+PagesController::index() - APP\Controller\PagesController.php, line 159
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 485
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 186
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 161
+[main] - APP\webroot\index.php, line 92
+
+2013-06-13 15:47:12 Warning: Warning (2): number_format() expects parameter 2 to be long, string given in [C:\xampp\htdocs\www\test\eshop\app\Controller\Component\CurrencyBaseComponent.php, line 47]
+Trace:
+number_format - [internal], line ??
+CurrencyBaseComponent::display_price() - APP\Controller\Component\CurrencyBaseComponent.php, line 47
+smarty_function_shopping_cart - APP\Vendor\smarty\vam_plugins\function.shopping_cart.php, line 105
+eval - APP\Vendor\smarty\sysplugins\smarty_internal_templatebase.php(147) : eval()'d code, line 117
+Smarty_Internal_TemplateBase::fetch() - APP\Vendor\smarty\sysplugins\smarty_internal_templatebase.php, line 147
+SmartyComponent::fetch() - APP\Controller\Component\SmartyComponent.php, line 82
+SmartyComponent::display() - APP\Controller\Component\SmartyComponent.php, line 87
+PagesController::index() - APP\Controller\PagesController.php, line 159
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 485
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 186
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 161
+[main] - APP\webroot\index.php, line 92
+
+2013-06-13 15:47:14 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\www\test\eshop\app\View\Helper\AdminHelper.php, line 238]
+Trace:
+AdminHelper::DrawMenu() - APP\View\Helper\AdminHelper.php, line 238
+include - APP\View\Layouts\admin.ctp, line 42
+View::_evaluate() - CORE\Cake\View\View.php, line 947
+View::_render() - CORE\Cake\View\View.php, line 909
+View::renderLayout() - CORE\Cake\View\View.php, line 534
+View::render() - CORE\Cake\View\View.php, line 478
+Controller::render() - CORE\Cake\Controller\Controller.php, line 947
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 161
+[main] - APP\webroot\index.php, line 92
+
+2013-06-13 15:47:57 Warning: Warning (2): number_format() expects parameter 2 to be long, string given in [C:\xampp\htdocs\www\test\eshop\app\Controller\Component\CurrencyBaseComponent.php, line 47]
+Trace:
+number_format - [internal], line ??
+CurrencyBaseComponent::display_price() - APP\Controller\Component\CurrencyBaseComponent.php, line 47
+smarty_function_product_prices - APP\Vendor\smarty\vam_plugins\function.product_prices.php, line 49
+eval - APP\Vendor\smarty\sysplugins\smarty_internal_templatebase.php(147) : eval()'d code, line 48
+Smarty_Internal_TemplateBase::fetch() - APP\Vendor\smarty\sysplugins\smarty_internal_templatebase.php, line 147
+SmartyComponent::fetch() - APP\Controller\Component\SmartyComponent.php, line 82
+SmartyComponent::display() - APP\Controller\Component\SmartyComponent.php, line 87
+smarty_function_content - APP\Vendor\smarty\vam_plugins\function.content.php, line 29
+eval - APP\Vendor\smarty\sysplugins\smarty_internal_templatebase.php(147) : eval()'d code, line 92
+Smarty_Internal_TemplateBase::fetch() - APP\Vendor\smarty\sysplugins\smarty_internal_templatebase.php, line 147
+SmartyComponent::fetch() - APP\Controller\Component\SmartyComponent.php, line 82
+SmartyComponent::display() - APP\Controller\Component\SmartyComponent.php, line 87
+PagesController::index() - APP\Controller\PagesController.php, line 159
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 485
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 186
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 161
+[main] - APP\webroot\index.php, line 92
+
+2013-06-13 15:47:59 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\www\test\eshop\app\View\Helper\AdminHelper.php, line 238]
+Trace:
+AdminHelper::DrawMenu() - APP\View\Helper\AdminHelper.php, line 238
+include - APP\View\Layouts\admin.ctp, line 42
+View::_evaluate() - CORE\Cake\View\View.php, line 947
+View::_render() - CORE\Cake\View\View.php, line 909
+View::renderLayout() - CORE\Cake\View\View.php, line 534
+View::render() - CORE\Cake\View\View.php, line 478
+Controller::render() - CORE\Cake\Controller\Controller.php, line 947
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 161
+[main] - APP\webroot\index.php, line 92
+
+2013-06-13 15:48:34 Warning: Warning (2): number_format() expects parameter 2 to be long, string given in [C:\xampp\htdocs\www\test\eshop\app\Controller\Component\CurrencyBaseComponent.php, line 47]
+Trace:
+number_format - [internal], line ??
+CurrencyBaseComponent::display_price() - APP\Controller\Component\CurrencyBaseComponent.php, line 47
+smarty_function_product_prices - APP\Vendor\smarty\vam_plugins\function.product_prices.php, line 49
+eval - APP\Vendor\smarty\sysplugins\smarty_internal_templatebase.php(147) : eval()'d code, line 48
+Smarty_Internal_TemplateBase::fetch() - APP\Vendor\smarty\sysplugins\smarty_internal_templatebase.php, line 147
+SmartyComponent::fetch() - APP\Controller\Component\SmartyComponent.php, line 82
+SmartyComponent::display() - APP\Controller\Component\SmartyComponent.php, line 87
+smarty_function_content - APP\Vendor\smarty\vam_plugins\function.content.php, line 29
+eval - APP\Vendor\smarty\sysplugins\smarty_internal_templatebase.php(147) : eval()'d code, line 92
+Smarty_Internal_TemplateBase::fetch() - APP\Vendor\smarty\sysplugins\smarty_internal_templatebase.php, line 147
+SmartyComponent::fetch() - APP\Controller\Component\SmartyComponent.php, line 82
+SmartyComponent::display() - APP\Controller\Component\SmartyComponent.php, line 87
+PagesController::index() - APP\Controller\PagesController.php, line 159
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 485
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 186
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 161
+[main] - APP\webroot\index.php, line 92
+
+2013-06-13 15:48:35 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\www\test\eshop\app\View\Helper\AdminHelper.php, line 238]
+Trace:
+AdminHelper::DrawMenu() - APP\View\Helper\AdminHelper.php, line 238
+include - APP\View\Layouts\admin.ctp, line 42
+View::_evaluate() - CORE\Cake\View\View.php, line 947
+View::_render() - CORE\Cake\View\View.php, line 909
+View::renderLayout() - CORE\Cake\View\View.php, line 534
+View::render() - CORE\Cake\View\View.php, line 478
+Controller::render() - CORE\Cake\Controller\Controller.php, line 947
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 161
+[main] - APP\webroot\index.php, line 92
+
+2013-06-13 15:50:47 Warning: Warning (2): number_format() expects parameter 2 to be long, string given in [C:\xampp\htdocs\www\test\eshop\app\Controller\Component\CurrencyBaseComponent.php, line 47]
+Trace:
+number_format - [internal], line ??
+CurrencyBaseComponent::display_price() - APP\Controller\Component\CurrencyBaseComponent.php, line 47
+smarty_function_product_prices - APP\Vendor\smarty\vam_plugins\function.product_prices.php, line 49
+eval - APP\Vendor\smarty\sysplugins\smarty_internal_templatebase.php(147) : eval()'d code, line 48
+Smarty_Internal_TemplateBase::fetch() - APP\Vendor\smarty\sysplugins\smarty_internal_templatebase.php, line 147
+SmartyComponent::fetch() - APP\Controller\Component\SmartyComponent.php, line 82
+SmartyComponent::display() - APP\Controller\Component\SmartyComponent.php, line 87
+smarty_function_content - APP\Vendor\smarty\vam_plugins\function.content.php, line 29
+eval - APP\Vendor\smarty\sysplugins\smarty_internal_templatebase.php(147) : eval()'d code, line 92
+Smarty_Internal_TemplateBase::fetch() - APP\Vendor\smarty\sysplugins\smarty_internal_templatebase.php, line 147
+SmartyComponent::fetch() - APP\Controller\Component\SmartyComponent.php, line 82
+SmartyComponent::display() - APP\Controller\Component\SmartyComponent.php, line 87
+PagesController::index() - APP\Controller\PagesController.php, line 159
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 485
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 186
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 161
+[main] - APP\webroot\index.php, line 92
+
+2013-06-13 15:50:49 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\www\test\eshop\app\View\Helper\AdminHelper.php, line 238]
+Trace:
+AdminHelper::DrawMenu() - APP\View\Helper\AdminHelper.php, line 238
+include - APP\View\Layouts\admin.ctp, line 42
+View::_evaluate() - CORE\Cake\View\View.php, line 947
+View::_render() - CORE\Cake\View\View.php, line 909
+View::renderLayout() - CORE\Cake\View\View.php, line 534
+View::render() - CORE\Cake\View\View.php, line 478
+Controller::render() - CORE\Cake\Controller\Controller.php, line 947
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 161
+[main] - APP\webroot\index.php, line 92
+
+2013-06-13 15:51:11 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\www\test\eshop\app\View\Helper\AdminHelper.php, line 238]
+Trace:
+AdminHelper::DrawMenu() - APP\View\Helper\AdminHelper.php, line 238
+include - APP\View\Layouts\admin.ctp, line 42
+View::_evaluate() - CORE\Cake\View\View.php, line 947
+View::_render() - CORE\Cake\View\View.php, line 909
+View::renderLayout() - CORE\Cake\View\View.php, line 534
+View::render() - CORE\Cake\View\View.php, line 478
+Controller::render() - CORE\Cake\Controller\Controller.php, line 947
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 161
+[main] - APP\webroot\index.php, line 92
+
+2013-06-13 15:53:13 Error: [MissingControllerException] Controller class TrikoController could not be found.
+Exception Attributes: array (
+  'class' => 'TrikoController',
+  'plugin' => NULL,
+)
+Request URL: /eshop/triko
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\eshop\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-06-13 15:53:14 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\www\test\eshop\app\View\Helper\AdminHelper.php, line 238]
+Trace:
+AdminHelper::DrawMenu() - APP\View\Helper\AdminHelper.php, line 238
+include - APP\View\Layouts\admin.ctp, line 42
+View::_evaluate() - CORE\Cake\View\View.php, line 947
+View::_render() - CORE\Cake\View\View.php, line 909
+View::renderLayout() - CORE\Cake\View\View.php, line 534
+View::render() - CORE\Cake\View\View.php, line 478
+Controller::render() - CORE\Cake\Controller\Controller.php, line 947
+ExceptionRenderer::_outputMessage() - CORE\Cake\Error\ExceptionRenderer.php, line 273
+ExceptionRenderer::error400() - CORE\Cake\Error\ExceptionRenderer.php, line 219
+ExceptionRenderer::render() - CORE\Cake\Error\ExceptionRenderer.php, line 175
+ErrorHandler::handleException() - CORE\Cake\Error\ErrorHandler.php, line 122
+[main] - [internal], line ??
+
+2013-06-13 16:47:15 Error: [MissingViewException] View file "C:\xampp\htdocs\www\test\eshop\app\View\Site\login.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\xampp\\htdocs\\www\\test\\eshop\\app\\View\\Site\\login.ctp',
+)
+Request URL: /eshop/site/login?return_url=
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\eshop\lib\Cake\View\View.php(467): View->_getViewFileName(NULL)
+#1 C:\xampp\htdocs\www\test\eshop\lib\Cake\Controller\Controller.php(947): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\www\test\eshop\lib\Cake\Routing\Dispatcher.php(193): Controller->render()
+#3 C:\xampp\htdocs\www\test\eshop\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(SiteController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\xampp\htdocs\www\test\eshop\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-06-13 16:47:15 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\www\test\eshop\app\View\Helper\AdminHelper.php, line 238]
+Trace:
+AdminHelper::DrawMenu() - APP\View\Helper\AdminHelper.php, line 238
+include - APP\View\Layouts\admin.ctp, line 42
+View::_evaluate() - CORE\Cake\View\View.php, line 947
+View::_render() - CORE\Cake\View\View.php, line 909
+View::renderLayout() - CORE\Cake\View\View.php, line 534
+View::render() - CORE\Cake\View\View.php, line 478
+Controller::render() - CORE\Cake\Controller\Controller.php, line 947
+ExceptionRenderer::_outputMessage() - CORE\Cake\Error\ExceptionRenderer.php, line 273
+ExceptionRenderer::error500() - CORE\Cake\Error\ExceptionRenderer.php, line 242
+ExceptionRenderer::render() - CORE\Cake\Error\ExceptionRenderer.php, line 175
+ErrorHandler::handleException() - CORE\Cake\Error\ErrorHandler.php, line 122
+[main] - [internal], line ??
+
+2013-06-13 16:47:40 Error: [MissingViewException] View file "C:\xampp\htdocs\www\test\eshop\app\View\Site\login.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\xampp\\htdocs\\www\\test\\eshop\\app\\View\\Site\\login.ctp',
+)
+Request URL: /eshop/site/login
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\eshop\lib\Cake\View\View.php(467): View->_getViewFileName(NULL)
+#1 C:\xampp\htdocs\www\test\eshop\lib\Cake\Controller\Controller.php(947): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\www\test\eshop\lib\Cake\Routing\Dispatcher.php(193): Controller->render()
+#3 C:\xampp\htdocs\www\test\eshop\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(SiteController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\xampp\htdocs\www\test\eshop\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-06-13 16:47:40 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\www\test\eshop\app\View\Helper\AdminHelper.php, line 238]
+Trace:
+AdminHelper::DrawMenu() - APP\View\Helper\AdminHelper.php, line 238
+include - APP\View\Layouts\admin.ctp, line 42
+View::_evaluate() - CORE\Cake\View\View.php, line 947
+View::_render() - CORE\Cake\View\View.php, line 909
+View::renderLayout() - CORE\Cake\View\View.php, line 534
+View::render() - CORE\Cake\View\View.php, line 478
+Controller::render() - CORE\Cake\Controller\Controller.php, line 947
+ExceptionRenderer::_outputMessage() - CORE\Cake\Error\ExceptionRenderer.php, line 273
+ExceptionRenderer::error500() - CORE\Cake\Error\ExceptionRenderer.php, line 242
+ExceptionRenderer::render() - CORE\Cake\Error\ExceptionRenderer.php, line 175
+ErrorHandler::handleException() - CORE\Cake\Error\ErrorHandler.php, line 122
+[main] - [internal], line ??
+
+2013-06-13 16:47:55 Error: [MissingViewException] View file "C:\xampp\htdocs\www\test\eshop\app\View\Site\login.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\xampp\\htdocs\\www\\test\\eshop\\app\\View\\Site\\login.ctp',
+)
+Request URL: /eshop/site/login?return_url=
+Stack Trace:
+#0 C:\xampp\htdocs\www\test\eshop\lib\Cake\View\View.php(467): View->_getViewFileName(NULL)
+#1 C:\xampp\htdocs\www\test\eshop\lib\Cake\Controller\Controller.php(947): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\www\test\eshop\lib\Cake\Routing\Dispatcher.php(193): Controller->render()
+#3 C:\xampp\htdocs\www\test\eshop\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(SiteController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\xampp\htdocs\www\test\eshop\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-06-13 16:47:55 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\www\test\eshop\app\View\Helper\AdminHelper.php, line 238]
+Trace:
+AdminHelper::DrawMenu() - APP\View\Helper\AdminHelper.php, line 238
+include - APP\View\Layouts\admin.ctp, line 42
+View::_evaluate() - CORE\Cake\View\View.php, line 947
+View::_render() - CORE\Cake\View\View.php, line 909
+View::renderLayout() - CORE\Cake\View\View.php, line 534
+View::render() - CORE\Cake\View\View.php, line 478
+Controller::render() - CORE\Cake\Controller\Controller.php, line 947
+ExceptionRenderer::_outputMessage() - CORE\Cake\Error\ExceptionRenderer.php, line 273
+ExceptionRenderer::error500() - CORE\Cake\Error\ExceptionRenderer.php, line 242
+ExceptionRenderer::render() - CORE\Cake\Error\ExceptionRenderer.php, line 175
+ErrorHandler::handleException() - CORE\Cake\Error\ErrorHandler.php, line 122
+[main] - [internal], line ??
+
+2013-06-13 16:58:04 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\www\test\eshop\app\View\Helper\AdminHelper.php, line 238]
+Trace:
+AdminHelper::DrawMenu() - APP\View\Helper\AdminHelper.php, line 238
+include - APP\View\Layouts\admin.ctp, line 42
+View::_evaluate() - CORE\Cake\View\View.php, line 947
+View::_render() - CORE\Cake\View\View.php, line 909
+View::renderLayout() - CORE\Cake\View\View.php, line 534
+View::render() - CORE\Cake\View\View.php, line 478
+Controller::render() - CORE\Cake\Controller\Controller.php, line 947
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 161
+[main] - APP\webroot\index.php, line 92
+
+2013-06-13 16:58:07 Warning: Warning (2): number_format() expects parameter 2 to be long, string given in [C:\xampp\htdocs\www\test\eshop\app\Controller\Component\CurrencyBaseComponent.php, line 47]
+Trace:
+number_format - [internal], line ??
+CurrencyBaseComponent::display_price() - APP\Controller\Component\CurrencyBaseComponent.php, line 47
+smarty_function_product_prices - APP\Vendor\smarty\vam_plugins\function.product_prices.php, line 49
+eval - APP\Vendor\smarty\sysplugins\smarty_internal_templatebase.php(147) : eval()'d code, line 48
+Smarty_Internal_TemplateBase::fetch() - APP\Vendor\smarty\sysplugins\smarty_internal_templatebase.php, line 147
+SmartyComponent::fetch() - APP\Controller\Component\SmartyComponent.php, line 82
+SmartyComponent::display() - APP\Controller\Component\SmartyComponent.php, line 87
+smarty_function_content - APP\Vendor\smarty\vam_plugins\function.content.php, line 29
+eval - APP\Vendor\smarty\sysplugins\smarty_internal_templatebase.php(147) : eval()'d code, line 92
+Smarty_Internal_TemplateBase::fetch() - APP\Vendor\smarty\sysplugins\smarty_internal_templatebase.php, line 147
+SmartyComponent::fetch() - APP\Controller\Component\SmartyComponent.php, line 82
+SmartyComponent::display() - APP\Controller\Component\SmartyComponent.php, line 87
+PagesController::index() - APP\Controller\PagesController.php, line 159
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 485
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 186
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 161
+[main] - APP\webroot\index.php, line 92
+
+2013-06-13 16:58:08 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\www\test\eshop\app\View\Helper\AdminHelper.php, line 238]
+Trace:
+AdminHelper::DrawMenu() - APP\View\Helper\AdminHelper.php, line 238
+include - APP\View\Layouts\admin.ctp, line 42
+View::_evaluate() - CORE\Cake\View\View.php, line 947
+View::_render() - CORE\Cake\View\View.php, line 909
+View::renderLayout() - CORE\Cake\View\View.php, line 534
+View::render() - CORE\Cake\View\View.php, line 478
+Controller::render() - CORE\Cake\Controller\Controller.php, line 947
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 161
+[main] - APP\webroot\index.php, line 92
+
+2013-06-13 16:58:19 Warning: Warning (2): number_format() expects parameter 2 to be long, string given in [C:\xampp\htdocs\www\test\eshop\app\Controller\Component\CurrencyBaseComponent.php, line 47]
+Trace:
+number_format - [internal], line ??
+CurrencyBaseComponent::display_price() - APP\Controller\Component\CurrencyBaseComponent.php, line 47
+smarty_function_product_prices - APP\Vendor\smarty\vam_plugins\function.product_prices.php, line 49
+eval - APP\Vendor\smarty\sysplugins\smarty_internal_templatebase.php(147) : eval()'d code, line 48
+Smarty_Internal_TemplateBase::fetch() - APP\Vendor\smarty\sysplugins\smarty_internal_templatebase.php, line 147
+SmartyComponent::fetch() - APP\Controller\Component\SmartyComponent.php, line 82
+SmartyComponent::display() - APP\Controller\Component\SmartyComponent.php, line 87
+smarty_function_content - APP\Vendor\smarty\vam_plugins\function.content.php, line 29
+eval - APP\Vendor\smarty\sysplugins\smarty_internal_templatebase.php(147) : eval()'d code, line 92
+Smarty_Internal_TemplateBase::fetch() - APP\Vendor\smarty\sysplugins\smarty_internal_templatebase.php, line 147
+SmartyComponent::fetch() - APP\Controller\Component\SmartyComponent.php, line 82
+SmartyComponent::display() - APP\Controller\Component\SmartyComponent.php, line 87
+PagesController::index() - APP\Controller\PagesController.php, line 159
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 485
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 186
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 161
+[main] - APP\webroot\index.php, line 92
+
+2013-06-13 16:58:20 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\www\test\eshop\app\View\Helper\AdminHelper.php, line 238]
+Trace:
+AdminHelper::DrawMenu() - APP\View\Helper\AdminHelper.php, line 238
+include - APP\View\Layouts\admin.ctp, line 42
+View::_evaluate() - CORE\Cake\View\View.php, line 947
+View::_render() - CORE\Cake\View\View.php, line 909
+View::renderLayout() - CORE\Cake\View\View.php, line 534
+View::render() - CORE\Cake\View\View.php, line 478
+Controller::render() - CORE\Cake\Controller\Controller.php, line 947
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 161
+[main] - APP\webroot\index.php, line 92
+
+2013-06-13 16:58:34 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\www\test\eshop\app\View\Helper\AdminHelper.php, line 238]
+Trace:
+AdminHelper::DrawMenu() - APP\View\Helper\AdminHelper.php, line 238
+include - APP\View\Layouts\admin.ctp, line 42
+View::_evaluate() - CORE\Cake\View\View.php, line 947
+View::_render() - CORE\Cake\View\View.php, line 909
+View::renderLayout() - CORE\Cake\View\View.php, line 534
+View::render() - CORE\Cake\View\View.php, line 478
+Controller::render() - CORE\Cake\Controller\Controller.php, line 947
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 161
+[main] - APP\webroot\index.php, line 92
+
+2013-06-13 17:02:03 Warning: Warning (2): number_format() expects parameter 2 to be long, string given in [C:\xampp\htdocs\www\test\eshop\app\Controller\Component\CurrencyBaseComponent.php, line 47]
+Trace:
+number_format - [internal], line ??
+CurrencyBaseComponent::display_price() - APP\Controller\Component\CurrencyBaseComponent.php, line 47
+smarty_function_product_prices - APP\Vendor\smarty\vam_plugins\function.product_prices.php, line 49
+eval - APP\Vendor\smarty\sysplugins\smarty_internal_templatebase.php(147) : eval()'d code, line 48
+Smarty_Internal_TemplateBase::fetch() - APP\Vendor\smarty\sysplugins\smarty_internal_templatebase.php, line 147
+SmartyComponent::fetch() - APP\Controller\Component\SmartyComponent.php, line 82
+SmartyComponent::display() - APP\Controller\Component\SmartyComponent.php, line 87
+smarty_function_content - APP\Vendor\smarty\vam_plugins\function.content.php, line 29
+eval - APP\Vendor\smarty\sysplugins\smarty_internal_templatebase.php(147) : eval()'d code, line 92
+Smarty_Internal_TemplateBase::fetch() - APP\Vendor\smarty\sysplugins\smarty_internal_templatebase.php, line 147
+SmartyComponent::fetch() - APP\Controller\Component\SmartyComponent.php, line 82
+SmartyComponent::display() - APP\Controller\Component\SmartyComponent.php, line 87
+PagesController::index() - APP\Controller\PagesController.php, line 159
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 485
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 186
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 161
+[main] - APP\webroot\index.php, line 92
+
+2013-06-13 17:02:05 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\www\test\eshop\app\View\Helper\AdminHelper.php, line 238]
+Trace:
+AdminHelper::DrawMenu() - APP\View\Helper\AdminHelper.php, line 238
+include - APP\View\Layouts\admin.ctp, line 42
+View::_evaluate() - CORE\Cake\View\View.php, line 947
+View::_render() - CORE\Cake\View\View.php, line 909
+View::renderLayout() - CORE\Cake\View\View.php, line 534
+View::render() - CORE\Cake\View\View.php, line 478
+Controller::render() - CORE\Cake\Controller\Controller.php, line 947
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 161
+[main] - APP\webroot\index.php, line 92
+
+2013-06-13 17:02:08 Warning: Warning (2): number_format() expects parameter 2 to be long, string given in [C:\xampp\htdocs\www\test\eshop\app\Controller\Component\CurrencyBaseComponent.php, line 47]
+Trace:
+number_format - [internal], line ??
+CurrencyBaseComponent::display_price() - APP\Controller\Component\CurrencyBaseComponent.php, line 47
+smarty_function_product_prices - APP\Vendor\smarty\vam_plugins\function.product_prices.php, line 49
+eval - APP\Vendor\smarty\sysplugins\smarty_internal_templatebase.php(147) : eval()'d code, line 48
+Smarty_Internal_TemplateBase::fetch() - APP\Vendor\smarty\sysplugins\smarty_internal_templatebase.php, line 147
+SmartyComponent::fetch() - APP\Controller\Component\SmartyComponent.php, line 82
+SmartyComponent::display() - APP\Controller\Component\SmartyComponent.php, line 87
+smarty_function_content - APP\Vendor\smarty\vam_plugins\function.content.php, line 29
+eval - APP\Vendor\smarty\sysplugins\smarty_internal_templatebase.php(147) : eval()'d code, line 92
+Smarty_Internal_TemplateBase::fetch() - APP\Vendor\smarty\sysplugins\smarty_internal_templatebase.php, line 147
+SmartyComponent::fetch() - APP\Controller\Component\SmartyComponent.php, line 82
+SmartyComponent::display() - APP\Controller\Component\SmartyComponent.php, line 87
+PagesController::index() - APP\Controller\PagesController.php, line 159
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 485
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 186
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 161
+[main] - APP\webroot\index.php, line 92
+
+2013-06-13 17:02:09 Warning: Warning (2): number_format() expects parameter 2 to be long, string given in [C:\xampp\htdocs\www\test\eshop\app\Controller\Component\CurrencyBaseComponent.php, line 47]
+Trace:
+number_format - [internal], line ??
+CurrencyBaseComponent::display_price() - APP\Controller\Component\CurrencyBaseComponent.php, line 47
+smarty_function_shopping_cart - APP\Vendor\smarty\vam_plugins\function.shopping_cart.php, line 95
+eval - APP\Vendor\smarty\sysplugins\smarty_internal_templatebase.php(147) : eval()'d code, line 117
+Smarty_Internal_TemplateBase::fetch() - APP\Vendor\smarty\sysplugins\smarty_internal_templatebase.php, line 147
+SmartyComponent::fetch() - APP\Controller\Component\SmartyComponent.php, line 82
+SmartyComponent::display() - APP\Controller\Component\SmartyComponent.php, line 87
+PagesController::index() - APP\Controller\PagesController.php, line 159
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 485
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 186
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 161
+[main] - APP\webroot\index.php, line 92
+
+2013-06-13 17:02:09 Warning: Warning (2): number_format() expects parameter 2 to be long, string given in [C:\xampp\htdocs\www\test\eshop\app\Controller\Component\CurrencyBaseComponent.php, line 47]
+Trace:
+number_format - [internal], line ??
+CurrencyBaseComponent::display_price() - APP\Controller\Component\CurrencyBaseComponent.php, line 47
+smarty_function_shopping_cart - APP\Vendor\smarty\vam_plugins\function.shopping_cart.php, line 98
+eval - APP\Vendor\smarty\sysplugins\smarty_internal_templatebase.php(147) : eval()'d code, line 117
+Smarty_Internal_TemplateBase::fetch() - APP\Vendor\smarty\sysplugins\smarty_internal_templatebase.php, line 147
+SmartyComponent::fetch() - APP\Controller\Component\SmartyComponent.php, line 82
+SmartyComponent::display() - APP\Controller\Component\SmartyComponent.php, line 87
+PagesController::index() - APP\Controller\PagesController.php, line 159
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 485
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 186
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 161
+[main] - APP\webroot\index.php, line 92
+
+2013-06-13 17:02:09 Warning: Warning (2): number_format() expects parameter 2 to be long, string given in [C:\xampp\htdocs\www\test\eshop\app\Controller\Component\CurrencyBaseComponent.php, line 47]
+Trace:
+number_format - [internal], line ??
+CurrencyBaseComponent::display_price() - APP\Controller\Component\CurrencyBaseComponent.php, line 47
+smarty_function_shopping_cart - APP\Vendor\smarty\vam_plugins\function.shopping_cart.php, line 104
+eval - APP\Vendor\smarty\sysplugins\smarty_internal_templatebase.php(147) : eval()'d code, line 117
+Smarty_Internal_TemplateBase::fetch() - APP\Vendor\smarty\sysplugins\smarty_internal_templatebase.php, line 147
+SmartyComponent::fetch() - APP\Controller\Component\SmartyComponent.php, line 82
+SmartyComponent::display() - APP\Controller\Component\SmartyComponent.php, line 87
+PagesController::index() - APP\Controller\PagesController.php, line 159
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 485
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 186
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 161
+[main] - APP\webroot\index.php, line 92
+
+2013-06-13 17:02:09 Warning: Warning (2): number_format() expects parameter 2 to be long, string given in [C:\xampp\htdocs\www\test\eshop\app\Controller\Component\CurrencyBaseComponent.php, line 47]
+Trace:
+number_format - [internal], line ??
+CurrencyBaseComponent::display_price() - APP\Controller\Component\CurrencyBaseComponent.php, line 47
+smarty_function_shopping_cart - APP\Vendor\smarty\vam_plugins\function.shopping_cart.php, line 105
+eval - APP\Vendor\smarty\sysplugins\smarty_internal_templatebase.php(147) : eval()'d code, line 117
+Smarty_Internal_TemplateBase::fetch() - APP\Vendor\smarty\sysplugins\smarty_internal_templatebase.php, line 147
+SmartyComponent::fetch() - APP\Controller\Component\SmartyComponent.php, line 82
+SmartyComponent::display() - APP\Controller\Component\SmartyComponent.php, line 87
+PagesController::index() - APP\Controller\PagesController.php, line 159
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 485
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 186
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 161
+[main] - APP\webroot\index.php, line 92
+
+2013-06-13 17:02:10 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\www\test\eshop\app\View\Helper\AdminHelper.php, line 238]
+Trace:
+AdminHelper::DrawMenu() - APP\View\Helper\AdminHelper.php, line 238
+include - APP\View\Layouts\admin.ctp, line 42
+View::_evaluate() - CORE\Cake\View\View.php, line 947
+View::_render() - CORE\Cake\View\View.php, line 909
+View::renderLayout() - CORE\Cake\View\View.php, line 534
+View::render() - CORE\Cake\View\View.php, line 478
+Controller::render() - CORE\Cake\Controller\Controller.php, line 947
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 161
+[main] - APP\webroot\index.php, line 92
+
+2013-06-13 17:02:14 Warning: Warning (2): number_format() expects parameter 2 to be long, string given in [C:\xampp\htdocs\www\test\eshop\app\Controller\Component\CurrencyBaseComponent.php, line 47]
+Trace:
+number_format - [internal], line ??
+CurrencyBaseComponent::display_price() - APP\Controller\Component\CurrencyBaseComponent.php, line 47
+smarty_function_shopping_cart - APP\Vendor\smarty\vam_plugins\function.shopping_cart.php, line 95
+eval - APP\Vendor\smarty\sysplugins\smarty_internal_templatebase.php(147) : eval()'d code, line 117
+Smarty_Internal_TemplateBase::fetch() - APP\Vendor\smarty\sysplugins\smarty_internal_templatebase.php, line 147
+SmartyComponent::fetch() - APP\Controller\Component\SmartyComponent.php, line 82
+SmartyComponent::display() - APP\Controller\Component\SmartyComponent.php, line 87
+PagesController::index() - APP\Controller\PagesController.php, line 159
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 485
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 186
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 161
+[main] - APP\webroot\index.php, line 92
+
+2013-06-13 17:02:14 Warning: Warning (2): number_format() expects parameter 2 to be long, string given in [C:\xampp\htdocs\www\test\eshop\app\Controller\Component\CurrencyBaseComponent.php, line 47]
+Trace:
+number_format - [internal], line ??
+CurrencyBaseComponent::display_price() - APP\Controller\Component\CurrencyBaseComponent.php, line 47
+smarty_function_shopping_cart - APP\Vendor\smarty\vam_plugins\function.shopping_cart.php, line 98
+eval - APP\Vendor\smarty\sysplugins\smarty_internal_templatebase.php(147) : eval()'d code, line 117
+Smarty_Internal_TemplateBase::fetch() - APP\Vendor\smarty\sysplugins\smarty_internal_templatebase.php, line 147
+SmartyComponent::fetch() - APP\Controller\Component\SmartyComponent.php, line 82
+SmartyComponent::display() - APP\Controller\Component\SmartyComponent.php, line 87
+PagesController::index() - APP\Controller\PagesController.php, line 159
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 485
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 186
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 161
+[main] - APP\webroot\index.php, line 92
+
+2013-06-13 17:02:14 Warning: Warning (2): number_format() expects parameter 2 to be long, string given in [C:\xampp\htdocs\www\test\eshop\app\Controller\Component\CurrencyBaseComponent.php, line 47]
+Trace:
+number_format - [internal], line ??
+CurrencyBaseComponent::display_price() - APP\Controller\Component\CurrencyBaseComponent.php, line 47
+smarty_function_shopping_cart - APP\Vendor\smarty\vam_plugins\function.shopping_cart.php, line 104
+eval - APP\Vendor\smarty\sysplugins\smarty_internal_templatebase.php(147) : eval()'d code, line 117
+Smarty_Internal_TemplateBase::fetch() - APP\Vendor\smarty\sysplugins\smarty_internal_templatebase.php, line 147
+SmartyComponent::fetch() - APP\Controller\Component\SmartyComponent.php, line 82
+SmartyComponent::display() - APP\Controller\Component\SmartyComponent.php, line 87
+PagesController::index() - APP\Controller\PagesController.php, line 159
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 485
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 186
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 161
+[main] - APP\webroot\index.php, line 92
+
+2013-06-13 17:02:14 Warning: Warning (2): number_format() expects parameter 2 to be long, string given in [C:\xampp\htdocs\www\test\eshop\app\Controller\Component\CurrencyBaseComponent.php, line 47]
+Trace:
+number_format - [internal], line ??
+CurrencyBaseComponent::display_price() - APP\Controller\Component\CurrencyBaseComponent.php, line 47
+smarty_function_shopping_cart - APP\Vendor\smarty\vam_plugins\function.shopping_cart.php, line 105
+eval - APP\Vendor\smarty\sysplugins\smarty_internal_templatebase.php(147) : eval()'d code, line 117
+Smarty_Internal_TemplateBase::fetch() - APP\Vendor\smarty\sysplugins\smarty_internal_templatebase.php, line 147
+SmartyComponent::fetch() - APP\Controller\Component\SmartyComponent.php, line 82
+SmartyComponent::display() - APP\Controller\Component\SmartyComponent.php, line 87
+PagesController::index() - APP\Controller\PagesController.php, line 159
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 485
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 186
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 161
+[main] - APP\webroot\index.php, line 92
+
+2013-06-13 17:03:44 Warning: Warning (2): number_format() expects parameter 2 to be long, string given in [C:\xampp\htdocs\www\test\eshop\app\Controller\Component\CurrencyBaseComponent.php, line 47]
+Trace:
+number_format - [internal], line ??
+CurrencyBaseComponent::display_price() - APP\Controller\Component\CurrencyBaseComponent.php, line 47
+smarty_function_shopping_cart - APP\Vendor\smarty\vam_plugins\function.shopping_cart.php, line 95
+eval - APP\Vendor\smarty\sysplugins\smarty_internal_templatebase.php(147) : eval()'d code, line 15
+Smarty_Internal_TemplateBase::fetch() - APP\Vendor\smarty\sysplugins\smarty_internal_templatebase.php, line 147
+SmartyComponent::fetch() - APP\Controller\Component\SmartyComponent.php, line 82
+SmartyComponent::display() - APP\Controller\Component\SmartyComponent.php, line 87
+smarty_function_description - APP\Vendor\smarty\vam_plugins\function.description.php, line 17
+eval - APP\Vendor\smarty\sysplugins\smarty_internal_templatebase.php(147) : eval()'d code, line 4
+Smarty_Internal_TemplateBase::fetch() - APP\Vendor\smarty\sysplugins\smarty_internal_templatebase.php, line 147
+SmartyComponent::fetch() - APP\Controller\Component\SmartyComponent.php, line 82
+SmartyComponent::display() - APP\Controller\Component\SmartyComponent.php, line 87
+smarty_function_content - APP\Vendor\smarty\vam_plugins\function.content.php, line 29
+eval - APP\Vendor\smarty\sysplugins\smarty_internal_templatebase.php(147) : eval()'d code, line 92
+Smarty_Internal_TemplateBase::fetch() - APP\Vendor\smarty\sysplugins\smarty_internal_templatebase.php, line 147
+SmartyComponent::fetch() - APP\Controller\Component\SmartyComponent.php, line 82
+SmartyComponent::display() - APP\Controller\Component\SmartyComponent.php, line 87
+PagesController::index() - APP\Controller\PagesController.php, line 159
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 485
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 186
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 161
+[main] - APP\webroot\index.php, line 92
+
+2013-06-13 17:03:44 Warning: Warning (2): number_format() expects parameter 2 to be long, string given in [C:\xampp\htdocs\www\test\eshop\app\Controller\Component\CurrencyBaseComponent.php, line 47]
+Trace:
+number_format - [internal], line ??
+CurrencyBaseComponent::display_price() - APP\Controller\Component\CurrencyBaseComponent.php, line 47
+smarty_function_shopping_cart - APP\Vendor\smarty\vam_plugins\function.shopping_cart.php, line 98
+eval - APP\Vendor\smarty\sysplugins\smarty_internal_templatebase.php(147) : eval()'d code, line 15
+Smarty_Internal_TemplateBase::fetch() - APP\Vendor\smarty\sysplugins\smarty_internal_templatebase.php, line 147
+SmartyComponent::fetch() - APP\Controller\Component\SmartyComponent.php, line 82
+SmartyComponent::display() - APP\Controller\Component\SmartyComponent.php, line 87
+smarty_function_description - APP\Vendor\smarty\vam_plugins\function.description.php, line 17
+eval - APP\Vendor\smarty\sysplugins\smarty_internal_templatebase.php(147) : eval()'d code, line 4
+Smarty_Internal_TemplateBase::fetch() - APP\Vendor\smarty\sysplugins\smarty_internal_templatebase.php, line 147
+SmartyComponent::fetch() - APP\Controller\Component\SmartyComponent.php, line 82
+SmartyComponent::display() - APP\Controller\Component\SmartyComponent.php, line 87
+smarty_function_content - APP\Vendor\smarty\vam_plugins\function.content.php, line 29
+eval - APP\Vendor\smarty\sysplugins\smarty_internal_templatebase.php(147) : eval()'d code, line 92
+Smarty_Internal_TemplateBase::fetch() - APP\Vendor\smarty\sysplugins\smarty_internal_templatebase.php, line 147
+SmartyComponent::fetch() - APP\Controller\Component\SmartyComponent.php, line 82
+SmartyComponent::display() - APP\Controller\Component\SmartyComponent.php, line 87
+PagesController::index() - APP\Controller\PagesController.php, line 159
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 485
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 186
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 161
+[main] - APP\webroot\index.php, line 92
+
+2013-06-13 17:03:44 Warning: Warning (2): number_format() expects parameter 2 to be long, string given in [C:\xampp\htdocs\www\test\eshop\app\Controller\Component\CurrencyBaseComponent.php, line 47]
+Trace:
+number_format - [internal], line ??
+CurrencyBaseComponent::display_price() - APP\Controller\Component\CurrencyBaseComponent.php, line 47
+smarty_function_shopping_cart - APP\Vendor\smarty\vam_plugins\function.shopping_cart.php, line 104
+eval - APP\Vendor\smarty\sysplugins\smarty_internal_templatebase.php(147) : eval()'d code, line 15
+Smarty_Internal_TemplateBase::fetch() - APP\Vendor\smarty\sysplugins\smarty_internal_templatebase.php, line 147
+SmartyComponent::fetch() - APP\Controller\Component\SmartyComponent.php, line 82
+SmartyComponent::display() - APP\Controller\Component\SmartyComponent.php, line 87
+smarty_function_description - APP\Vendor\smarty\vam_plugins\function.description.php, line 17
+eval - APP\Vendor\smarty\sysplugins\smarty_internal_templatebase.php(147) : eval()'d code, line 4
+Smarty_Internal_TemplateBase::fetch() - APP\Vendor\smarty\sysplugins\smarty_internal_templatebase.php, line 147
+SmartyComponent::fetch() - APP\Controller\Component\SmartyComponent.php, line 82
+SmartyComponent::display() - APP\Controller\Component\SmartyComponent.php, line 87
+smarty_function_content - APP\Vendor\smarty\vam_plugins\function.content.php, line 29
+eval - APP\Vendor\smarty\sysplugins\smarty_internal_templatebase.php(147) : eval()'d code, line 92
+Smarty_Internal_TemplateBase::fetch() - APP\Vendor\smarty\sysplugins\smarty_internal_templatebase.php, line 147
+SmartyComponent::fetch() - APP\Controller\Component\SmartyComponent.php, line 82
+SmartyComponent::display() - APP\Controller\Component\SmartyComponent.php, line 87
+PagesController::index() - APP\Controller\PagesController.php, line 159
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 485
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 186
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 161
+[main] - APP\webroot\index.php, line 92
+
+2013-06-13 17:03:44 Warning: Warning (2): number_format() expects parameter 2 to be long, string given in [C:\xampp\htdocs\www\test\eshop\app\Controller\Component\CurrencyBaseComponent.php, line 47]
+Trace:
+number_format - [internal], line ??
+CurrencyBaseComponent::display_price() - APP\Controller\Component\CurrencyBaseComponent.php, line 47
+smarty_function_shopping_cart - APP\Vendor\smarty\vam_plugins\function.shopping_cart.php, line 105
+eval - APP\Vendor\smarty\sysplugins\smarty_internal_templatebase.php(147) : eval()'d code, line 15
+Smarty_Internal_TemplateBase::fetch() - APP\Vendor\smarty\sysplugins\smarty_internal_templatebase.php, line 147
+SmartyComponent::fetch() - APP\Controller\Component\SmartyComponent.php, line 82
+SmartyComponent::display() - APP\Controller\Component\SmartyComponent.php, line 87
+smarty_function_description - APP\Vendor\smarty\vam_plugins\function.description.php, line 17
+eval - APP\Vendor\smarty\sysplugins\smarty_internal_templatebase.php(147) : eval()'d code, line 4
+Smarty_Internal_TemplateBase::fetch() - APP\Vendor\smarty\sysplugins\smarty_internal_templatebase.php, line 147
+SmartyComponent::fetch() - APP\Controller\Component\SmartyComponent.php, line 82
+SmartyComponent::display() - APP\Controller\Component\SmartyComponent.php, line 87
+smarty_function_content - APP\Vendor\smarty\vam_plugins\function.content.php, line 29
+eval - APP\Vendor\smarty\sysplugins\smarty_internal_templatebase.php(147) : eval()'d code, line 92
+Smarty_Internal_TemplateBase::fetch() - APP\Vendor\smarty\sysplugins\smarty_internal_templatebase.php, line 147
+SmartyComponent::fetch() - APP\Controller\Component\SmartyComponent.php, line 82
+SmartyComponent::display() - APP\Controller\Component\SmartyComponent.php, line 87
+PagesController::index() - APP\Controller\PagesController.php, line 159
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 485
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 186
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 161
+[main] - APP\webroot\index.php, line 92
+
+2013-06-13 17:03:45 Warning: Warning (2): number_format() expects parameter 2 to be long, string given in [C:\xampp\htdocs\www\test\eshop\app\Controller\Component\CurrencyBaseComponent.php, line 47]
+Trace:
+number_format - [internal], line ??
+CurrencyBaseComponent::display_price() - APP\Controller\Component\CurrencyBaseComponent.php, line 47
+smarty_function_shopping_cart - APP\Vendor\smarty\vam_plugins\function.shopping_cart.php, line 95
+eval - APP\Vendor\smarty\sysplugins\smarty_internal_templatebase.php(147) : eval()'d code, line 117
+Smarty_Internal_TemplateBase::fetch() - APP\Vendor\smarty\sysplugins\smarty_internal_templatebase.php, line 147
+SmartyComponent::fetch() - APP\Controller\Component\SmartyComponent.php, line 82
+SmartyComponent::display() - APP\Controller\Component\SmartyComponent.php, line 87
+PagesController::index() - APP\Controller\PagesController.php, line 159
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 485
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 186
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 161
+[main] - APP\webroot\index.php, line 92
+
+2013-06-13 17:03:45 Warning: Warning (2): number_format() expects parameter 2 to be long, string given in [C:\xampp\htdocs\www\test\eshop\app\Controller\Component\CurrencyBaseComponent.php, line 47]
+Trace:
+number_format - [internal], line ??
+CurrencyBaseComponent::display_price() - APP\Controller\Component\CurrencyBaseComponent.php, line 47
+smarty_function_shopping_cart - APP\Vendor\smarty\vam_plugins\function.shopping_cart.php, line 98
+eval - APP\Vendor\smarty\sysplugins\smarty_internal_templatebase.php(147) : eval()'d code, line 117
+Smarty_Internal_TemplateBase::fetch() - APP\Vendor\smarty\sysplugins\smarty_internal_templatebase.php, line 147
+SmartyComponent::fetch() - APP\Controller\Component\SmartyComponent.php, line 82
+SmartyComponent::display() - APP\Controller\Component\SmartyComponent.php, line 87
+PagesController::index() - APP\Controller\PagesController.php, line 159
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 485
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 186
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 161
+[main] - APP\webroot\index.php, line 92
+
+2013-06-13 17:03:45 Warning: Warning (2): number_format() expects parameter 2 to be long, string given in [C:\xampp\htdocs\www\test\eshop\app\Controller\Component\CurrencyBaseComponent.php, line 47]
+Trace:
+number_format - [internal], line ??
+CurrencyBaseComponent::display_price() - APP\Controller\Component\CurrencyBaseComponent.php, line 47
+smarty_function_shopping_cart - APP\Vendor\smarty\vam_plugins\function.shopping_cart.php, line 104
+eval - APP\Vendor\smarty\sysplugins\smarty_internal_templatebase.php(147) : eval()'d code, line 117
+Smarty_Internal_TemplateBase::fetch() - APP\Vendor\smarty\sysplugins\smarty_internal_templatebase.php, line 147
+SmartyComponent::fetch() - APP\Controller\Component\SmartyComponent.php, line 82
+SmartyComponent::display() - APP\Controller\Component\SmartyComponent.php, line 87
+PagesController::index() - APP\Controller\PagesController.php, line 159
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 485
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 186
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 161
+[main] - APP\webroot\index.php, line 92
+
+2013-06-13 17:03:45 Warning: Warning (2): number_format() expects parameter 2 to be long, string given in [C:\xampp\htdocs\www\test\eshop\app\Controller\Component\CurrencyBaseComponent.php, line 47]
+Trace:
+number_format - [internal], line ??
+CurrencyBaseComponent::display_price() - APP\Controller\Component\CurrencyBaseComponent.php, line 47
+smarty_function_shopping_cart - APP\Vendor\smarty\vam_plugins\function.shopping_cart.php, line 105
+eval - APP\Vendor\smarty\sysplugins\smarty_internal_templatebase.php(147) : eval()'d code, line 117
+Smarty_Internal_TemplateBase::fetch() - APP\Vendor\smarty\sysplugins\smarty_internal_templatebase.php, line 147
+SmartyComponent::fetch() - APP\Controller\Component\SmartyComponent.php, line 82
+SmartyComponent::display() - APP\Controller\Component\SmartyComponent.php, line 87
+PagesController::index() - APP\Controller\PagesController.php, line 159
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 485
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 186
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 161
+[main] - APP\webroot\index.php, line 92
+
